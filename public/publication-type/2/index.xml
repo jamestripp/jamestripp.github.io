@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 | James Tripp</title>
+    <link>/publication-type/2/</link>
+      <atom:link href="/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
+    <description>2</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 03 Aug 2020 20:53:07 +0100</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>2</title>
+      <link>/publication-type/2/</link>
+    </image>
+    
+    <item>
+      <title>A Dilution Effect Without Dilution</title>
+      <link>/publication/a-dilution-effect-without-dilution/</link>
+      <pubDate>Mon, 03 Aug 2020 20:53:07 +0100</pubDate>
+      <guid>/publication/a-dilution-effect-without-dilution/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Being Paid Relatively Well Most of the Time Negatively Skewed Payments Are More Satisfying</title>
+      <link>/publication/being-paid-relatively-well-most-of-the-time-negatively-skewed-payments-are-more-satisfying/</link>
+      <pubDate>Mon, 03 Aug 2020 20:49:49 +0100</pubDate>
+      <guid>/publication/being-paid-relatively-well-most-of-the-time-negatively-skewed-payments-are-more-satisfying/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
