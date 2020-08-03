@@ -32,7 +32,7 @@ education:
     year: 2013
   - course: BSc(Hons) Psychology
     institution: University of Warwick
-    year: 2020
+    year: 2010
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
