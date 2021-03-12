@@ -1,21 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Posts on James Tripp</title>
-    <link>/post/</link>
-    <description>Recent content in Posts on James Tripp</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 09 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Identical and recordplot in R</title>
-      <link>/2021/03/09/identical-and-recordplot-in-r/</link>
-      <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/2021/03/09/identical-and-recordplot-in-r/</guid>
-      <description>How does one check if plots are identical?
-identical(1,1)## [1] TRUE</description>
-    </item>
-    
-  </channel>
-</rss>

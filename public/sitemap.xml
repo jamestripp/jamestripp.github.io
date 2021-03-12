@@ -2,24 +2,76 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/2021/03/09/identical-and-recordplot-in-r/</loc>
-    <lastmod>2021-03-09T00:00:00+00:00</lastmod>
+    <loc>https://example.com/</loc>
+    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
   </url><url>
-    <loc>/</loc>
-    <lastmod>2021-03-09T00:00:00+00:00</lastmod>
+    <loc>https://example.com/categories/</loc>
+    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
   </url><url>
-    <loc>/post/</loc>
-    <lastmod>2021-03-09T00:00:00+00:00</lastmod>
+    <loc>https://example.com/posts/2020-12-01-r-rmarkdown/</loc>
+    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
   </url><url>
-    <loc>/tags/r/</loc>
-    <lastmod>2021-03-09T00:00:00+00:00</lastmod>
+    <loc>https://example.com/tags/plot/</loc>
+    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2021-03-09T00:00:00+00:00</lastmod>
+    <loc>https://example.com/posts/</loc>
+    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
   </url><url>
-    <loc>/about/</loc>
-    <lastmod>2016-05-05T21:48:51-07:00</lastmod>
+    <loc>https://example.com/categories/r/</loc>
+    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>https://example.com/tags/r-markdown/</loc>
+    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
+  </url><url>
+    <loc>https://example.com/tags/regression/</loc>
+    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
+  </url><url>
+    <loc>https://example.com/tags/</loc>
+    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
+  </url><url>
+    <loc>https://example.com/posts/tg-gh/</loc>
+    <lastmod>2020-04-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://example.com/tags/primer/</loc>
+    <lastmod>2020-04-01T02:01:58+05:30</lastmod>
+  </url><url>
+    <loc>https://example.com/posts/post-1/</loc>
+    <lastmod>2020-04-01T02:01:58+05:30</lastmod>
+  </url><url>
+    <loc>https://example.com/tags/todo/</loc>
+    <lastmod>2020-04-01T02:01:58+05:30</lastmod>
+  </url><url>
+    <loc>https://example.com/posts/post-4/</loc>
+    <lastmod>2020-03-18T12:13:35+05:30</lastmod>
+  </url><url>
+    <loc>https://example.com/archives/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://example.com/about/</loc>
+    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://example.com/posts/post-7/</loc>
+    <lastmod>2018-03-18T12:13:38+05:30</lastmod>
+  </url><url>
+    <loc>https://example.com/posts/post-5/</loc>
+    <lastmod>2018-03-18T12:13:38+05:30</lastmod>
+  </url><url>
+    <loc>https://example.com/posts/post-6/</loc>
+    <lastmod>2018-03-18T12:13:36+05:30</lastmod>
+  </url><url>
+    <loc>https://example.com/posts/post-3/</loc>
+    <lastmod>2018-03-18T12:13:32+05:30</lastmod>
+  </url><url>
+    <loc>https://example.com/tags/procrastinating/</loc>
+    <lastmod>2018-03-18T12:13:32+05:30</lastmod>
+  </url><url>
+    <loc>https://example.com/posts/post-2/</loc>
+    <lastmod>2018-03-18T12:13:30+05:30</lastmod>
+  </url><url>
+    <loc>https://example.com/tags/space/</loc>
+    <lastmod>2018-03-18T12:13:30+05:30</lastmod>
+  </url><url>
+    <loc>https://example.com/projects/</loc>
+    <priority>0</priority>
   </url>
 </urlset>

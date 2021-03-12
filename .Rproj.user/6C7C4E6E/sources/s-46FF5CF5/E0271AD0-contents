@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Projects - James Tripp</title><link rel="icon" type="image/png" href=favicon.ico /><meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta property="og:image" content=""/>
+	<meta property="og:title" content="Projects" />
+<meta property="og:description" content="Grapho   
+LE-CAT " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/projects/" /><meta property="article:section" content="" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Projects"/>
+<meta name="twitter:description" content="Grapho   
+LE-CAT "/>
+
+	<link href="/css/fonts.css" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="/">James Tripp</a>
+	</div>
+	<nav>
+		
+		<a href="/about/">About</a>
+		
+		<a href="https://github.com/jamestripp">GitHub</a>
+		
+		<a href="/projects/">Projects</a>
+		
+		<a href="https://twitter.com/jamestripp_">Twitter</a>
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">Projects</h1>
+			<div class="meta">Posted on Jan 1, 0001</div>
+		</div>
+		
+
+		<section class="body">
+			<h1 id="graphohttpswarwickcimgithubiographo"><a href="https://warwickcim.github.io/grapho/">Grapho</a></h1>
+<p><a href="https://www.repostatus.org/#wip"><img src="https://www.repostatus.org/badges/latest/wip.svg" alt="Project Status: WIP – Initial development is in progress, but therehas not yet been a stable, usable release suitable for thepublic."></a>
+<a href="https://github.com/WarwickCIM/grapho/actions"><img src="https://github.com/WarwickCIM/grapho/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a>
+<a href="https://codecov.io/gh/WarwickCIM/grapho?branch=master"><img src="https://codecov.io/gh/WarwickCIM/grapho/branch/master/graph/badge.svg" alt="Codecov testcoverage"></a></p>
+<h1 id="le-cathttpswarwickcimgithubiolecat"><a href="https://warwickcim.github.io/lecat/">LE-CAT</a></h1>
+
+		</section>
+
+		<div class="post-tags">
+			
+		</div>
+	</article>
+</main>
+<footer>
+<hr>⚡️
+	2021  <a href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+</footer>
+
+
+</div>
+    </body>
+</html>
