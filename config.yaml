@@ -11,11 +11,11 @@ params:
   social:
     - icon: github
       name: GitHub
-      url: https://github.com/jamestripp
+      url: https://github.com/athul/jamestripp
     - icon: twitter
       name: Twitter
-      url: https://github.com/jamestripp_
-  subtitle: Senior Academic Technologist, University of Warwick
+      url: https://twitter.com/jamestripp
+  subtitle: Curious cat
   useCDN: no
 menu:
   main:
@@ -24,7 +24,7 @@ menu:
       weight: 1
     - name: About
       url: /about
-      weight: 2
+      weight: 3
     - name: Projects
       url: /projects
-      weight: 3
+      weight: 4
