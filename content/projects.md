@@ -4,7 +4,7 @@ title: Projects
 ---
 
 The below research software projects are part of my work at the Centre for Interdisciplinary Methodologies.
-
+ 
 # [Grapho](https://warwickcim.github.io/grapho/)
 
 [![Project Status: WIP – Initial development is in progress, but there
