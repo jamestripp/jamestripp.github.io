@@ -7,7 +7,6 @@ categories:
   - R
 tags:
   - grapho
-draft: yes
 ---
 
 I'm working on an R package called [Grapho](https://warwickcim.github.io/grapho/). 
