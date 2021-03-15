@@ -15,7 +15,7 @@ params:
     - icon: twitter
       name: Twitter
       url: https://twitter.com/jamestripp
-  subtitle: Curious cat
+  subtitle: Senior Academic Technologist, University of Warwick
   useCDN: no
 menu:
   main:
