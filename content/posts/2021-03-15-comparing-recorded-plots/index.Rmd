@@ -2,7 +2,7 @@
 title: Comparing recorded plots
 author: James Tripp
 date: '2021-03-15'
-slug: []
+slug: [Comparing different plots using the recordPlot and identical functions.]
 categories:
   - R
 tags:
