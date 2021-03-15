@@ -1,5 +1,7 @@
 ---
-date: "2021-05-12T21:48:51-07:00"
+author: James Trioo
+date: "2019-02-28"
+description: Current projects
 title: Projects
 ---
 
@@ -36,4 +38,4 @@ Status](https://travis-ci.org/warwickCIM/lecat.svg?branch=master)](https://travi
 
 Backfillz.R provides new visual diagnostics for understanding MCMC (Markov Chain Monte Carlo) analyses and outputs. MCMC chains can defy a simple line graph. Unless the chain is very short (which isn’t often the case), plotting tens or hundreds of thousands of data points reveals very little other than a ‘trace plot’ where we only see the outermost points. Common plotting methods may only reveal when an MCMC really hasn’t worked, but not when it has.
 
-# WAYS - Forthcomings
+# WAYS - Forthcoming

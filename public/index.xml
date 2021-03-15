@@ -38,5 +38,18 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
 My background is in Cognitive Science. I completed both a BSc(Hons) and PhD in Psychology at the University of Warwick, then worked as a Post-Doctoral research fellow.</description>
     </item>
     
+    <item>
+      <title>Projects</title>
+      <link>https://jamestripp.net/projects/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jamestripp.net/projects/</guid>
+      <description>The below research software projects are part of my work at the Centre for Interdisciplinary Methodologies.
+Grapho   
+Grapho is an R package for recording the commands and visualisations created in an R session. Functions are provided for parsing and visualising the user workflow.
+LE-CAT    
+LE-CAT is a Lexicon-based Categorization and Analysis Tool developed by the Centre for Interdisciplinary Methodologies in collaboration with the Media of Cooperation Group at the University of Siegen.</description>
+    </item>
+    
   </channel>
 </rss>
