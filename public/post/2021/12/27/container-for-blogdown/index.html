@@ -30,7 +30,34 @@
 </div>
 
 <main>
-<p>I use Blogdown to create this site. All I do is edit markdown files. The creation of the site template, installation of themes, new post templates and converting these into a working site using the Hugo progam is all handled by Blogdown. It&rsquo;s great.</p>
+<h1 id="blogdown">Blogdown</h1>
+<p>The blogdown package is superb. I created this site by installing Hugo via</p>
+<pre><code class="language-r">blogdown::install_hugo()
+</code></pre>
+<p>and then, in a folder for a github repo, running the below.</p>
+<pre><code class="language-r">blogdown::new_site(theme = 'yihui/hugo-xmin')
+</code></pre>
+<p>The xmin theme (<a href="https://github.com/yihui/hugo-xmin">GitHub</a>) is simple. Keeping it simple allows me to customise and, maybe, fix any future errors.</p>
+<p>Then I can open up a new file for creating a post,</p>
+<pre><code class="language-r">blogdown::new_post(title='Container for blogdown?')
+</code></pre>
+<p>add the content and generate the site.</p>
+<pre><code class="language-r">blogdown::serve_site()
+</code></pre>
+<p>That command will also create a web server process so you can see the website.</p>
+<h2 id="netify">Netify</h2>
+<p>As an aside, I use the Netify service to publish the website. The Blogdown package puts the files for the page in a folder called public. I upload all the files created by Blogdown to a GitHub repository. Netify creates a container with a webserver and imports the files in public. There are more details about blogdown and Netify <a href="https://bookdown.org/yihui/blogdown/netlify.html">here</a>.</p>
+<h1 id="containers">Containers</h1>
+<p>Imagine defining an isolated Linux system using a text file. You can run that system on any Linux, MacOS or Windows machine. The same environment, every, darn time.</p>
+<p>Sounds useful, huh?</p>
+<p>Containers are that solution. There are several programs for running containers (e.g., Docker, Podman, Apptainer). To get started, I suggest using <a href="https://www.docker.com/products/docker-desktop">Docker desktop</a>.</p>
+<p>Containers are defined using a Dockerfile. Let&rsquo;s consider a simple example where we extend the Ubuntu bionic docker image and upgrade the packages.</p>
+<pre><code class="language-dockerfile">FROM ubuntu:bionic
+
+RUN apt update
+RUN apt -f upgrade
+</code></pre>
+<p>Docker (or Podman, etc.) can create an image from the dockerfile. You c</p>
 
 </main>
 

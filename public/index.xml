@@ -13,7 +13,11 @@
       <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>/post/2021/12/27/container-for-blogdown/</guid>
-      <description>I use Blogdown to create this site. All I do is edit markdown files. The creation of the site template, installation of themes, new post templates and converting these into a working site using the Hugo progam is all handled by Blogdown. It&amp;rsquo;s great.</description>
+      <description>Blogdown The blogdown package is superb. I created this site by installing Hugo via
+blogdown::install_hugo()  and then, in a folder for a github repo, running the below.
+blogdown::new_site(theme = &#39;yihui/hugo-xmin&#39;)  The xmin theme (GitHub) is simple. Keeping it simple allows me to customise and, maybe, fix any future errors.
+Then I can open up a new file for creating a post,
+blogdown::new_post(title=&#39;Container for blogdown?&#39;)  add the content and generate the site.</description>
     </item>
     
     <item>
