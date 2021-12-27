@@ -10,7 +10,7 @@ tags: [containers, github, continuous integration]
 
 I went on a bit of an adventure. My quest, to create a reproducible environment for making my website using the R Blogdown package.
 
-# Blogdown
+## Blogdown
 
 The [blogdown](https://bookdown.org/yihui/blogdown/) package is superb. I created this site by installing [Hugo](https://gohugo.io) via
 
@@ -40,11 +40,11 @@ blogdown::serve_site()
 
 That command will also create a web server process so you can see the website.
 
-## Netify
+### Netify
 
 As an aside, I use the [Netify](https://www.netlify.com/) service to publish the website. The Blogdown package puts the files for the page in a folder called public. I upload all the files created by Blogdown to a GitHub repository. Netify creates a container with a webserver and imports the files in public. There are more details about blogdown and Netify [here](https://bookdown.org/yihui/blogdown/netlify.html).
 
-# Containers
+## Containers
 
 Imagine defining an isolated Linux system using a text file. You can run that system on any Linux, MacOS or Windows machine. The same environment, every, darn time.
 
@@ -77,7 +77,7 @@ Running the run command multiple times will create multiple containers from our_
 
 Other images are configured to continue running.
 
-## Rocker images
+### Rocker images
 
 There are some excellent images created by the [Rocker Project](https://www.rocker-project.org/images/). These images contain R and RStudio.
 
@@ -98,7 +98,7 @@ RUN install2.r --error \
     rstudioapi
 ```
 
-# GitHub
+## GitHub
 
 I want the image on all my machines. I could copy the dockerfile to each machine. Maybe put it in an email. Each modification would be a different dockerfile (dockerfile_final, dockerfile_final_JT, etc.).
 
@@ -108,7 +108,7 @@ Like any good research software engineer, I've used GitHub. You can find the doc
 
 ... I think we can do better than that.
 
-## Continuous Integration
+### Continuous Integration
 
 GitHub has a feature called [GitHub Actions](https://docs.github.com/en/actions/learn-github-actions). We can set a criteria which, when met, tells GitHub to run a series of actions. For example, running tests or, as in our case, building images from a dockerfile.
 
@@ -118,7 +118,7 @@ You can view the results of the latest build [here](https://github.com/jamestrip
 
 The image should now be publicly available. If we commit a dodgy change to the container file then we will recieve an email. Awesome.
 
-# Blogdown container
+## Blogdown container
 
 Downloading the image is simple.
 
