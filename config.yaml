@@ -30,7 +30,7 @@ menu:
 
 params:
   description: "The personal site of James Tripp"
-  footer: "&copy; [James Tripp](https://jamestripp.net) 2021 -- 2022 | [Github](https://github.com/jamestripp) | [Twitter](https://twitter.com/jamestripp_)"
+  footer: "&copy; [James Tripp](https://jamestripp.net) 2021 -- 2022 | [Github](https://github.com/jamestripp) | [LinkedIn](https://www.linkedin.com/in/jamestripp/) | [Twitter](https://twitter.com/jamestripp_)"
 
 markup:
   highlight:
