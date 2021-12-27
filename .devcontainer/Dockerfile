@@ -45,7 +45,6 @@ RUN export TAG=$(git ls-remote --tags --refs --sort='version:refname' https://gi
 # See more details: https://github.com/REditorSupport/vscode-R/wiki/R-Session-watcher
 RUN echo 'source(file.path(Sys.getenv("HOME"), ".vscode-R", "init.R"))' >> ${R_HOME}/etc/Rprofile.site
 
-
 # [Optional] Uncomment this section to install additional OS packages.
 # RUN apt-get update \
 #     && export DEBIAN_FRONTEND=noninteractive \

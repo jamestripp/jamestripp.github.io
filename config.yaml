@@ -16,20 +16,20 @@ menu:
     - name: Home
       url: ""
       weight: 1
-    - name: About
-      url: "about/"
-      weight: 2
+#    - name: About
+#      url: "about/"
+#      weight: 2
 #    - name: Categories
 #      url: "categories/"
 #      weight: 3
     - name: Tags
       url: "tags/"
-      weight: 3
+      weight: 2
     - name: Subscribe
       url: "index.xml"
 
 params:
-  description: "The personal site of James Tripp"
+  description: "James Tripp's personal website"
   footer: "&copy; [James Tripp](https://jamestripp.net) 2021 -- 2022 | [Github](https://github.com/jamestripp) | [LinkedIn](https://www.linkedin.com/in/jamestripp/) | [Twitter](https://twitter.com/jamestripp_)"
 
 markup:
