@@ -1,6 +1,6 @@
 baseurl: "/"
 languageCode: "en-us"
-title: "James Tripp"
+title: "A minimal Hugo website"
 theme: "hugo-xmin"
 googleAnalytics: ""
 disqusShortname: ""
@@ -19,18 +19,18 @@ menu:
     - name: About
       url: "about/"
       weight: 2
-#    - name: Categories
-#      url: "categories/"
-#      weight: 3
+    - name: Categories
+      url: "categories/"
+      weight: 3
     - name: Tags
       url: "tags/"
-      weight: 3
+      weight: 4
     - name: Subscribe
       url: "index.xml"
 
 params:
-  description: "The personal site of James Tripp"
-  footer: "&copy; [James Tripp](https://jamestripp.net) 2021 -- 2022 | [Github](https://github.com/jamestripp) | [Twitter](https://twitter.com/jamestripp_)"
+  description: "A website built through Hugo and blogdown."
+  footer: "&copy; [Yihui Xie](https://yihui.org) 2017 -- 2021 | [Github](https://github.com/yihui) | [Twitter](https://twitter.com/xieyihui)"
 
 markup:
   highlight:
