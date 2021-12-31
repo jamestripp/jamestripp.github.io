@@ -5,6 +5,7 @@ body {
   line-height: 1.5em;
   color: #dad5d2;
   background-color: #363636;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -32,7 +33,7 @@ h1, h2, h3 {
 .title { font-size: 1.1em; }
 footer a { text-decoration: none; }
 hr {
-  border-style: dashed;
+  border-style: solid;
   color: #a4998c;
 }
 
