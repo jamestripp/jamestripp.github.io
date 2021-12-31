@@ -3,6 +3,7 @@ body {
   margin: auto;
   padding: 1em;
   line-height: 1.5em;
+  color: #dad5d2;
   background-color: #363636;
 }
 
@@ -10,11 +11,11 @@ a {
   color: #d8b26e;
 }
 
-p {
+p, li, ul {
   color: #dad5d2;
 }
 
-h1 {
+h1, h2, h3 {
   color: #c78a44;
 }
 
@@ -23,7 +24,7 @@ h1 {
 .menu li { display: inline-block; }
 .article-meta, .menu a {
   text-decoration: none;
-  background: #a4998c;
+  background: #363636;
   padding: 5px;
   border-radius: 5px;
 }
