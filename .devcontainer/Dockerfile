@@ -24,6 +24,8 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     libssl-dev \
     libxml2-dev \
     libxt-dev \
+    pandoc \
+    pandoc-citeproc \
     && apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/* /tmp/library-scripts \
     && python3 -m pip --no-cache-dir install radian \
     && install2.r --error --skipinstalled --ncpus -1 \
@@ -31,8 +33,6 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     languageserver \
     httpgd \
     blogdown \
-    pandoc \
-    pandoc-citeproc \
     && rm -rf /tmp/downloaded_packages
 
 # VSCode R Debugger dependency. Install the latest release version from GitHub without using GitHub API.

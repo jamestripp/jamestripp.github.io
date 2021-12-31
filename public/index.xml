@@ -6,18 +6,26 @@
     <description>Recent content in Home on James Tripp</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 31 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Devcontainers</title>
+      <link>/post/2021/12/31/devcontainers/</link>
+      <pubDate>Fri, 31 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2021/12/31/devcontainers/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Container for blogdown?</title>
       <link>/post/2021/12/27/container-for-blogdown/</link>
       <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>/post/2021/12/27/container-for-blogdown/</guid>
-      <description>Blogdown The blogdown package is superb. I created this site by installing Hugo via
+      <description>I went on a bit of an adventure. My quest, to create a reproducible environment for making my website using the R Blogdown package.
+Blogdown The blogdown package is superb. I created this site by installing Hugo via
 blogdown::install_hugo()  and then, in a folder for a github repo, running the below.
-blogdown::new_site(theme = &#39;yihui/hugo-xmin&#39;)  The xmin theme (GitHub) is simple. Keeping it simple allows me to customise and, maybe, fix any future errors.
-Then I can open up a new file for creating a post,
-blogdown::new_post(title=&#39;Container for blogdown?&#39;)  add the content and generate the site.</description>
+blogdown::new_site(theme = &#39;yihui/hugo-xmin&#39;)  The xmin theme (GitHub) is simple. Keeping it simple allows me to customise and, maybe, fix any future errors.</description>
     </item>
     
     <item>
