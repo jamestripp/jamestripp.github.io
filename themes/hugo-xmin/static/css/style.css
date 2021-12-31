@@ -32,7 +32,7 @@ h1, h2, h3 {
 .title { font-size: 1.1em; }
 footer a { text-decoration: none; }
 hr {
-  border-style: dashed;
+  border-style: solid;
   color: #a4998c;
 }
 
