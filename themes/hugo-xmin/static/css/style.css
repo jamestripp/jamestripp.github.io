@@ -6,8 +6,16 @@ body {
   background-color: #363636;
 }
 
+a {
+  color: #CC527A;
+}
+
 p {
-  color: #A8A7A8
+  color: #A8A7A8;
+}
+
+h1 {
+  color: #e8175D;
 }
 
 /* header and footer areas */
@@ -24,7 +32,7 @@ p {
 footer a { text-decoration: none; }
 hr {
   border-style: dashed;
-  color: #CC527A;
+  color: #474747;
 }
 
 #TableOfContents, #TOC {
