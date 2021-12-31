@@ -1,6 +1,5 @@
 ---
 title: Container for blogdown?
-author: 'James Tripp'
 toc: true
 date: '2021-12-27'
 slug: container-for-blogdown

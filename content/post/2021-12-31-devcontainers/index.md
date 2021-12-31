@@ -1,6 +1,5 @@
 ---
 title: Dev containers
-author: 'James Tripp'
 date: '2021-12-31'
 slug: devcontainers
 categories: [software]
