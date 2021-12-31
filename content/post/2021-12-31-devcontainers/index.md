@@ -1,6 +1,7 @@
 ---
 title: Dev containers
 date: '2021-12-31'
+toc: true
 slug: devcontainers
 categories: [software]
 tags: [containers, github, continuous integration]

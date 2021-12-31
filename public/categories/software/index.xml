@@ -8,13 +8,13 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 31 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/software/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Devcontainers</title>
+      <title>Dev containers</title>
       <link>/post/2021/12/31/devcontainers/</link>
       <pubDate>Fri, 31 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>/post/2021/12/31/devcontainers/</guid>
       <description>How can we create a reproducible blogdown environment? I encountered an error in my previous attempt. In this post I detail my current solution which uses devcontainers.
-Devcontainers Devcontainers are a vscode feature. There are two files. A dockerfile with instructions for building a container and a devcontainer.json file with various VSCode settings. VSCode deals with creating these files, building the container and then opening up VSCode within the container.</description>
+Dev containers Devcontainers are a vscode feature. There are two files. A dockerfile with instructions for building a container and a devcontainer.json file with various VSCode settings. VSCode deals with creating these files, building the container and then opening up VSCode within the container.</description>
     </item>
     
     <item>
