@@ -50,7 +50,7 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && rm -rf /tmp/downloaded_packages
 ```
 
-The files for this website are in [this repository](https://github.com/jamestripp/jamestripp-net). All the .devcontainer files are in the [.decontainer folder](https://github.com/jamestripp/jamestripp-net).
+The files for this website are in [this repository](https://github.com/jamestripp/jamestripp-net). All the .devcontainer files are in the [.devcontainer folder](https://github.com/jamestripp/jamestripp-net).
 
 ## Wrapup
 
