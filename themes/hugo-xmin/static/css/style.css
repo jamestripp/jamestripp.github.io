@@ -5,12 +5,16 @@ body {
   line-height: 1.5em;
 }
 
+p {
+  color: #A8A7A8
+}
+
 /* header and footer areas */
 .menu { padding: 0; }
 .menu li { display: inline-block; }
 .article-meta, .menu a {
   text-decoration: none;
-  background: #eee;
+  background: #363636;
   padding: 5px;
   border-radius: 5px;
 }
@@ -19,11 +23,11 @@ body {
 footer a { text-decoration: none; }
 hr {
   border-style: dashed;
-  color: #ddd;
+  color: #CC527A;
 }
 
 #TableOfContents, #TOC {
-  border: 1px solid #eee;
+  border: 1px solid #474747;
   border-radius: 5px;
 }
 
