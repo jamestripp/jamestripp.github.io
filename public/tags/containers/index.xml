@@ -25,8 +25,8 @@ Dev containers Devcontainers are a vscode feature. There are two files. A docker
       <guid>/post/2021/12/27/container-for-blogdown/</guid>
       <description>I went on a bit of an adventure. My quest, to create a reproducible environment for making my website using the R Blogdown package.
 Blogdown The blogdown package is superb. I created this site by installing Hugo via
-blogdown::install_hugo()  and then, in a folder for a github repo, running the below.
-blogdown::new_site(theme = &#39;yihui/hugo-xmin&#39;)  The xmin theme (GitHub) is simple. Keeping it simple allows me to customise and, maybe, fix any future errors.</description>
+blogdown::install_hugo() and then, in a folder for a github repo, running the below.
+blogdown::new_site(theme = &#39;yihui/hugo-xmin&#39;) The xmin theme (GitHub) is simple. Keeping it simple allows me to customise and, maybe, fix any future errors.</description>
     </item>
     
   </channel>
