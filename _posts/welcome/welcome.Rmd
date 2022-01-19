@@ -1,0 +1,26 @@
+---
+title: "Welcome to James Tripp"
+description: |
+  Welcome to our new blog, James Tripp. We hope you enjoy 
+  reading what we have to say!
+author:
+  - name: James Tripp 
+    url: https://github.com/jamestripp
+    affiliation: University of Warwick
+    affiliation_url: https://warwick.ac.uk/jamestripp
+date: 01-19-2022
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Learn more about creating blogs with Distill at:
+# https://rstudio.github.io/distill/blog.html
+
+```
+
+
+

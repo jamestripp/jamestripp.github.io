@@ -1,0 +1,20 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About this blog",
+      "description": "Some additional details about the blog",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2022-01-19T18:37:20+00:00"
+    },
+    {
+      "path": "index.html",
+      "title": "James Tripp",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2022-01-19T18:38:23+00:00"
+    }
+  ],
+  "collections": ["posts/posts.json"]
+}
