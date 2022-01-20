@@ -1,5 +1,5 @@
 ---
-title: "James Tripp"
+title: "Guttenberg experiment"
 description: |
   Welcome to our new blog, James Tripp. We hope you enjoy 
   reading what we have to say!
@@ -17,10 +17,17 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 
-# Learn more about creating blogs with Distill at:
-# https://rstudio.github.io/distill/blog.html
-
 ```
 
+Download a text file.
 
 
+```{r}
+df <- readLines(url('https://gutenberg.org/files/1342/1342-0.txt'))
+```
+
+Display the top 10 lines.
+
+```{r}
+head(df)
+```

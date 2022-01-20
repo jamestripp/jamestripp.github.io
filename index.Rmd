@@ -1,5 +1,5 @@
 ---
-title: "James Tripp"
+title: "JaunT"
 site: distill::distill_website
 listing: posts
 ---
