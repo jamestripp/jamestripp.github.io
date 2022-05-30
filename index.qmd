@@ -7,7 +7,7 @@ listing:
   categories: cloud
   sort-ui: false
   filter-ui: false
-  feed: true
+  feed: false
 page-layout: article
 title-block-banner: true
 ---

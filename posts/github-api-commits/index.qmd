@@ -1,6 +1,6 @@
 ---
 title: "Downloading Github Commits"
-author: "James Tripp"
+author: "<a href='https://orcid.org/0000-0003-2471-3411'>James Tripp <img alt='ORCID logo' src='https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png' width='16' height='16' /></a>"
 date: "2022-05-28"
 categories: [visualisation, code, api]
 ---
