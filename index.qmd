@@ -1,0 +1,15 @@
+---
+title: ""
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: cloud
+  sort-ui: false
+  filter-ui: false
+  feed: true
+page-layout: article
+title-block-banner: true
+---
+
+

@@ -1,20 +1,23 @@
-{
-  "articles": [
-    {
-      "path": "about.html",
-      "title": "About this blog",
-      "description": "Some additional details about the blog",
-      "author": [],
-      "contents": "\n\n\n\n",
-      "last_modified": "2022-01-19T18:37:20+00:00"
-    },
-    {
-      "path": "index.html",
-      "title": "James Tripp",
-      "author": [],
-      "contents": "\n.\n\n\n\n",
-      "last_modified": "2022-01-20T19:04:51+00:00"
-    }
-  ],
-  "collections": ["posts/posts.json"]
-}
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Interdisciplinarity is great and computers are fun."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "James Tripp",
+    "section": "",
+    "text": "visualisation\n\n\ncode\n\n\napi\n\n\n\n\n\n\n\n\n\n\n\nMay 28, 2022\n\n\nJames Tripp\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/github-api-commits/index.html",
+    "href": "posts/github-api-commits/index.html",
+    "title": "Downloading Github Commits",
+    "section": "",
+    "text": "The code for much of the software I use lives on Github. People are continually editing and uploading contributions to the different projects. I think we could learn a lot about a community from looking at who commits and what they commit to.\nThe GitHub api makes it easy to download commits with their API. A list of JSON objects can be downloaded using their API. The format for the API is\nhttps://api.github.com/repos/{user/organisation}/{repo}/commits?pages={page_number}\nso we can see the most recent commits to the Omeka S project by going to the page below.\nhttps://api.github.com/repos/omeka/omeka-s/commits?page=1\nTo download the page in Python we use our old friends requests and json to parse the page.\n\nimport requests\nimport json\nimport pandas as pd\n\nurl = \"https://api.github.com/repos/omeka/omeka-s/commits?page=1\"\n\nresp = requests.get(url)\n\njson_list = json.loads(resp.text)\n\nFor this toy example, it’s easier to go through the json list and pick out the author and date.\n\ndef filter_json(data: json) -> dict:\n    out = data[\"commit\"][\"author\"]\n    return out\n\nresult = []\nfor json_item in json_list:\n    result.append(\n        filter_json(json_item)\n        )\n\ndf = pd.DataFrame(result)\n\nWho has made the most commits looking at only the most recent 30 commits?\n\npd.pivot_table(\n    df,\n    index = 'name',\n    values = 'date',\n    aggfunc='count'\n    )\n\n\n\n\n\n  \n    \n      \n      date\n    \n    \n      name\n      \n    \n  \n  \n    \n      Alex Dryden\n      1\n    \n    \n      Jim Safley\n      2\n    \n    \n      John Flatness\n      25\n    \n    \n      Kim Nguyen\n      1\n    \n    \n      ManOnDaMoon\n      1\n    \n  \n\n\n\n\nAs a plot (as if we need it…)\n\nfrom matplotlib import pyplot as plt\nfig, ax = plt.subplots()\n\ndf['name'].value_counts().plot(\n    ax=ax,\n    kind='bar',\n    xlabel='Users',\n    ylabel='Commit Frequency'\n    )\n\n<AxesSubplot:xlabel='Users', ylabel='Commit Frequency'>\n\n\n\n\n\nJohn Flatness is clearly leading. Though there are lots of caveats:\n\nDoes this hold true across the project history?\nAre the commits all the same size? If not, then how do we weight commits of different size?\n\netc.\nThough it is a start."
+  }
+]

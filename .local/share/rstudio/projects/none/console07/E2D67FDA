@@ -1,22 +1,0 @@
-To run a command as administrator (user "root"), use "sudo <command>".
-See "man sudo_root" for details.
-
-]0;/home/rstudiorstudio@6967c0b57646:~$  R --slave -e 'Cstack_info()["size"]'
-Error: C stack usage  7969268 is too close to the limit
-Execution halted
-]0;/home/rstudiorstudio@6967c0b57646:~$ 
-]0;/home/rstudiorstudio@6967c0b57646:~$ 
-]0;/home/rstudiorstudio@6967c0b57646:~$  R --slave -e 'Cstack_info()["size"]'
-Error: C stack usage  7970260 is too close to the limit
-Execution halted
-]0;/home/rstudiorstudio@6967c0b57646:~$ ulimit -s 16384 
-]0;/home/rstudiorstudio@6967c0b57646:~$ ulimit -s 16384 
-]0;/home/rstudiorstudio@6967c0b57646:~$ ulimit -s 16384 [KR --slave -e 'Cstack_info()["size"]'
-Error: C stack usage  15938900 is too close to the limit
-Execution halted
-]0;/home/rstudiorstudio@6967c0b57646:~$ R --slave -e 'Cstack_info()["size"]'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[20Pulimit -s 16384 [C[1@1[1P[C[C[1@1
-bash: ulimit: stack size: cannot modify limit: Operation not permitted
-]0;/home/rstudiorstudio@6967c0b57646:~$ ulimit -s 116384 [1@s[C[1@u[1@d[1@o[1@ 
-sudo: ulimit: command not found
-]0;/home/rstudiorstudio@6967c0b57646:~$ sudo ulimit -s 116384 [5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CR --slave -e 'Cstack_info()["size"]'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[19Pulimit -s 116384 R --slave -e 'Cstack_info()["size"]'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[20Pulimit -s 16384 
-]0;/home/rstudiorstudio@6967c0b57646:~$ 

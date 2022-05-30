@@ -1,0 +1,22 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "James Tripp"
+  site-url: "https://jamestripp.net"
+  search: false
+  twitter-card: true
+  navbar:
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/jamestripp
+      - icon: twitter
+        href: https://twitter.com/jamestripp_
+      - icon: rss
+        href: index.xml
+format:
+  html:
+    theme: litera
+    css: styles.css
