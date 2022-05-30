@@ -40,9 +40,9 @@ ul.task-list{list-style: none;}
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -128,47 +128,37 @@ ul.task-list{list-style: none;}
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="visualisation,code,api" data-listing-date-sort="1653692400000" data-listing-file-modified-sort="1653915157398" data-listing-reading-time-sort="1.47">
-<div class="body">
-<a href="./posts/github-api-commits/index.html">
-<h3 class="no-anchor listing-title">
-Downloading Github Commits
-</h3>
-<div class="listing-subtitle">
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
 
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('visualisation'); return false;">
-visualisation
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('api'); return false;">
-api
-</div>
-</div>
-<a href="./posts/github-api-commits/index.html">
-<div class="listing-description">
-Code repository commits are informative.
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/github-api-commits/index.html">
-<div class="listing-date">
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+Date
+</th>
+<th>
+Title
+</th>
+<th>
+Author
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-categories="visualisation,code,api" data-listing-date-sort="1653692400000" data-listing-file-modified-sort="1653915157398" data-listing-reading-time-sort="1.47" data-listing-title-sort="Downloading Github Commits" data-listing-filename-sort="index.qmd">
+<td class="listing-date">
 May 28, 2022
-</div>
-</a><div class="listing-author"><a href="./posts/github-api-commits/index.html">
-</a><a href="https://orcid.org/0000-0003-2471-3411">James Tripp <img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="16" height="16"></a>
-</div>
+</td>
+<td class="listing-title">
+<a href="./posts/github-api-commits/index.html" class="title">Downloading Github Commits</a>
+</td>
+<td class="listing-author">
+<a href="https://orcid.org/0000-0003-2471-3411">James Tripp <img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="16" height="16"></a>
+</td>
+</tr>
+</tbody>
 
-</div>
-</div>
-</div>
+</table>
 <div class="listing-no-matching d-none">
 No matching items
 </div>

@@ -3,7 +3,7 @@ title: ""
 listing:
   contents: posts
   sort: "date desc"
-  type: default
+  type: table
   categories: cloud
   sort-ui: false
   filter-ui: false
