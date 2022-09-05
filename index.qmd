@@ -1,15 +1,11 @@
 ---
-title: ""
-listing:
-  contents: posts
-  sort: "date desc"
-  type: table
-  categories: cloud
-  sort-ui: false
-  filter-ui: false
-  feed: false
-page-layout: article
-title-block-banner: true
+image: profile.jfif
+about:
+  template: solana
 ---
 
+Welcome to my website.
 
+I've worked in research and technology for 10 years - from a researcher in Psychology to an academic technologist in an interdisciplinary centre and now as a senior research software engineer in central services.
+
+I work at every step of the research software cycle. From initial consultation, to supporing grants, then designing and writing both research software and infrastructure.

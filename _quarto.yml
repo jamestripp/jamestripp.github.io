@@ -5,17 +5,18 @@ project:
 website:
   title: "James Tripp"
   site-url: "https://jamestripp.net"
-  search: false
+  search: true
   twitter-card: true
   navbar:
     right:
-      - about.qmd
+      - icon: linkedin
+        href: https://linkedin.com/in/jamestripp/
       - icon: github
         href: https://github.com/jamestripp
       - icon: twitter
         href: https://twitter.com/jamestripp_
-      - icon: rss
-        href: index.xml
+      - href: https://github.com/jamestripp/CV-1/raw/master/JT.pdf
+        text: CV
 format:
   html:
     theme: litera
