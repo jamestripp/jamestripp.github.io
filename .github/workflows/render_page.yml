@@ -13,8 +13,7 @@ jobs:
       - name: "Install Quarto and render"
         uses: jamestripp/quarto-render@main
 
-      - if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
-        name: Copy output dir contents to live gh-pages branch
+      - name: Copy output dir contents to live gh-pages branch
         uses: s0/git-publish-subdir-action@develop
         env:
           REPO: self
