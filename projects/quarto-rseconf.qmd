@@ -1,0 +1,27 @@
+---
+title: "Quarto: a library to run them all?"
+description: "Workshop delivered at RSE conf 2022"
+author: "Carlos Cámara-Menoyo, Cagatay Turkay, James Tripp"
+date: "09/07/2022"
+draft: false
+---
+
+I co-delivered a workshop exploring the Quarto library at the RSE conference 2022. The slides and abstract are below.
+
+### Slides
+
+<iframe src="https://warwickcim.github.io/quarto-workshop/slides/slides.html" height="400" width="500"></iframe>
+
+### Abstract
+
+Using literate programming is a widespread practice amongst data scientists. This practice not only encourages data scientists to produce transparent, rich and reflective accounts of their analysis without the extra overhead of switching between tools, but also leads to artefacts (i.e., notebooks) that are increasingly becoming a medium for dissemination, reproducibility and education. Rmarkdown or Jupyter notebooks, are two of the most well known and used options. While both solutions can be used with multiple programming languages, the decision of whether to use one or the other is almost certain to be exclusively based on that. At least until now, with Quarto being mature enough to become a game-changer.
+
+Quarto is a language-agnostic software based on Pandoc to render files combining markdown and code into multiple ranges of formats and outputs. As a result, it can be used with either R, Python or Julia without any other dependencies.
+
+This collaborative workshop will be structured as follows: 
+
+* a brief theoretical introduction and instructions; 
+* a task that participants may choose from the different use cases provided (i.e. generating a single document, migrating from Rmarkdown or Jupyter, creating a book or generating interactive content); and 
+* a group discussion and conclusions.
+
+Participants in this workshop have fun while gaining enough depth of breath and practice to evaluate how feasible it is to use Quarto in different scenarios and, ultimately, if it can become the one tool for authoring reproducible scientific or technical documents, regardless of your language of choice.

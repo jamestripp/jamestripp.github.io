@@ -1,0 +1,7 @@
+---
+listing:
+  contents: projects
+  type: table
+  sort:
+    - "date"
+---

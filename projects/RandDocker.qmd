@@ -1,0 +1,13 @@
+---
+title: "R and Docker"
+description: "Presentation to the Warwick R User Group (WRUG)"
+author: "James Tripp"
+date: "09/15/2022"
+draft: false
+---
+
+I will be presenting and introduction to Docker and Containers with R to the Warwick User Group. Slides are forthcoming and the abstract is below.
+
+### Abstract
+
+Docker is a container technology which allows you to specify and build a compute environment. You can run the environment on your local machine and both the instructions for creating the environment and the environment itself can be shared. In this talk I will (a) introduce containers, (b) discuss a worked examples of using Docker with R, and (c) consider how containers can help us do better research. Hopefully this presentation will help those of you who have never used Docker to consider if you want to use Docker in your own work and where to start.

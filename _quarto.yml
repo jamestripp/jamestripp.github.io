@@ -9,15 +9,18 @@ website:
   twitter-card: true
   navbar:
     right:
+      - href: https://github.com/jamestripp/CV-1/raw/master/JT.pdf
+        text: CV
+      - text: Projects
+        href: projects.html
       - icon: linkedin
         href: https://linkedin.com/in/jamestripp/
       - icon: github
         href: https://github.com/jamestripp
       - icon: twitter
         href: https://twitter.com/jamestripp_
-      - href: https://github.com/jamestripp/CV-1/raw/master/JT.pdf
-        text: CV
+
 format:
   html:
-    theme: united
+    theme: litera
     css: styles.css
