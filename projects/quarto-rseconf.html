@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Carlos Cámara-Menoyo, Cagatay Turkay, James Tripp">
+<meta name="dcterms.date" content="2022-09-07">
+<meta name="description" content="Workshop delivered at RSE conf 2022">
 
-<title>James Tripp</title>
+<title>James Tripp - Quarto: a library to run them all?</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,21 +26,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -59,11 +63,10 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
-<meta name="twitter:title" content="">
-<meta name="twitter:description" content="Welcome to my website.">
-<meta name="twitter:image" content="https://jamestripp.net/profile.jfif">
-<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="../styles.css">
+<meta name="twitter:title" content="James Tripp - Quarto: a library to run them all?">
+<meta name="twitter:description" content="Workshop delivered at RSE conf 2022">
+<meta name="twitter:card" content="summary">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -73,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">James Tripp</span>
     </a>
   </div>
@@ -86,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="https://github.com/jamestripp/CV-1/raw/master/JT.pdf">CV</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html">Projects</a>
+    <a class="nav-link" href="../projects.html">Projects</a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://linkedin.com/in/jamestripp/"><i class="bi bi-linkedin" role="img">
@@ -115,22 +118,63 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-solana column-body">
-  <div class="about-entity">
-    <div class="entity-contents">
-      <div class="about-contents"><main class="content" id="quarto-document-content">
-<p>Welcome to my website.</p>
-<p>I’ve worked in research and technology for ten years - from a researcher in psychology to an academic technologist in an interdisciplinary centre and now as a senior research software engineer in central services at the University of Warwick.</p>
-<p>You can view details of my public projects <a href="projects.html">here</a>.</p>
+<main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Quarto: a library to run them all?</h1>
+</div>
 
-</main></div>
-    </div>
-    <img src="profile.jfif" class="about-image
-  rounded " style="width: 15em;">
+<div>
+  <div class="description">
+    Workshop delivered at RSE conf 2022
   </div>
 </div>
- <!-- /main -->
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Carlos Cámara-Menoyo, Cagatay Turkay, James Tripp </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 7, 2022</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+</header>
+
+<p>I co-delivered a workshop exploring the Quarto library at the RSE conference 2022. The slides and abstract are below.</p>
+<section id="slides" class="level3">
+<h3 class="anchored" data-anchor-id="slides">Slides</h3>
+<iframe src="https://warwickcim.github.io/quarto-workshop/slides/slides.html" height="400" width="500">
+</iframe>
+</section>
+<section id="abstract" class="level3">
+<h3 class="anchored" data-anchor-id="abstract">Abstract</h3>
+<p>Using literate programming is a widespread practice amongst data scientists. This practice not only encourages data scientists to produce transparent, rich and reflective accounts of their analysis without the extra overhead of switching between tools, but also leads to artefacts (i.e., notebooks) that are increasingly becoming a medium for dissemination, reproducibility and education. Rmarkdown or Jupyter notebooks, are two of the most well known and used options. While both solutions can be used with multiple programming languages, the decision of whether to use one or the other is almost certain to be exclusively based on that. At least until now, with Quarto being mature enough to become a game-changer.</p>
+<p>Quarto is a language-agnostic software based on Pandoc to render files combining markdown and code into multiple ranges of formats and outputs. As a result, it can be used with either R, Python or Julia without any other dependencies.</p>
+<p>This collaborative workshop will be structured as follows:</p>
+<ul>
+<li>a brief theoretical introduction and instructions;</li>
+<li>a task that participants may choose from the different use cases provided (i.e.&nbsp;generating a single document, migrating from Rmarkdown or Jupyter, creating a book or generating interactive content); and</li>
+<li>a group discussion and conclusions.</li>
+</ul>
+<p>Participants in this workshop have fun while gaining enough depth of breath and practice to evaluate how feasible it is to use Quarto in different scenarios and, ultimately, if it can become the one tool for authoring reproducible scientific or technical documents, regardless of your language of choice.</p>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -151,6 +195,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const clipboard = new window.ClipboardJS('.code-copy-button', {
     target: function(trigger) {
       return trigger.previousElementSibling;

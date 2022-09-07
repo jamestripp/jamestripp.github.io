@@ -4,6 +4,27 @@
     "href": "index.html",
     "title": "James Tripp",
     "section": "",
-    "text": "I’ve worked in research and technology for ten years - from a researcher in psychology to an academic technologist in an interdisciplinary centre and now as a senior research software engineer in central services at the University of Warwick."
+    "text": "I’ve worked in research and technology for ten years - from a researcher in psychology to an academic technologist in an interdisciplinary centre and now as a senior research software engineer in central services at the University of Warwick.\nYou can view details of my public projects here."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "James Tripp",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nSep 7, 2022\n\n\nQuarto: a library to run them all?\n\n\nCarlos Cámara-Menoyo, Cagatay Turkay, James Tripp\n\n\n\n\nSep 15, 2022\n\n\nR and Docker\n\n\nJames Tripp\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/quarto-rseconf.html",
+    "href": "projects/quarto-rseconf.html",
+    "title": "Quarto: a library to run them all?",
+    "section": "",
+    "text": "Slides\n\n\n\n\nAbstract\nUsing literate programming is a widespread practice amongst data scientists. This practice not only encourages data scientists to produce transparent, rich and reflective accounts of their analysis without the extra overhead of switching between tools, but also leads to artefacts (i.e., notebooks) that are increasingly becoming a medium for dissemination, reproducibility and education. Rmarkdown or Jupyter notebooks, are two of the most well known and used options. While both solutions can be used with multiple programming languages, the decision of whether to use one or the other is almost certain to be exclusively based on that. At least until now, with Quarto being mature enough to become a game-changer.\nQuarto is a language-agnostic software based on Pandoc to render files combining markdown and code into multiple ranges of formats and outputs. As a result, it can be used with either R, Python or Julia without any other dependencies.\nThis collaborative workshop will be structured as follows:\n\na brief theoretical introduction and instructions;\na task that participants may choose from the different use cases provided (i.e. generating a single document, migrating from Rmarkdown or Jupyter, creating a book or generating interactive content); and\na group discussion and conclusions.\n\nParticipants in this workshop have fun while gaining enough depth of breath and practice to evaluate how feasible it is to use Quarto in different scenarios and, ultimately, if it can become the one tool for authoring reproducible scientific or technical documents, regardless of your language of choice."
+  },
+  {
+    "objectID": "projects/RandDocker.html",
+    "href": "projects/RandDocker.html",
+    "title": "R and Docker",
+    "section": "",
+    "text": "Abstract\nDocker is a container technology which allows you to specify and build a compute environment. You can run the environment on your local machine and both the instructions for creating the environment and the environment itself can be shared. In this talk I will (a) introduce containers, (b) discuss a worked examples of using Docker with R, and (c) consider how containers can help us do better research. Hopefully this presentation will help those of you who have never used Docker to consider if you want to use Docker in your own work and where to start."
   }
 ]
