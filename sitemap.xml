@@ -2,18 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jamestripp.net/index.html</loc>
-    <lastmod>2022-09-08T08:21:04.519Z</lastmod>
+    <lastmod>2022-09-08T10:15:28.132Z</lastmod>
   </url>
   <url>
     <loc>https://jamestripp.net/projects.html</loc>
-    <lastmod>2022-09-08T08:21:05.467Z</lastmod>
+    <lastmod>2022-09-08T10:15:28.852Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jamestripp.net/projects/lecat.html</loc>
+    <lastmod>2022-09-08T10:15:29.224Z</lastmod>
   </url>
   <url>
     <loc>https://jamestripp.net/projects/quarto-rseconf.html</loc>
-    <lastmod>2022-09-08T08:21:05.919Z</lastmod>
+    <lastmod>2022-09-08T10:15:29.556Z</lastmod>
   </url>
   <url>
     <loc>https://jamestripp.net/projects/RandDocker.html</loc>
-    <lastmod>2022-09-08T08:21:06.315Z</lastmod>
+    <lastmod>2022-09-08T10:15:29.852Z</lastmod>
   </url>
 </urlset>
