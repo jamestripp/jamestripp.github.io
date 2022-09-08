@@ -2,6 +2,7 @@
   {
     "listing": "/projects.html",
     "items": [
+      "/projects/lecat.html",
       "/projects/quarto-rseconf.html",
       "/projects/RandDocker.html"
     ]

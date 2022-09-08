@@ -7,6 +7,13 @@
     "text": "I’ve worked in research and technology for ten years - from a researcher in psychology to an academic technologist in an interdisciplinary centre and now as a senior research software engineer in central services at the University of Warwick.\nYou can view details of my public projects here."
   },
   {
+    "objectID": "projects/lecat.html",
+    "href": "projects/lecat.html",
+    "title": "LE-CAT: Lexicon-based Categorization and Analysis Tool",
+    "section": "",
+    "text": "I developed LE-CAT for Professor Noortje Marres. The software is written in R and searches for words in a text. Each word is associated with a category. The presence of the word (e.g., Tony Blair) is assumed to indicate the presence of the category in the text (e.g., politics). Summary information about category co-occurence is displayed displayed to the user as is a network of category and word co-occurence.\nAn interesting feature of the software is that it is an R package containing a shiny app. I could teach with the tool to users who (a) were comfortable with R, (b) preferred a GUI interface running within R (the shiny app), and (c) much preferred only a web browser interface. At CIM I ran LE-CAT within docker containers via the shinyproxy application so that each user could log into one of our CIM servers and use LE-CAT without R installed.\nThe software was used for both research and in teaching environments.\n\nDescription from GitHub\nLE-CAT is a Lexicon-based Categorization and Analysis Tool developed by the Centre for Interdisciplinary Methodologies in collaboration with the Media of Cooperation Group at the University of Siegen.\nThe tool allows you to apply a set of word queries associated with a category (a lexicon) to a data set of textual sources (the corpus). LE-CAT determines the frequency of occurrence for each query and category in the corpus, as well as the relations between categories (co-occurrence) by source.\nThe purpose of this technique is to automate and scale up user-led data analysis as it allows the application of a custom-built Lexicon to large data sets. The quick iteration of analysis allows the user to refine a corpus and deeply analyse a given phenomenon.\nLE-CAT was coded by James Tripp. It has been used to support the workshops Youtube as Test Society (University of Siegen), Parking on Twitter (University of Warwick) and the Digital Test of the News (University of Warwick) and is part of the CIM module Digital Object, Digital Methods.\nAcademic correspondence should be sent to Noortje Marres."
+  },
+  {
     "objectID": "projects/quarto-rseconf.html",
     "href": "projects/quarto-rseconf.html",
     "title": "Quarto: a library to run them all?",
@@ -25,6 +32,6 @@
     "href": "projects.html",
     "title": "James Tripp",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nSep 7, 2022\n\n\nQuarto: a library to run them all?\n\n\nCarlos Cámara-Menoyo, Cagatay Turkay, James Tripp\n\n\n\n\nSep 15, 2022\n\n\nR and Docker\n\n\nJames Tripp\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nMar 20, 2020\n\n\nLE-CAT: Lexicon-based Categorization and Analysis Tool\n\n\nNoortje Marres, James Tripp\n\n\n\n\nSep 7, 2022\n\n\nQuarto: a library to run them all?\n\n\nCarlos Cámara-Menoyo, Cagatay Turkay, James Tripp\n\n\n\n\nSep 15, 2022\n\n\nR and Docker\n\n\nJames Tripp\n\n\n\n\n\n\nNo matching items"
   }
 ]
