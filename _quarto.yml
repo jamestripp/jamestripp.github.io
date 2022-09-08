@@ -5,7 +5,7 @@ project:
 website:
   title: "James Tripp"
   site-url: "https://jamestripp.net"
-  search: true
+  search: false
   twitter-card: true
   navbar:
     right:
@@ -22,5 +22,5 @@ website:
 
 format:
   html:
-    theme: litera
+    theme: yeti
     css: styles.css
