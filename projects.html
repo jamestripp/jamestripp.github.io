@@ -33,10 +33,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -60,9 +62,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -123,6 +125,9 @@ ul.task-list li input[type="checkbox"] {
  </a>
   </li>  
 </ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -137,88 +142,266 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<p>The various projects are listed below. These exclude internal teaching for Masters modules, prototypes and code associated with the development and deployment of infrastructure.</p>
 
 
 
 
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-       <option value="" disabled="" selected="" hidden="">Order By</option>
-       <option value="index" data-direction="asc">Default</option>
-         <option value="listing-date-sort" data-direction="asc">
-          Date - Oldest
-        </option>
-         <option value="listing-date-sort" data-direction="desc">
-          Date - Newest
-        </option>
-         <option value="listing-title-sort" data-direction="asc">
-          Title
-        </option>
-         <option value="listing-author" data-direction="asc">
-          Author
-        </option>
-     </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Presentation" data-listing-date-sort="1663200000000" data-listing-file-modified-sort="1663533807385" data-listing-reading-time-sort="0.615">
+<div class="body">
+<a href="./projects/RandDocker.html">
+<h3 class="no-anchor listing-title">
+R and Docker
+</h3>
+<div class="listing-subtitle">
+
 </div>
-
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-<th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
-</th>
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
-</th>
-<th>
-<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Author</a>
-</th>
-</tr>
-</thead>
-<tbody class="list">
-<tr data-index="0" data-listing-date-sort="1584662400000" data-listing-file-modified-sort="1662632122540" data-listing-reading-time-sort="1.675" data-listing-title-sort="LE-CAT: Lexicon-based Categorization and Analysis Tool" data-listing-filename-sort="lecat.qmd">
-<td class="listing-date">
-Mar 20, 2020
-</td>
-<td class="listing-title">
-<a href="./projects/lecat.html" class="title">LE-CAT: Lexicon-based Categorization and Analysis Tool</a>
-</td>
-<td class="listing-author">
-Noortje Marres, James Tripp
-</td>
-</tr>
-<tr data-index="1" data-listing-date-sort="1662508800000" data-listing-file-modified-sort="1662632122540" data-listing-reading-time-sort="1.335" data-listing-title-sort="Quarto: a library to run them all?" data-listing-filename-sort="quarto-rseconf.qmd">
-<td class="listing-date">
-Sep 7, 2022
-</td>
-<td class="listing-title">
-<a href="./projects/quarto-rseconf.html" class="title">Quarto: a library to run them all?</a>
-</td>
-<td class="listing-author">
-Carlos Cámara-Menoyo, Cagatay Turkay, James Tripp
-</td>
-</tr>
-<tr data-index="2" data-listing-date-sort="1663200000000" data-listing-file-modified-sort="1662632122540" data-listing-reading-time-sort="0.605" data-listing-title-sort="R and Docker" data-listing-filename-sort="RandDocker.qmd">
-<td class="listing-date">
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Presentation'); return false;">
+Presentation
+</div>
+</div>
+<a href="./projects/RandDocker.html"> </a>
+</div>
+<div class="metadata">
+<a href="./projects/RandDocker.html">
+<div class="listing-date">
 Sep 15, 2022
-</td>
-<td class="listing-title">
-<a href="./projects/RandDocker.html" class="title">R and Docker</a>
-</td>
-<td class="listing-author">
+</div>
+<div class="listing-author">
 James Tripp
-</td>
-</tr>
-</tbody>
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="Presentation" data-listing-date-sort="1662508800000" data-listing-file-modified-sort="1663533807385" data-listing-reading-time-sort="1.335">
+<div class="body">
+<a href="./projects/quarto-rseconf.html">
+<h3 class="no-anchor listing-title">
+Quarto: a library to run them all?
+</h3>
+<div class="listing-subtitle">
 
-</table>
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Presentation'); return false;">
+Presentation
+</div>
+</div>
+<a href="./projects/quarto-rseconf.html"> </a>
+</div>
+<div class="metadata">
+<a href="./projects/quarto-rseconf.html">
+<div class="listing-date">
+Sep 7, 2022
+</div>
+<div class="listing-author">
+Carlos Cámara-Menoyo, Cagatay Turkay, James Tripp
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="Software" data-listing-date-sort="1652572800000" data-listing-file-modified-sort="1663533807385" data-listing-reading-time-sort="1.05">
+<div class="body">
+<a href="./projects/grapho.html">
+<h3 class="no-anchor listing-title">
+Grapho (Alpha)
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Software'); return false;">
+Software
+</div>
+</div>
+<a href="./projects/grapho.html"> </a>
+</div>
+<div class="metadata">
+<a href="./projects/grapho.html">
+<div class="listing-date">
+May 15, 2022
+</div>
+<div class="listing-author">
+James Tripp, Gregory McInerny
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="Teaching" data-listing-date-sort="1643673600000" data-listing-file-modified-sort="1663533807385" data-listing-reading-time-sort="0.125">
+<div class="body">
+<a href="./projects/introductory-social-media-analysis.html">
+<h3 class="no-anchor listing-title">
+Introductory Social Media Analysis
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Teaching'); return false;">
+Teaching
+</div>
+</div>
+<a href="./projects/introductory-social-media-analysis.html"> </a>
+</div>
+<div class="metadata">
+<a href="./projects/introductory-social-media-analysis.html">
+<div class="listing-date">
+Feb 1, 2022
+</div>
+<div class="listing-author">
+James Tripp
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="Teaching" data-listing-date-sort="1637798400000" data-listing-file-modified-sort="1663533807385" data-listing-reading-time-sort="0.685">
+<div class="body">
+<a href="./projects/qstep-sql.html">
+<h3 class="no-anchor listing-title">
+SQL Masterclass
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Teaching'); return false;">
+Teaching
+</div>
+</div>
+<a href="./projects/qstep-sql.html"> </a>
+</div>
+<div class="metadata">
+<a href="./projects/qstep-sql.html">
+<div class="listing-date">
+Nov 25, 2021
+</div>
+<div class="listing-author">
+James Tripp
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="Software" data-listing-date-sort="1588550400000" data-listing-file-modified-sort="1663533807385" data-listing-reading-time-sort="0.935">
+<div class="body">
+<a href="./projects/backfillz.html">
+<h3 class="no-anchor listing-title">
+Backfillz
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Software'); return false;">
+Software
+</div>
+</div>
+<a href="./projects/backfillz.html"> </a>
+</div>
+<div class="metadata">
+<a href="./projects/backfillz.html">
+<div class="listing-date">
+May 4, 2020
+</div>
+<div class="listing-author">
+James Tripp, Gregory McInerny
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="6" data-categories="Software" data-listing-date-sort="1584662400000" data-listing-file-modified-sort="1663533807385" data-listing-reading-time-sort="1.75">
+<div class="body">
+<a href="./projects/lecat.html">
+<h3 class="no-anchor listing-title">
+LE-CAT: Lexicon-based Categorization and Analysis Tool
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Software'); return false;">
+Software
+</div>
+</div>
+<a href="./projects/lecat.html"> </a>
+</div>
+<div class="metadata">
+<a href="./projects/lecat.html">
+<div class="listing-date">
+Mar 20, 2020
+</div>
+<div class="listing-author">
+James Tripp, Noortje Marres
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="7" data-categories="Teaching" data-listing-date-sort="1566086400000" data-listing-file-modified-sort="1663533807385" data-listing-reading-time-sort="0.985">
+<div class="body">
+<a href="./projects/qstep-statistical-workshops.html">
+<h3 class="no-anchor listing-title">
+QSTEP: Statistical workshop
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Teaching'); return false;">
+Teaching
+</div>
+</div>
+<a href="./projects/qstep-statistical-workshops.html"> </a>
+</div>
+<div class="metadata">
+<a href="./projects/qstep-statistical-workshops.html">
+<div class="listing-date">
+Aug 18, 2019
+</div>
+<div class="listing-author">
+James Tripp
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="8" data-categories="Teaching" data-listing-date-sort="1552867200000" data-listing-file-modified-sort="1663533807385" data-listing-reading-time-sort="3.38">
+<div class="body">
+<a href="./projects/qstep-social-media.html">
+<h3 class="no-anchor listing-title">
+Masterclass: Social Media
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Teaching'); return false;">
+Teaching
+</div>
+</div>
+<a href="./projects/qstep-social-media.html"> </a>
+</div>
+<div class="metadata">
+<a href="./projects/qstep-social-media.html">
+<div class="listing-date">
+Mar 18, 2019
+</div>
+<div class="listing-author">
+James Tripp
+</div>
+</a>
+</div>
+</div>
+</div>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
@@ -243,6 +426,119 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } 
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {

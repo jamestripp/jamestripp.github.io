@@ -2,22 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jamestripp.net/index.html</loc>
-    <lastmod>2022-09-08T10:15:28.132Z</lastmod>
+    <lastmod>2022-09-18T20:43:34.381Z</lastmod>
   </url>
   <url>
     <loc>https://jamestripp.net/projects.html</loc>
-    <lastmod>2022-09-08T10:15:28.852Z</lastmod>
+    <lastmod>2022-09-18T20:43:36.618Z</lastmod>
   </url>
   <url>
     <loc>https://jamestripp.net/projects/lecat.html</loc>
-    <lastmod>2022-09-08T10:15:29.224Z</lastmod>
+    <lastmod>2022-09-18T20:43:37.014Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jamestripp.net/projects/qstep-statistical-workshops.html</loc>
+    <lastmod>2022-09-18T20:43:37.358Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jamestripp.net/projects/qstep-social-media.html</loc>
+    <lastmod>2022-09-18T20:43:37.746Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jamestripp.net/projects/qstep-sql.html</loc>
+    <lastmod>2022-09-18T20:43:38.062Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jamestripp.net/projects/backfillz.html</loc>
+    <lastmod>2022-09-18T20:43:38.406Z</lastmod>
   </url>
   <url>
     <loc>https://jamestripp.net/projects/quarto-rseconf.html</loc>
-    <lastmod>2022-09-08T10:15:29.556Z</lastmod>
+    <lastmod>2022-09-18T20:43:38.730Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jamestripp.net/projects/introductory-social-media-analysis.html</loc>
+    <lastmod>2022-09-18T20:43:39.038Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jamestripp.net/projects/grapho.html</loc>
+    <lastmod>2022-09-18T20:43:39.418Z</lastmod>
   </url>
   <url>
     <loc>https://jamestripp.net/projects/RandDocker.html</loc>
-    <lastmod>2022-09-08T10:15:29.852Z</lastmod>
+    <lastmod>2022-09-18T20:43:39.734Z</lastmod>
   </url>
 </urlset>
