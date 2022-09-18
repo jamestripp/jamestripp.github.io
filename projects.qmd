@@ -1,7 +1,11 @@
 ---
 listing:
   contents: projects
-  type: table
+  type: default
+  filter-ui: false
+  fields: [date, title, author, categories]
   sort:
-    - "date"
+    - "date desc"
 ---
+
+The various projects are listed below. These exclude internal teaching for Masters modules, prototypes and code associated with the development and deployment of infrastructure.

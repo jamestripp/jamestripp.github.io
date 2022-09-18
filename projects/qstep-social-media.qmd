@@ -1,0 +1,32 @@
+---
+title: "Masterclass: Social Media"
+description: "A masterclass in social media data collection for the QSTEP centre"
+author: "James Tripp"
+categories: "Teaching"
+date: "03/18/2019"
+draft: false
+---
+[Code on GitHub](https://github.com/jamestripp/qstep-socialmedia)
+
+<!-- badges: start -->
+[![DOI](https://zenodo.org/badge/174321567.svg)](https://zenodo.org/badge/latestdoi/174321567)
+RStudio: [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/jamestripp/qstep-socialmedia/master?urlpath=rstudio)
+<!-- badges: end -->
+
+I was asked to deliver a Social Media Data Analysis workshop in R by the QSTEP centre at the University of Warwick. I decided to write the Masterclass entirely, where possible, using the tidyverse packages. It was a delightful learning experience and I would suggest anyone face the challenge of putting together such a workshop.
+
+The workshop covered methods for downloading, analysing and visualising social media data using the R programming language. We use the 'tidyverse' in R and (optionally) the spacy python module for natural language processing.
+
+## Outline
+
+The structure of the workshop is as follows
+
+| **Stage**     | **Title**          | **Detail**                                               | **R package(s)**          |
+|---------------|--------------------|----------------------------------------------------------|---------------------------|
+|               | Introduction       | Overview of the day                                      |                           |
+|               | [R intro](https://github.com/jamestripp/qstep-socialmedia/tree/master/1_r_intro)            | An introduction to R                                     |  [ggplot2](https://ggplot2.tidyverse.org), [tidyverse](https://www.tidyverse.org)                         |
+| Collection    | [Scraping](https://github.com/jamestripp/qstep-socialmedia/tree/master/2_scraping)           | Downloading and filtering html pages                     | [rvest](https://github.com/tidyverse/rvest), [tidyverse](https://www.tidyverse.org), [magittr](https://magrittr.tidyverse.org), [ggplot2](https://ggplot2.tidyverse.org), [tibble](https://tibble.tidyverse.org)                     |
+|               | [API and data dumps](https://github.com/jamestripp/qstep-socialmedia/tree/master/3_apis_datadumps) | Accessing data directly using APIs                       | [httr](https://github.com/r-lib/httr), [jsonlite](https://www.opencpu.org/posts/jsonlite-a-smarter-json-encoder/), [dplyr](https://dplyr.tidyverse.org), [textclean](https://github.com/trinker/textclean), [stringr](https://stringr.tidyverse.org), [ggplot2](https://ggplot2.tidyverse.org), [tidyverse](https://www.tidyverse.org), [magittr](https://magrittr.tidyverse.org), [tibble](https://tibble.tidyverse.org), [twitteR](https://cran.r-project.org/web/packages/twitteR/twitteR.pdf), [RedditExtractoR](https://CRAN.R-project.org/package=RedditExtractoR)  |
+| Analysis      | [Summarising](https://github.com/jamestripp/qstep-socialmedia/tree/master/4_summarising)        | Tidyverse enabled summaries of our collected data        | [tidyverse](https://www.tidyverse.org), [tidytext](https://github.com/juliasilge/tidytext), [dplyr](https://dplyr.tidyverse.org), [tidyr](https://tidyr.tidyverse.org)                  |
+|               | [Text analysis](https://github.com/jamestripp/qstep-socialmedia/tree/master/5_text_analysis)      | Applying numerical analysis to our text                  | [tidytext](https://cran.r-project.org/web/packages/tidytext/vignettes/tidytext.html), [tidyverse](https://www.tidyverse.org), [dplyr](https://dplyr.tidyverse.org), [stringr](https://stringr.tidyverse.org), [RedditExtractoR](https://CRAN.R-project.org/package=RedditExtractoR), [tidyr](https://tidyr.tidyverse.org), [igraph](https://igraph.org/r/), [ggraph](https://github.com/thomasp85/ggraph), [wordcloud](https://cran.r-project.org/web/packages/wordcloud/index.html), [reshape2](https://github.com/hadley/reshape), [tm](http://tm.r-forge.r-project.org), [topicmodels](https://cran.r-project.org/web/packages/topicmodels/index.html) |
+|               | [Natural Language](https://github.com/jamestripp/qstep-socialmedia/tree/master/6_natural_language)   | Optional section using the cleanNLP package              | [cleanNLP](https://statsmaths.github.io/cleanNLP/), [tibble](https://tibble.tidyverse.org), [tidyverse](https://www.tidyverse.org), [RedditExtractoR](https://CRAN.R-project.org/package=RedditExtractoR), [reticulate](https://rstudio.github.io/reticulate/)                  |

@@ -2,9 +2,15 @@
   {
     "listing": "/projects.html",
     "items": [
-      "/projects/lecat.html",
+      "/projects/RandDocker.html",
       "/projects/quarto-rseconf.html",
-      "/projects/RandDocker.html"
+      "/projects/grapho.html",
+      "/projects/introductory-social-media-analysis.html",
+      "/projects/qstep-sql.html",
+      "/projects/backfillz.html",
+      "/projects/lecat.html",
+      "/projects/qstep-statistical-workshops.html",
+      "/projects/qstep-social-media.html"
     ]
   }
 ]

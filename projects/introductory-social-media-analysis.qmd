@@ -1,0 +1,15 @@
+---
+title: "Introductory Social Media Analysis"
+description: "Basic example of collecting social media data"
+author: "James Tripp"
+categories: "Teaching"
+date: "02/01/2022"
+draft: false
+---
+[Code on GitHub](https://github.com/WarwickCDI/workshop-introductory-social-media-analysis-R)
+
+<!-- badges: start -->
+[![DOI](https://zenodo.org/badge/454447997.svg)](https://zenodo.org/badge/latestdoi/454447997)
+<!-- badges: end -->
+
+Rudimentary example of collecting data from Twitter aimed at introducing R and data collection to humanities students.

@@ -6,11 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="James Tripp, Noortje Marres">
-<meta name="dcterms.date" content="2020-03-20">
-<meta name="description" content="R package and shiny app for lexicon based categorisation">
+<meta name="author" content="James Tripp">
+<meta name="dcterms.date" content="2019-03-18">
+<meta name="description" content="A masterclass in social media data collection for the QSTEP centre">
 
-<title>James Tripp - LE-CAT: Lexicon-based Categorization and Analysis Tool</title>
+<title>James Tripp - Masterclass: Social Media</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -56,8 +56,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../styles.css">
-<meta name="twitter:title" content="James Tripp - LE-CAT: Lexicon-based Categorization and Analysis Tool">
-<meta name="twitter:description" content="R package and shiny app for lexicon based categorisation">
+<meta name="twitter:title" content="James Tripp - Masterclass: Social Media">
+<meta name="twitter:description" content="A masterclass in social media data collection for the QSTEP centre">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -116,15 +116,15 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">LE-CAT: Lexicon-based Categorization and Analysis Tool</h1>
+<h1 class="title">Masterclass: Social Media</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Software</div>
+    <div class="quarto-category">Teaching</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    R package and shiny app for lexicon based categorisation
+    A masterclass in social media data collection for the QSTEP centre
   </div>
 </div>
 
@@ -134,14 +134,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>James Tripp, Noortje Marres </p>
+             <p>James Tripp </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 20, 2020</p>
+      <p class="date">March 18, 2019</p>
     </div>
   </div>
     
@@ -150,18 +150,68 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><a href="https://github.com/WarwickCIM/lecat">Code on GitHub</a></p>
-<p><a href="https://www.repostatus.org/#active"><img src="https://www.repostatus.org/badges/latest/active.svg" class="img-fluid" alt="Project Status: Active – The project has reached a stable, usable state and is being actively developed."></a> <a href="https://codecov.io/gh/WarwickCIM/lecat"><img src="https://codecov.io/gh/WarwickCIM/lecat/branch/master/graph/badge.svg?token=RtMnQjfEcZ" class="img-fluid" alt="codecov"></a> <a href="https://github.com/WarwickCIM/lecat/actions"><img src="https://github.com/WarwickCIM/lecat/workflows/R-CMD-check/badge.svg" class="img-fluid" alt="R-CMD-check"></a> <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" class="img-fluid" alt="License: MIT"></a> <a href="https://zenodo.org/badge/latestdoi/161813229"><img src="https://zenodo.org/badge/161813229.svg" class="img-fluid" alt="DOI"></a></p>
-<p>I developed LE-CAT for Professor Noortje Marres. The software is written in R and searches for words in a text. Each word is associated with a category. The presence of the word (e.g., Tony Blair) is assumed to indicate the presence of the category in the text (e.g., politics). Summary information about category co-occurence is displayed displayed to the user as is a network of category and word co-occurence.</p>
-<p>An interesting feature of the software is that it is an R package containing a shiny app. I could teach with the tool to users who (a) were comfortable with R, (b) preferred a GUI interface running within R (the shiny app), and (c) much preferred only a web browser interface. At CIM I ran LE-CAT within docker containers via the <a href="https://www.shinyproxy.io/">shinyproxy</a> application so that each user could log into one of our CIM servers and use LE-CAT without R installed.</p>
-<p>The software was used for both research and in teaching environments.</p>
-<section id="project-description" class="level1">
-<h1>Project Description</h1>
-<p>LE-CAT is a Lexicon-based Categorization and Analysis Tool developed by the Centre for Interdisciplinary Methodologies in collaboration with the Media of Cooperation Group at the University of Siegen.</p>
-<p>The tool allows you to apply a set of word queries associated with a category (a lexicon) to a data set of textual sources (the corpus). LE-CAT determines the frequency of occurrence for each query and category in the corpus, as well as the relations between categories (co-occurrence) by source.</p>
-<p>The purpose of this technique is to automate and scale up user-led data analysis as it allows the application of a custom-built Lexicon to large data sets. The quick iteration of analysis allows the user to refine a corpus and deeply analyse a given phenomenon.</p>
-<p>LE-CAT was coded by James Tripp. It has been used to support the workshops Youtube as Test Society (University of Siegen), Parking on Twitter (University of Warwick) and the Digital Test of the News (University of Warwick) and is part of the CIM module Digital Object, Digital Methods.</p>
-<p>Academic correspondence should be sent to Noortje Marres.</p>
+<p><a href="https://github.com/jamestripp/qstep-socialmedia">Code on GitHub</a></p>
+<!-- badges: start -->
+<p><a href="https://zenodo.org/badge/latestdoi/174321567"><img src="https://zenodo.org/badge/174321567.svg" class="img-fluid" alt="DOI"></a> RStudio: <a href="http://mybinder.org/v2/gh/jamestripp/qstep-socialmedia/master?urlpath=rstudio"><img src="http://mybinder.org/badge_logo.svg" class="img-fluid" alt="Binder"></a> <!-- badges: end --></p>
+<p>I was asked to deliver a Social Media Data Analysis workshop in R by the QSTEP centre at the University of Warwick. I decided to write the Masterclass entirely, where possible, using the tidyverse packages. It was a delightful learning experience and I would suggest anyone face the challenge of putting together such a workshop.</p>
+<p>The workshop covered methods for downloading, analysing and visualising social media data using the R programming language. We use the ‘tidyverse’ in R and (optionally) the spacy python module for natural language processing.</p>
+<section id="outline" class="level2">
+<h2 class="anchored" data-anchor-id="outline">Outline</h2>
+<p>The structure of the workshop is as follows</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th><strong>Stage</strong></th>
+<th><strong>Title</strong></th>
+<th><strong>Detail</strong></th>
+<th><strong>R package(s)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>Introduction</td>
+<td>Overview of the day</td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td><a href="https://github.com/jamestripp/qstep-socialmedia/tree/master/1_r_intro">R intro</a></td>
+<td>An introduction to R</td>
+<td><a href="https://ggplot2.tidyverse.org">ggplot2</a>, <a href="https://www.tidyverse.org">tidyverse</a></td>
+</tr>
+<tr class="odd">
+<td>Collection</td>
+<td><a href="https://github.com/jamestripp/qstep-socialmedia/tree/master/2_scraping">Scraping</a></td>
+<td>Downloading and filtering html pages</td>
+<td><a href="https://github.com/tidyverse/rvest">rvest</a>, <a href="https://www.tidyverse.org">tidyverse</a>, <a href="https://magrittr.tidyverse.org">magittr</a>, <a href="https://ggplot2.tidyverse.org">ggplot2</a>, <a href="https://tibble.tidyverse.org">tibble</a></td>
+</tr>
+<tr class="even">
+<td></td>
+<td><a href="https://github.com/jamestripp/qstep-socialmedia/tree/master/3_apis_datadumps">API and data dumps</a></td>
+<td>Accessing data directly using APIs</td>
+<td><a href="https://github.com/r-lib/httr">httr</a>, <a href="https://www.opencpu.org/posts/jsonlite-a-smarter-json-encoder/">jsonlite</a>, <a href="https://dplyr.tidyverse.org">dplyr</a>, <a href="https://github.com/trinker/textclean">textclean</a>, <a href="https://stringr.tidyverse.org">stringr</a>, <a href="https://ggplot2.tidyverse.org">ggplot2</a>, <a href="https://www.tidyverse.org">tidyverse</a>, <a href="https://magrittr.tidyverse.org">magittr</a>, <a href="https://tibble.tidyverse.org">tibble</a>, <a href="https://cran.r-project.org/web/packages/twitteR/twitteR.pdf">twitteR</a>, <a href="https://CRAN.R-project.org/package=RedditExtractoR">RedditExtractoR</a></td>
+</tr>
+<tr class="odd">
+<td>Analysis</td>
+<td><a href="https://github.com/jamestripp/qstep-socialmedia/tree/master/4_summarising">Summarising</a></td>
+<td>Tidyverse enabled summaries of our collected data</td>
+<td><a href="https://www.tidyverse.org">tidyverse</a>, <a href="https://github.com/juliasilge/tidytext">tidytext</a>, <a href="https://dplyr.tidyverse.org">dplyr</a>, <a href="https://tidyr.tidyverse.org">tidyr</a></td>
+</tr>
+<tr class="even">
+<td></td>
+<td><a href="https://github.com/jamestripp/qstep-socialmedia/tree/master/5_text_analysis">Text analysis</a></td>
+<td>Applying numerical analysis to our text</td>
+<td><a href="https://cran.r-project.org/web/packages/tidytext/vignettes/tidytext.html">tidytext</a>, <a href="https://www.tidyverse.org">tidyverse</a>, <a href="https://dplyr.tidyverse.org">dplyr</a>, <a href="https://stringr.tidyverse.org">stringr</a>, <a href="https://CRAN.R-project.org/package=RedditExtractoR">RedditExtractoR</a>, <a href="https://tidyr.tidyverse.org">tidyr</a>, <a href="https://igraph.org/r/">igraph</a>, <a href="https://github.com/thomasp85/ggraph">ggraph</a>, <a href="https://cran.r-project.org/web/packages/wordcloud/index.html">wordcloud</a>, <a href="https://github.com/hadley/reshape">reshape2</a>, <a href="http://tm.r-forge.r-project.org">tm</a>, <a href="https://cran.r-project.org/web/packages/topicmodels/index.html">topicmodels</a></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><a href="https://github.com/jamestripp/qstep-socialmedia/tree/master/6_natural_language">Natural Language</a></td>
+<td>Optional section using the cleanNLP package</td>
+<td><a href="https://statsmaths.github.io/cleanNLP/">cleanNLP</a>, <a href="https://tibble.tidyverse.org">tibble</a>, <a href="https://www.tidyverse.org">tidyverse</a>, <a href="https://CRAN.R-project.org/package=RedditExtractoR">RedditExtractoR</a>, <a href="https://rstudio.github.io/reticulate/">reticulate</a></td>
+</tr>
+</tbody>
+</table>
 
 
 </section>

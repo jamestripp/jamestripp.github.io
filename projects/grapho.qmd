@@ -1,0 +1,34 @@
+---
+title: "Grapho (Alpha)"
+description: "Grapho is an R package for recording the commands and visualisations created in an R session."
+author: "James Tripp, Gregory McInerny"
+categories: "Software"
+date: "17/15/2021"
+draft: false
+---
+[Code on GitHub](https://github.com/WarwickCIM/grapho)
+
+<!-- badges: start -->
+
+[![Project Status: WIP – Initial development is in progress, but there
+has not yet been a stable, usable release suitable for the
+public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+[![R-CMD-check](https://github.com/WarwickCIM/grapho/workflows/R-CMD-check/badge.svg)](https://github.com/WarwickCIM/grapho/actions)
+[![Codecov test
+coverage](https://codecov.io/gh/WarwickCIM/grapho/branch/master/graph/badge.svg)](https://codecov.io/gh/WarwickCIM/grapho?branch=master)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<!-- badges: end -->
+
+I wrote this software alongside Greg, a fantastic visualisation academic, and it remains unfinished. The software uses a callback function to record commands passed to the R interpreter into a text file and records the plots created. All of these are then saved with date annotation.
+
+I moved to CIM part way through a rewrite of the package loading process. If anyone would like to fork or futher develop the software then please do get in touch.
+
+# Project Description
+
+Grapho is an R package for recording the commands and visualisations created in an R session. Functions are provided for parsing and visualising the user workflow.
+
+Grapho is part of WAYS: What aren’t you seeing. The goal of this Turing funded research project is to ‘develop tools which enhance people’s capacity to visualise data, by letting them see what can and can’t be seen in the visualisation.’.
+
+The version in this repository is currently under active development. A full release is forthcoming. Please see the roadmap for more details.
+
+The package is written by Dr James Tripp and Dr Greg McInerny. Please contact James with any technical issues.

@@ -2,6 +2,7 @@
 title: "Quarto: a library to run them all?"
 description: "Workshop delivered at RSE conf 2022"
 author: "Carlos Cámara-Menoyo, Cagatay Turkay, James Tripp"
+categories: "Presentation"
 date: "09/07/2022"
 draft: false
 ---
@@ -10,7 +11,7 @@ I co-delivered a workshop exploring the Quarto library at the RSE conference 202
 
 ### Slides
 
-<iframe src="https://warwickcim.github.io/quarto-workshop/slides/slides.html" height="400" width="500"></iframe>
+<iframe src="https://warwickcim.github.io/quarto-workshop/slides/slides.html" height="500" width="600"></iframe>
 
 ### Abstract
 

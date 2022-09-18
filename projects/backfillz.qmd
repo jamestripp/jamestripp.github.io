@@ -1,0 +1,22 @@
+---
+title: "Backfillz"
+description: "Backfillz.R provides new visual diagnostics for understanding MCMC (Markov Chain Monte Carlo) analyses and outputs."
+author: "James Tripp, Gregory McInerny"
+categories: "Software"
+date: "05/04/2020"
+draft: false
+---
+[Code on GitHub](https://github.com/WarwickCIM/backfillz)
+
+<!-- badges: start -->
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/inactive.svg)](https://www.repostatus.org/#inactive)
+[![codecov](https://codecov.io/gh/WarwickCIM/backfillz/branch/master/graph/badge.svg?token=R9DQXEUWH3)](https://codecov.io/gh/WarwickCIM/backfillz)
+[![R-CMD-check](https://github.com/WarwickCIM/backfillz/workflows/R-CMD-check/badge.svg)](https://github.com/WarwickCIM/backfillz/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<!-- badges: end -->
+
+This software provides several novel visualisations for exploring MCMC chains. I worked with MCMC chains during the my post-doc in Psychology when estimating the posterior distributions of cognitive models given the data and found this project very interesting. The software has been released and is considered complete. Fun stuff.
+
+# Project Description
+
+Backfillz.R provides new visual diagnostics for understanding MCMC (Markov Chain Monte Carlo) analyses and outputs. MCMC chains can defy a simple line graph. Unless the chain is very short (which isn’t often the case), plotting tens or hundreds of thousands of data points reveals very little other than a ‘trace plot’ where we only see the outermost points. Common plotting methods may only reveal when an MCMC really hasn’t worked, but not when it has. BackFillz.R slices and dices MCMC chains so increasingly parameter rich, complex analyses can be visualised meaningfully. What does ‘good mixing’ look like? Is a ‘hair caterpillar’ test verifiable? What does a density plot show and what does it hide?
