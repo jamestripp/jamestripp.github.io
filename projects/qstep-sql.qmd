@@ -22,4 +22,4 @@ Students then (a) carried out basic SQL queries, (b) aggregated and joined data,
  to create choropleths, and (d) explored additional datasets.
  
 Feedback from students was very good with this one. I may even have encouraged 
-some aspiring data scientists.
+some aspiring data scientists :).
