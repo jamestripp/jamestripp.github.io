@@ -7,6 +7,7 @@ website:
   site-url: "https://jamestripp.net"
   search: false
   twitter-card: true
+  open-graph: true
   navbar:
     right:
       - href: https://github.com/jamestripp/CV-1/raw/master/JT.pdf

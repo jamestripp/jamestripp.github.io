@@ -1,5 +1,5 @@
 ---
-title: "Grapho (Alpha)"
+title: "Grapho"
 description: "Grapho is an R package for recording the commands and visualisations created in an R session."
 author: "James Tripp, Gregory McInerny"
 categories: "Software"

@@ -4,6 +4,7 @@ description: "Presentation to the Warwick R User Group (WRUG)"
 author: "James Tripp"
 categories: "Presentation"
 date: "09/15/2022"
+image: images/randdocker.png
 draft: false
 ---
 

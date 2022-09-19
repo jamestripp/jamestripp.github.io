@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jamestripp.net/index.html</loc>
-    <lastmod>2022-09-18T20:43:51.248Z</lastmod>
+    <lastmod>2022-09-19T11:35:36.377Z</lastmod>
   </url>
   <url>
     <loc>https://jamestripp.net/projects/lecat.html</loc>
@@ -10,19 +10,19 @@
   </url>
   <url>
     <loc>https://jamestripp.net/projects/quarto-rseconf.html</loc>
-    <lastmod>2022-09-18T19:23:14.246Z</lastmod>
+    <lastmod>2022-09-19T11:14:13.944Z</lastmod>
   </url>
   <url>
     <loc>https://jamestripp.net/projects/RandDocker.html</loc>
-    <lastmod>2022-09-18T20:16:32.899Z</lastmod>
+    <lastmod>2022-09-19T11:30:46.965Z</lastmod>
   </url>
   <url>
     <loc>https://jamestripp.net/projects.html</loc>
-    <lastmod>2022-09-18T20:32:42.021Z</lastmod>
+    <lastmod>2022-09-19T11:35:35.917Z</lastmod>
   </url>
   <url>
     <loc>https://jamestripp.net/projects/grapho.html</loc>
-    <lastmod>2022-09-18T19:23:13.235Z</lastmod>
+    <lastmod>2022-09-19T11:35:35.426Z</lastmod>
   </url>
   <url>
     <loc>https://jamestripp.net/projects/backfillz.html</loc>
@@ -43,5 +43,17 @@
   <url>
     <loc>https://jamestripp.net/projects/qstep-sql.html</loc>
     <lastmod>2022-09-18T20:43:58.095Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jamestripp.net/projects/networking.html</loc>
+    <lastmod>2022-09-19T11:13:49.704Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jamestripp.net/projects/negativelyskewed-paper.html</loc>
+    <lastmod>2022-09-19T11:22:47.230Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jamestripp.net/projects/dilutioneffect-paper.html</loc>
+    <lastmod>2022-09-19T11:22:47.602Z</lastmod>
   </url>
 </urlset>
