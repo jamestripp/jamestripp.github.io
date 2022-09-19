@@ -1,7 +1,7 @@
 ---
 title: "A dilution effect without dilution"
 description: "A dilution effect without dilution: When missing evidence, not non-diagnostic evidence, is judged inaccurately"
-author: "Adam N.Sanborn, Takao Noguchib, James Tripp, Neil Stewart"
+author: "Adam N.Sanborn, Takao Noguchi, James Tripp, Neil Stewart"
 categories: "Paper"
 date: "03/31/2020"
 draft: false
