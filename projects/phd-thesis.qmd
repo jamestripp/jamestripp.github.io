@@ -1,0 +1,14 @@
+---
+title: "Memory and sampling in contextual judgment"
+description: "PhD Thesis in Psychology"
+author: "James Tripp"
+categories: "PhD Thesis"
+date: "01/10/2013"
+draft: false
+---
+[Paper link](http://wrap.warwick.ac.uk/60630/1/WRAP_Theses_Tripp_2013.pdf)
+
+# Abstract
+
+This thesis investigates the interaction of memory and decision making in relative and retrospective judgment. Theories of memory and decision making are often rigorously tested using a variety of data sets, and the resulting theories can be applied to a large selection of psychological phenomena. In Chapter 1 I argue that
+theoretical development in relative and retrospective judgment is in contrast often very specialized. Theories of relative and retrospective judgment cannot easily be applied to other memory and decision making phenomena. Another approach is to take broad models or principles from the wider literature and apply them to relative and retrospective judgment. I suggest that the SIMPLE model of memory (Brown, Neath, & Chater, 2007) and the decision by sampling model (DbS; Stewart, Chater, & Brown, 2006) can in combination offer a comprehensive and unifying account of relative judgment. In Chapter 2 I find that both relative and retrospective judgments are consistent with range-frequency theory. I also find evidence for range effects which are inconsistent with decision by sampling. Chapter 3 investigates the role of similarity in these relative judgments using the distance based sampling model (Qian & Brown, 2005). The results show no evidence for distance based sampling. A combined SIMPLE and DbS model (SDbS) is applied to data from previous studies in Chapter 4. SDbS and range-frequency theory can account for the data – including range effects - equally well. In Chapter 5 I use an incentivized free recall task to elicit atypical serial position curves in three experiments. SIMPLE is shown to be able to fit the effect of output position which appears important in decision making behavior. Overall, this thesis suggests that SDbS is a candidate model for unifying retrospective and relative judgment with the wider memory and decision making literature.
