@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://jamestripp.net/projects/negativelyskewed-paper.html</loc>
-    <lastmod>2022-09-30T15:56:59.821Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jamestripp.net/projects/RandDocker.html</loc>
-    <lastmod>2022-09-30T15:57:03.397Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jamestripp.net/projects/dilutioneffect-paper.html</loc>
-    <lastmod>2022-09-30T15:57:03.801Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jamestripp.net/projects/lecat.html</loc>
-    <lastmod>2022-09-30T15:57:04.253Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jamestripp.net/projects/quarto-rseconf.html</loc>
-    <lastmod>2022-09-30T15:57:04.653Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jamestripp.net/projects/networking.html</loc>
-    <lastmod>2022-09-30T15:57:05.097Z</lastmod>
+    <loc>https://jamestripp.net/projects/grapho.html</loc>
+    <lastmod>2024-12-27T19:23:57.933Z</lastmod>
   </url>
   <url>
     <loc>https://jamestripp.net/projects/introductory-social-media-analysis.html</loc>
-    <lastmod>2022-09-30T15:57:05.489Z</lastmod>
+    <lastmod>2024-12-27T19:23:58.889Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jamestripp.net/projects/quarto-rseconf.html</loc>
+    <lastmod>2024-12-27T19:23:59.193Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jamestripp.net/projects/networking.html</loc>
+    <lastmod>2024-12-27T19:23:59.497Z</lastmod>
   </url>
   <url>
     <loc>https://jamestripp.net/projects/qstep-social-media.html</loc>
-    <lastmod>2022-09-30T15:57:05.921Z</lastmod>
+    <lastmod>2024-12-27T19:23:59.825Z</lastmod>
   </url>
   <url>
-    <loc>https://jamestripp.net/projects/backfillz.html</loc>
-    <lastmod>2022-09-30T15:57:06.361Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jamestripp.net/projects/qstep-sql.html</loc>
-    <lastmod>2022-09-30T15:57:06.793Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jamestripp.net/projects/qstep-statistical-workshops.html</loc>
-    <lastmod>2022-09-30T15:57:07.213Z</lastmod>
+    <loc>https://jamestripp.net/projects/lecat.html</loc>
+    <lastmod>2024-12-27T19:24:00.145Z</lastmod>
   </url>
   <url>
     <loc>https://jamestripp.net/projects/phd-thesis.html</loc>
-    <lastmod>2022-09-30T15:57:07.605Z</lastmod>
+    <lastmod>2024-12-27T19:24:00.437Z</lastmod>
   </url>
   <url>
-    <loc>https://jamestripp.net/projects/grapho.html</loc>
-    <lastmod>2022-09-30T15:57:08.049Z</lastmod>
+    <loc>https://jamestripp.net/projects/backfillz.html</loc>
+    <lastmod>2024-12-27T19:24:00.733Z</lastmod>
   </url>
   <url>
-    <loc>https://jamestripp.net/index.html</loc>
-    <lastmod>2022-09-30T15:57:08.421Z</lastmod>
+    <loc>https://jamestripp.net/projects/negativelyskewed-paper.html</loc>
+    <lastmod>2024-12-27T19:24:01.029Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jamestripp.net/projects/RandDocker.html</loc>
+    <lastmod>2024-12-27T19:24:01.313Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jamestripp.net/projects/qstep-statistical-workshops.html</loc>
+    <lastmod>2024-12-27T19:24:01.629Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jamestripp.net/projects/dilutioneffect-paper.html</loc>
+    <lastmod>2024-12-27T19:24:01.901Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jamestripp.net/projects/qstep-sql.html</loc>
+    <lastmod>2024-12-27T19:24:02.181Z</lastmod>
   </url>
   <url>
     <loc>https://jamestripp.net/projects.html</loc>
-    <lastmod>2022-09-30T15:57:09.017Z</lastmod>
+    <lastmod>2024-12-27T19:24:02.601Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jamestripp.net/index.html</loc>
+    <lastmod>2024-12-27T19:24:02.869Z</lastmod>
   </url>
 </urlset>
