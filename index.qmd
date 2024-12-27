@@ -6,6 +6,6 @@ about:
 
 Welcome to my website.
 
-I've worked in research and technology for ten years - from a researcher in psychology to an academic technologist in an interdisciplinary centre and now as a senior research software engineer in central services at the University of Warwick.
+I have worked in data analyics, research and technology for over ten years. From a Psychology researchers, to an academic technologist and research software engineer at the University of Warwick, and now a data analytics specialist in the Government Internal Audit Agency.
 
 You can view details of my public projects [here](projects.html).
