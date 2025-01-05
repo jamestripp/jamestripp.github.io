@@ -7,5 +7,3 @@ about:
 Welcome to my website.
 
 I have worked in data analyics, research and technology for over ten years. From a Psychology researchers, to an academic technologist and research software engineer at the University of Warwick, and now a data analytics specialist in the Government Internal Audit Agency.
-
-You can view details of my public projects [here](projects.html).
