@@ -4,4 +4,4 @@ about:
   template: solana
 ---
 
-I have over ten years of experience spanning data analytics, research, and technology. My career has taken me from working as a psychology researcher to serving as an academic technologist and research software engineer at the University of Warwick. I now apply my expertise as a data analytics specialist at the Government Internal Audit Agency.
+My career has taken me from working as a psychology researcher to serving as an academic technologist and research software engineer at the University of Warwick. I now apply my expertise as a data analytics specialist at the Government Internal Audit Agency.
