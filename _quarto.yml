@@ -10,13 +10,16 @@ website:
   open-graph: true
   navbar:
     right:
+      - text: Projects
+        href: projects.qmd
+      - text: CV
+        href: https://raw.githubusercontent.com/jamestripp/cv/main/JT.pdf
       - icon: linkedin
         href: https://linkedin.com/in/jamestripp/
       - icon: github
         href: https://github.com/jamestripp
       - icon: twitter
         href: https://twitter.com/jamestripp_
-
 format:
   html:
     theme:

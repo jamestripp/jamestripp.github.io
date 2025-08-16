@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.1.189">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>James Tripp – projects</title>
+<title>projects – James Tripp</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -17,7 +17,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -33,12 +33,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-d1b12f2568ecbe55642fee6aa00bd082.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-b2511bcbb01c2159fd96a78deb42ffd9.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -48,8 +48,10 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <script>
@@ -82,53 +84,89 @@ ul.task-list li input[type="checkbox"] {
   })
   </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 <link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="James Tripp">
+<meta property="og:description" content="">
+<meta property="og:site_name" content="James Tripp">
+<meta name="twitter:title" content="James Tripp">
+<meta name="twitter:description" content="">
+<meta name="twitter:card" content="summary">
 </head>
 
 <body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">James Tripp</span>
     </a>
   </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="https://github.com/jamestripp/CV-1/raw/master/JT.pdf">CV</a>
+    <a class="nav-link active" href="./projects.html" aria-current="page"> 
+<span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" aria-current="page">Projects</a>
+    <a class="nav-link" href="https://raw.githubusercontent.com/jamestripp/cv/main/JT.pdf"> 
+<span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://linkedin.com/in/jamestripp/"><i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://linkedin.com/in/jamestripp/"> <i class="bi bi-linkedin" role="img">
 </i> 
- </a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/jamestripp"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/jamestripp"> <i class="bi bi-github" role="img">
 </i> 
- </a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/jamestripp_"><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://twitter.com/jamestripp_"> <i class="bi bi-twitter" role="img">
 </i> 
- </a>
+<span class="menu-text"></span></a>
   </li>  
 </ul>
-              <div class="quarto-toggle-container">
-                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-              </div>
           </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -138,7 +176,8 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
 
 
 
@@ -149,25 +188,22 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Presentation" data-listing-date-sort="1663196400000" data-listing-file-modified-sort="1664553009480" data-listing-reading-time-sort="0.615">
+<div class="quarto-post image-right" data-index="0" data-categories="UHJlc2VudGF0aW9u" data-listing-date-sort="1663196400000" data-listing-file-modified-sort="1755346975727" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="123">
 <div class="body">
-<a href="./projects/RandDocker.html">
 <h3 class="no-anchor listing-title">
-R and Docker
+<a href="./projects/RandDocker.html" class="no-external">R and Docker</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./projects/RandDocker.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Presentation'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('UHJlc2VudGF0aW9u'); return false;">
 Presentation
 </div>
 </div>
-<a href="./projects/RandDocker.html"> </a>
 </div>
 <div class="metadata">
-<a href="./projects/RandDocker.html">
+<a href="./projects/RandDocker.html" class="no-external">
 <div class="listing-date">
 Sep 15, 2022
 </div>
@@ -177,25 +213,22 @@ James Tripp
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="Presentation" data-listing-date-sort="1662505200000" data-listing-file-modified-sort="1664553009505" data-listing-reading-time-sort="1.335">
+<div class="quarto-post image-right" data-index="1" data-categories="UHJlc2VudGF0aW9u" data-listing-date-sort="1662505200000" data-listing-file-modified-sort="1755346975734" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="267">
 <div class="body">
-<a href="./projects/quarto-rseconf.html">
 <h3 class="no-anchor listing-title">
-Quarto: a library to run them all?
+<a href="./projects/quarto-rseconf.html" class="no-external">Quarto: a library to run them all?</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./projects/quarto-rseconf.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Presentation'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('UHJlc2VudGF0aW9u'); return false;">
 Presentation
 </div>
 </div>
-<a href="./projects/quarto-rseconf.html"> </a>
 </div>
 <div class="metadata">
-<a href="./projects/quarto-rseconf.html">
+<a href="./projects/quarto-rseconf.html" class="no-external">
 <div class="listing-date">
 Sep 7, 2022
 </div>
@@ -205,25 +238,22 @@ Carlos Cámara-Menoyo, Cagatay Turkay, James Tripp
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="Software" data-listing-date-sort="1652569200000" data-listing-file-modified-sort="1664553009483" data-listing-reading-time-sort="1.05">
+<div class="quarto-post image-right" data-index="2" data-categories="U29mdHdhcmU=" data-listing-date-sort="1652569200000" data-listing-file-modified-sort="1755346975727" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="210">
 <div class="body">
-<a href="./projects/grapho.html">
 <h3 class="no-anchor listing-title">
-Grapho
+<a href="./projects/grapho.html" class="no-external">Grapho</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./projects/grapho.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Software'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('U29mdHdhcmU='); return false;">
 Software
 </div>
 </div>
-<a href="./projects/grapho.html"> </a>
 </div>
 <div class="metadata">
-<a href="./projects/grapho.html">
+<a href="./projects/grapho.html" class="no-external">
 <div class="listing-date">
 May 15, 2022
 </div>
@@ -233,25 +263,22 @@ James Tripp, Gregory McInerny
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="Teaching" data-listing-date-sort="1645401600000" data-listing-file-modified-sort="1664553009494" data-listing-reading-time-sort="2.11">
+<div class="quarto-post image-right" data-index="3" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1645401600000" data-listing-file-modified-sort="1755346975732" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="422">
 <div class="body">
-<a href="./projects/networking.html">
 <h3 class="no-anchor listing-title">
-Networking Workshop
+<a href="./projects/networking.html" class="no-external">Networking Workshop</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./projects/networking.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Teaching'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('VGVhY2hpbmc='); return false;">
 Teaching
 </div>
 </div>
-<a href="./projects/networking.html"> </a>
 </div>
 <div class="metadata">
-<a href="./projects/networking.html">
+<a href="./projects/networking.html" class="no-external">
 <div class="listing-date">
 Feb 21, 2022
 </div>
@@ -261,25 +288,22 @@ James Tripp, Godwin Yeboah
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="Teaching" data-listing-date-sort="1643673600000" data-listing-file-modified-sort="1664553009491" data-listing-reading-time-sort="0.125">
+<div class="quarto-post image-right" data-index="4" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1643673600000" data-listing-file-modified-sort="1755346975732" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="25">
 <div class="body">
-<a href="./projects/introductory-social-media-analysis.html">
 <h3 class="no-anchor listing-title">
-Introductory Social Media Analysis
+<a href="./projects/introductory-social-media-analysis.html" class="no-external">Introductory Social Media Analysis</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./projects/introductory-social-media-analysis.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Teaching'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('VGVhY2hpbmc='); return false;">
 Teaching
 </div>
 </div>
-<a href="./projects/introductory-social-media-analysis.html"> </a>
 </div>
 <div class="metadata">
-<a href="./projects/introductory-social-media-analysis.html">
+<a href="./projects/introductory-social-media-analysis.html" class="no-external">
 <div class="listing-date">
 Feb 1, 2022
 </div>
@@ -289,25 +313,22 @@ James Tripp
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="Teaching" data-listing-date-sort="1637798400000" data-listing-file-modified-sort="1664553009495" data-listing-reading-time-sort="0.69">
+<div class="quarto-post image-right" data-index="5" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1637798400000" data-listing-file-modified-sort="1755346975733" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="138">
 <div class="body">
-<a href="./projects/qstep-sql.html">
 <h3 class="no-anchor listing-title">
-SQL Masterclass
+<a href="./projects/qstep-sql.html" class="no-external">SQL Masterclass</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./projects/qstep-sql.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Teaching'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('VGVhY2hpbmc='); return false;">
 Teaching
 </div>
 </div>
-<a href="./projects/qstep-sql.html"> </a>
 </div>
 <div class="metadata">
-<a href="./projects/qstep-sql.html">
+<a href="./projects/qstep-sql.html" class="no-external">
 <div class="listing-date">
 Nov 25, 2021
 </div>
@@ -317,25 +338,22 @@ James Tripp
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="Software" data-listing-date-sort="1588546800000" data-listing-file-modified-sort="1664553009481" data-listing-reading-time-sort="0.935">
+<div class="quarto-post image-right" data-index="6" data-categories="U29mdHdhcmU=" data-listing-date-sort="1588546800000" data-listing-file-modified-sort="1755346975727" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="187">
 <div class="body">
-<a href="./projects/backfillz.html">
 <h3 class="no-anchor listing-title">
-Backfillz
+<a href="./projects/backfillz.html" class="no-external">Backfillz</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./projects/backfillz.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Software'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('U29mdHdhcmU='); return false;">
 Software
 </div>
 </div>
-<a href="./projects/backfillz.html"> </a>
 </div>
 <div class="metadata">
-<a href="./projects/backfillz.html">
+<a href="./projects/backfillz.html" class="no-external">
 <div class="listing-date">
 May 4, 2020
 </div>
@@ -345,25 +363,22 @@ James Tripp, Gregory McInerny
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="Paper" data-listing-date-sort="1585609200000" data-listing-file-modified-sort="1664553009482" data-listing-reading-time-sort="0.84">
+<div class="quarto-post image-right" data-index="7" data-categories="UGFwZXI=" data-listing-date-sort="1585609200000" data-listing-file-modified-sort="1755346975727" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="168">
 <div class="body">
-<a href="./projects/dilutioneffect-paper.html">
 <h3 class="no-anchor listing-title">
-A dilution effect without dilution
+<a href="./projects/dilutioneffect-paper.html" class="no-external">A dilution effect without dilution</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./projects/dilutioneffect-paper.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Paper'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('UGFwZXI='); return false;">
 Paper
 </div>
 </div>
-<a href="./projects/dilutioneffect-paper.html"> </a>
 </div>
 <div class="metadata">
-<a href="./projects/dilutioneffect-paper.html">
+<a href="./projects/dilutioneffect-paper.html" class="no-external">
 <div class="listing-date">
 Mar 31, 2020
 </div>
@@ -373,25 +388,22 @@ Adam N.Sanborn, Takao Noguchi, James Tripp, Neil Stewart
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-categories="Software" data-listing-date-sort="1584662400000" data-listing-file-modified-sort="1664553009492" data-listing-reading-time-sort="1.75">
+<div class="quarto-post image-right" data-index="8" data-categories="U29mdHdhcmU=" data-listing-date-sort="1584662400000" data-listing-file-modified-sort="1755346975732" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="350">
 <div class="body">
-<a href="./projects/lecat.html">
 <h3 class="no-anchor listing-title">
-LE-CAT: Lexicon-based Categorization and Analysis Tool
+<a href="./projects/lecat.html" class="no-external">LE-CAT: Lexicon-based Categorization and Analysis Tool</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./projects/lecat.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Software'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('U29mdHdhcmU='); return false;">
 Software
 </div>
 </div>
-<a href="./projects/lecat.html"> </a>
 </div>
 <div class="metadata">
-<a href="./projects/lecat.html">
+<a href="./projects/lecat.html" class="no-external">
 <div class="listing-date">
 Mar 20, 2020
 </div>
@@ -401,25 +413,22 @@ James Tripp, Noortje Marres
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-categories="Teaching" data-listing-date-sort="1566082800000" data-listing-file-modified-sort="1664553009503" data-listing-reading-time-sort="0.985">
+<div class="quarto-post image-right" data-index="9" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1566082800000" data-listing-file-modified-sort="1755346975733" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="197">
 <div class="body">
-<a href="./projects/qstep-statistical-workshops.html">
 <h3 class="no-anchor listing-title">
-QSTEP: Statistical workshop
+<a href="./projects/qstep-statistical-workshops.html" class="no-external">QSTEP: Statistical workshop</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./projects/qstep-statistical-workshops.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Teaching'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('VGVhY2hpbmc='); return false;">
 Teaching
 </div>
 </div>
-<a href="./projects/qstep-statistical-workshops.html"> </a>
 </div>
 <div class="metadata">
-<a href="./projects/qstep-statistical-workshops.html">
+<a href="./projects/qstep-statistical-workshops.html" class="no-external">
 <div class="listing-date">
 Aug 18, 2019
 </div>
@@ -429,25 +438,22 @@ James Tripp
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="10" data-categories="Teaching" data-listing-date-sort="1552867200000" data-listing-file-modified-sort="1664553009495" data-listing-reading-time-sort="3.38">
+<div class="quarto-post image-right" data-index="10" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1552867200000" data-listing-file-modified-sort="1755346975733" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="676">
 <div class="body">
-<a href="./projects/qstep-social-media.html">
 <h3 class="no-anchor listing-title">
-Masterclass: Social Media
+<a href="./projects/qstep-social-media.html" class="no-external">Masterclass: Social Media</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./projects/qstep-social-media.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Teaching'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('VGVhY2hpbmc='); return false;">
 Teaching
 </div>
 </div>
-<a href="./projects/qstep-social-media.html"> </a>
 </div>
 <div class="metadata">
-<a href="./projects/qstep-social-media.html">
+<a href="./projects/qstep-social-media.html" class="no-external">
 <div class="listing-date">
 Mar 18, 2019
 </div>
@@ -457,25 +463,22 @@ James Tripp
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="11" data-categories="Paper" data-listing-date-sort="1459378800000" data-listing-file-modified-sort="1664553009493" data-listing-reading-time-sort="0.985">
+<div class="quarto-post image-right" data-index="11" data-categories="UGFwZXI=" data-listing-date-sort="1459378800000" data-listing-file-modified-sort="1755346975732" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="197">
 <div class="body">
-<a href="./projects/negativelyskewed-paper.html">
 <h3 class="no-anchor listing-title">
-Being paid relatively well most of the time
+<a href="./projects/negativelyskewed-paper.html" class="no-external">Being paid relatively well most of the time</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./projects/negativelyskewed-paper.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Paper'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('UGFwZXI='); return false;">
 Paper
 </div>
 </div>
-<a href="./projects/negativelyskewed-paper.html"> </a>
 </div>
 <div class="metadata">
-<a href="./projects/negativelyskewed-paper.html">
+<a href="./projects/negativelyskewed-paper.html" class="no-external">
 <div class="listing-date">
 Mar 31, 2016
 </div>
@@ -485,25 +488,22 @@ James Tripp, Gordon DA Brown
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="12" data-categories="PhD Thesis" data-listing-date-sort="1357776000000" data-listing-file-modified-sort="1664553229191" data-listing-reading-time-sort="1.475">
+<div class="quarto-post image-right" data-index="12" data-categories="UGhEJTIwVGhlc2lz" data-listing-date-sort="1357776000000" data-listing-file-modified-sort="1755346975733" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="295">
 <div class="body">
-<a href="./projects/phd-thesis.html">
 <h3 class="no-anchor listing-title">
-Memory and sampling in contextual judgment
+<a href="./projects/phd-thesis.html" class="no-external">Memory and sampling in contextual judgment</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./projects/phd-thesis.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('PhD Thesis'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('UGhEJTIwVGhlc2lz'); return false;">
 PhD Thesis
 </div>
 </div>
-<a href="./projects/phd-thesis.html"> </a>
 </div>
 <div class="metadata">
-<a href="./projects/phd-thesis.html">
+<a href="./projects/phd-thesis.html" class="no-external">
 <div class="listing-date">
 Jan 10, 2013
 </div>
@@ -559,6 +559,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -627,13 +654,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -650,7 +679,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   // Switch to dark mode if need be
   if (hasAlternateSentinel()) {
     toggleColorMode(true);
-  } 
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -658,12 +689,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
     }
-  });
-  clipboard.on('success', function(e) {
+    return false;
+  }
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -672,17 +706,71 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/jamestripp\.net");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -692,8 +780,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -705,31 +802,285 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>
 </div> <!-- /content -->
+
 
 
 

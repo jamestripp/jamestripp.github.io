@@ -1,7 +1,7 @@
 ---
-image: profile.jfif
+image: profile.jpg
 about:
   template: solana
 ---
 
-I have worked in data analyics, research and technology for over ten years. From a Psychology researchers, to an academic technologist and research software engineer at the University of Warwick, and now a data analytics specialist in the Government Internal Audit Agency.
+I have over ten years of experience spanning data analytics, research, and technology. My career has taken me from working as a psychology researcher to serving as an academic technologist and research software engineer at the University of Warwick. I now apply my expertise as a data analytics specialist at the Government Internal Audit Agency.
