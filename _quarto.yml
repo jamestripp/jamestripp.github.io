@@ -18,9 +18,7 @@ website:
         href: https://linkedin.com/in/jamestripp/
       - icon: github
         href: https://github.com/jamestripp
-      - icon: twitter
-        href: https://twitter.com/jamestripp_
 format:
   html:
-    theme: solar
+    theme: default
     css: styles.css
