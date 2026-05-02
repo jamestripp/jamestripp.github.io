@@ -1,0 +1,15 @@
+My passions include computation, infrastructure and research. I currently use these skills to help audit the UK Government. At UoW I wrote software, taught, and supported researchers.
+
+## Experience
+
+[GIAA](https://www.gov.uk/government/organisations/government-internal-audit-agency) \| Data Analytics Specialist \| 2023 - present
+
+[UoW](https://warwick.ac.uk/) \| Senior RSE \| 2021 - 2023
+
+[UoW](https://warwick.ac.uk/) \| Senior Academic Technologist \| 2019 - 2021
+
+## Education
+
+[UoW](https://warwick.ac.uk/) \| PhD Psychology \| 2011 - 2015
+
+[UoW](https://warwick.ac.uk/) \| BSc Psychology \| 2007 - 2011

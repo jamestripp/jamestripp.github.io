@@ -28,20 +28,35 @@ ul.task-list li input[type="checkbox"] {
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-listing/list.min.js"></script>
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6ad9beb2d34df4fb33d86c9001e18006.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-f59e40dd4a17874923f3adc463c32cfc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -66,9 +81,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -136,6 +151,7 @@ window.Quarto = {
     <span class="navbar-title">James Tripp</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
@@ -156,11 +172,6 @@ window.Quarto = {
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/jamestripp"> <i class="bi bi-github" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/jamestripp_"> <i class="bi bi-twitter" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -187,295 +198,262 @@ window.Quarto = {
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="UHJlc2VudGF0aW9u" data-listing-date-sort="1663196400000" data-listing-file-modified-sort="1777658018340" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="123">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/RandDocker.html" class="no-external">R and Docker</a>
-</h3>
-<div class="listing-categories">
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">Order By</option>
+      <option value="index" data-direction="asc">Default</option>
+      <option value="listing-date-sort" data-direction="asc">
+        Date - Oldest
+      </option>
+      <option value="listing-date-sort" data-direction="desc">
+        Date - Newest
+      </option>
+      <option value="listing-title-sort" data-direction="asc">
+        Title
+      </option>
+      <option value="listing-author" data-direction="asc">
+        Author
+      </option>
+    </select>
+  </div>
+</div>
+<table class="quarto-listing-table table">
+<thead>
+<tr>
 
-<div class="listing-category" onclick="window.quartoListingCategory('UHJlc2VudGF0aW9u'); return false;">Presentation</div>
+<th>
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
+</th>
 
-</div>
-</div>
-<div class="metadata">
-<a href="./projects/RandDocker.html" class="no-external">
-<div class="listing-date">
-Sep 15, 2022
-</div>
-<div class="listing-author">
-James Tripp
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="UHJlc2VudGF0aW9u" data-listing-date-sort="1662505200000" data-listing-file-modified-sort="1777658018342" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="267">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/quarto-rseconf.html" class="no-external">Quarto: a library to run them all?</a>
-</h3>
-<div class="listing-categories">
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
+</th>
 
-<div class="listing-category" onclick="window.quartoListingCategory('UHJlc2VudGF0aW9u'); return false;">Presentation</div>
+<th>
+<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Author</a>
+</th>
 
-</div>
-</div>
-<div class="metadata">
-<a href="./projects/quarto-rseconf.html" class="no-external">
-<div class="listing-date">
-Sep 7, 2022
-</div>
-<div class="listing-author">
-Carlos Cámara-Menoyo, Cagatay Turkay, James Tripp
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="U29mdHdhcmU=" data-listing-date-sort="1652569200000" data-listing-file-modified-sort="1777658018340" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="210">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/grapho.html" class="no-external">Grapho</a>
-</h3>
-<div class="listing-categories">
+<th>
+Categories
+</th>
 
-<div class="listing-category" onclick="window.quartoListingCategory('U29mdHdhcmU='); return false;">Software</div>
+</tr>
+</thead>
+<tbody class="list">
 
-</div>
-</div>
-<div class="metadata">
-<a href="./projects/grapho.html" class="no-external">
-<div class="listing-date">
-May 15, 2022
-</div>
-<div class="listing-author">
-James Tripp, Gregory McInerny
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1645401600000" data-listing-file-modified-sort="1777658018341" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="422">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/networking.html" class="no-external">Networking Workshop</a>
-</h3>
-<div class="listing-categories">
+<tr data-index="0" data-categories="UHJlc2VudGF0aW9u" data-listing-date-sort="1663196400000" data-listing-file-modified-sort="1777658018340" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="123" data-listing-title-sort="R and Docker" data-listing-filename-sort="RandDocker.qmd">
+<td>
+<span class="listing-date">Sep 15, 2022</span>
+</td>
+<td>
+<a href="./projects/RandDocker.html" class="title listing-title">R and Docker</a>
+</td>
+<td>
+<span class="listing-author">James Tripp</span>
+</td>
+<td>
+<span class="listing-categories">Presentation</span>
+</td>
 
-<div class="listing-category" onclick="window.quartoListingCategory('VGVhY2hpbmc='); return false;">Teaching</div>
+</tr>
 
-</div>
-</div>
-<div class="metadata">
-<a href="./projects/networking.html" class="no-external">
-<div class="listing-date">
-Feb 21, 2022
-</div>
-<div class="listing-author">
-James Tripp, Godwin Yeboah
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1643673600000" data-listing-file-modified-sort="1777658018341" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="25">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/introductory-social-media-analysis.html" class="no-external">Introductory Social Media Analysis</a>
-</h3>
-<div class="listing-categories">
+<tr data-index="1" data-categories="UHJlc2VudGF0aW9u" data-listing-date-sort="1662505200000" data-listing-file-modified-sort="1777658018342" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="267" data-listing-title-sort="Quarto: a library to run them all?" data-listing-filename-sort="quarto-rseconf.qmd">
+<td>
+<span class="listing-date">Sep 7, 2022</span>
+</td>
+<td>
+<a href="./projects/quarto-rseconf.html" class="title listing-title">Quarto: a library to run them all?</a>
+</td>
+<td>
+<span class="listing-author">Carlos Cámara-Menoyo, Cagatay Turkay, James Tripp</span>
+</td>
+<td>
+<span class="listing-categories">Presentation</span>
+</td>
 
-<div class="listing-category" onclick="window.quartoListingCategory('VGVhY2hpbmc='); return false;">Teaching</div>
+</tr>
 
-</div>
-</div>
-<div class="metadata">
-<a href="./projects/introductory-social-media-analysis.html" class="no-external">
-<div class="listing-date">
-Feb 1, 2022
-</div>
-<div class="listing-author">
-James Tripp
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1637798400000" data-listing-file-modified-sort="1777658018341" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="138">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/qstep-sql.html" class="no-external">SQL Masterclass</a>
-</h3>
-<div class="listing-categories">
+<tr data-index="2" data-categories="U29mdHdhcmU=" data-listing-date-sort="1652569200000" data-listing-file-modified-sort="1777658018340" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="210" data-listing-title-sort="Grapho" data-listing-filename-sort="grapho.qmd">
+<td>
+<span class="listing-date">May 15, 2022</span>
+</td>
+<td>
+<a href="./projects/grapho.html" class="title listing-title">Grapho</a>
+</td>
+<td>
+<span class="listing-author">James Tripp, Gregory McInerny</span>
+</td>
+<td>
+<span class="listing-categories">Software</span>
+</td>
 
-<div class="listing-category" onclick="window.quartoListingCategory('VGVhY2hpbmc='); return false;">Teaching</div>
+</tr>
 
-</div>
-</div>
-<div class="metadata">
-<a href="./projects/qstep-sql.html" class="no-external">
-<div class="listing-date">
-Nov 25, 2021
-</div>
-<div class="listing-author">
-James Tripp
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-categories="U29mdHdhcmU=" data-listing-date-sort="1588546800000" data-listing-file-modified-sort="1777658018340" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="187">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/backfillz.html" class="no-external">Backfillz</a>
-</h3>
-<div class="listing-categories">
+<tr data-index="3" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1645401600000" data-listing-file-modified-sort="1777658018341" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="422" data-listing-title-sort="Networking Workshop" data-listing-filename-sort="networking.qmd">
+<td>
+<span class="listing-date">Feb 21, 2022</span>
+</td>
+<td>
+<a href="./projects/networking.html" class="title listing-title">Networking Workshop</a>
+</td>
+<td>
+<span class="listing-author">James Tripp, Godwin Yeboah</span>
+</td>
+<td>
+<span class="listing-categories">Teaching</span>
+</td>
 
-<div class="listing-category" onclick="window.quartoListingCategory('U29mdHdhcmU='); return false;">Software</div>
+</tr>
 
-</div>
-</div>
-<div class="metadata">
-<a href="./projects/backfillz.html" class="no-external">
-<div class="listing-date">
-May 4, 2020
-</div>
-<div class="listing-author">
-James Tripp, Gregory McInerny
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-categories="UGFwZXI=" data-listing-date-sort="1585609200000" data-listing-file-modified-sort="1777658018340" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="168">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/dilutioneffect-paper.html" class="no-external">A dilution effect without dilution</a>
-</h3>
-<div class="listing-categories">
+<tr data-index="4" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1643673600000" data-listing-file-modified-sort="1777658018341" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="25" data-listing-title-sort="Introductory Social Media Analysis" data-listing-filename-sort="introductory-social-media-analysis.qmd">
+<td>
+<span class="listing-date">Feb 1, 2022</span>
+</td>
+<td>
+<a href="./projects/introductory-social-media-analysis.html" class="title listing-title">Introductory Social Media Analysis</a>
+</td>
+<td>
+<span class="listing-author">James Tripp</span>
+</td>
+<td>
+<span class="listing-categories">Teaching</span>
+</td>
 
-<div class="listing-category" onclick="window.quartoListingCategory('UGFwZXI='); return false;">Paper</div>
+</tr>
 
-</div>
-</div>
-<div class="metadata">
-<a href="./projects/dilutioneffect-paper.html" class="no-external">
-<div class="listing-date">
-Mar 31, 2020
-</div>
-<div class="listing-author">
-Adam N.Sanborn, Takao Noguchi, James Tripp, Neil Stewart
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="8" data-categories="U29mdHdhcmU=" data-listing-date-sort="1584662400000" data-listing-file-modified-sort="1777658018341" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="350">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/lecat.html" class="no-external">LE-CAT: Lexicon-based Categorization and Analysis Tool</a>
-</h3>
-<div class="listing-categories">
+<tr data-index="5" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1637798400000" data-listing-file-modified-sort="1777658018341" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="138" data-listing-title-sort="SQL Masterclass" data-listing-filename-sort="qstep-sql.qmd">
+<td>
+<span class="listing-date">Nov 25, 2021</span>
+</td>
+<td>
+<a href="./projects/qstep-sql.html" class="title listing-title">SQL Masterclass</a>
+</td>
+<td>
+<span class="listing-author">James Tripp</span>
+</td>
+<td>
+<span class="listing-categories">Teaching</span>
+</td>
 
-<div class="listing-category" onclick="window.quartoListingCategory('U29mdHdhcmU='); return false;">Software</div>
+</tr>
 
-</div>
-</div>
-<div class="metadata">
-<a href="./projects/lecat.html" class="no-external">
-<div class="listing-date">
-Mar 20, 2020
-</div>
-<div class="listing-author">
-James Tripp, Noortje Marres
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="9" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1566082800000" data-listing-file-modified-sort="1777658018341" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="197">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/qstep-statistical-workshops.html" class="no-external">QSTEP: Statistical workshop</a>
-</h3>
-<div class="listing-categories">
+<tr data-index="6" data-categories="U29mdHdhcmU=" data-listing-date-sort="1588546800000" data-listing-file-modified-sort="1777658018340" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="187" data-listing-title-sort="Backfillz" data-listing-filename-sort="backfillz.qmd">
+<td>
+<span class="listing-date">May 4, 2020</span>
+</td>
+<td>
+<a href="./projects/backfillz.html" class="title listing-title">Backfillz</a>
+</td>
+<td>
+<span class="listing-author">James Tripp, Gregory McInerny</span>
+</td>
+<td>
+<span class="listing-categories">Software</span>
+</td>
 
-<div class="listing-category" onclick="window.quartoListingCategory('VGVhY2hpbmc='); return false;">Teaching</div>
+</tr>
 
-</div>
-</div>
-<div class="metadata">
-<a href="./projects/qstep-statistical-workshops.html" class="no-external">
-<div class="listing-date">
-Aug 18, 2019
-</div>
-<div class="listing-author">
-James Tripp
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="10" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1552867200000" data-listing-file-modified-sort="1777658018341" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="676">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/qstep-social-media.html" class="no-external">Masterclass: Social Media</a>
-</h3>
-<div class="listing-categories">
+<tr data-index="7" data-categories="UGFwZXI=" data-listing-date-sort="1585609200000" data-listing-file-modified-sort="1777658018340" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="168" data-listing-title-sort="A dilution effect without dilution" data-listing-filename-sort="dilutioneffect-paper.qmd">
+<td>
+<span class="listing-date">Mar 31, 2020</span>
+</td>
+<td>
+<a href="./projects/dilutioneffect-paper.html" class="title listing-title">A dilution effect without dilution</a>
+</td>
+<td>
+<span class="listing-author">Adam N.Sanborn, Takao Noguchi, James Tripp, Neil Stewart</span>
+</td>
+<td>
+<span class="listing-categories">Paper</span>
+</td>
 
-<div class="listing-category" onclick="window.quartoListingCategory('VGVhY2hpbmc='); return false;">Teaching</div>
+</tr>
 
-</div>
-</div>
-<div class="metadata">
-<a href="./projects/qstep-social-media.html" class="no-external">
-<div class="listing-date">
-Mar 18, 2019
-</div>
-<div class="listing-author">
-James Tripp
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="11" data-categories="UGFwZXI=" data-listing-date-sort="1459378800000" data-listing-file-modified-sort="1777658018341" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="197">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/negativelyskewed-paper.html" class="no-external">Being paid relatively well most of the time</a>
-</h3>
-<div class="listing-categories">
+<tr data-index="8" data-categories="U29mdHdhcmU=" data-listing-date-sort="1584662400000" data-listing-file-modified-sort="1777658018341" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="350" data-listing-title-sort="LE-CAT: Lexicon-based Categorization and Analysis Tool" data-listing-filename-sort="lecat.qmd">
+<td>
+<span class="listing-date">Mar 20, 2020</span>
+</td>
+<td>
+<a href="./projects/lecat.html" class="title listing-title">LE-CAT: Lexicon-based Categorization and Analysis Tool</a>
+</td>
+<td>
+<span class="listing-author">James Tripp, Noortje Marres</span>
+</td>
+<td>
+<span class="listing-categories">Software</span>
+</td>
 
-<div class="listing-category" onclick="window.quartoListingCategory('UGFwZXI='); return false;">Paper</div>
+</tr>
 
-</div>
-</div>
-<div class="metadata">
-<a href="./projects/negativelyskewed-paper.html" class="no-external">
-<div class="listing-date">
-Mar 31, 2016
-</div>
-<div class="listing-author">
-James Tripp, Gordon DA Brown
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="12" data-categories="UGhEJTIwVGhlc2lz" data-listing-date-sort="1357776000000" data-listing-file-modified-sort="1777658018341" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="295">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/phd-thesis.html" class="no-external">Memory and sampling in contextual judgment</a>
-</h3>
-<div class="listing-categories">
+<tr data-index="9" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1566082800000" data-listing-file-modified-sort="1777658018341" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="197" data-listing-title-sort="QSTEP: Statistical workshop" data-listing-filename-sort="qstep-statistical-workshops.qmd">
+<td>
+<span class="listing-date">Aug 18, 2019</span>
+</td>
+<td>
+<a href="./projects/qstep-statistical-workshops.html" class="title listing-title">QSTEP: Statistical workshop</a>
+</td>
+<td>
+<span class="listing-author">James Tripp</span>
+</td>
+<td>
+<span class="listing-categories">Teaching</span>
+</td>
 
-<div class="listing-category" onclick="window.quartoListingCategory('UGhEJTIwVGhlc2lz'); return false;">PhD Thesis</div>
+</tr>
 
-</div>
-</div>
-<div class="metadata">
-<a href="./projects/phd-thesis.html" class="no-external">
-<div class="listing-date">
-Jan 10, 2013
-</div>
-<div class="listing-author">
-James Tripp
-</div>
-</a>
-</div>
-</div>
-</div>
+<tr data-index="10" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1552867200000" data-listing-file-modified-sort="1777658018341" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="676" data-listing-title-sort="Masterclass: Social Media" data-listing-filename-sort="qstep-social-media.qmd">
+<td>
+<span class="listing-date">Mar 18, 2019</span>
+</td>
+<td>
+<a href="./projects/qstep-social-media.html" class="title listing-title">Masterclass: Social Media</a>
+</td>
+<td>
+<span class="listing-author">James Tripp</span>
+</td>
+<td>
+<span class="listing-categories">Teaching</span>
+</td>
+
+</tr>
+
+<tr data-index="11" data-categories="UGFwZXI=" data-listing-date-sort="1459378800000" data-listing-file-modified-sort="1777658018341" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="197" data-listing-title-sort="Being paid relatively well most of the time" data-listing-filename-sort="negativelyskewed-paper.qmd">
+<td>
+<span class="listing-date">Mar 31, 2016</span>
+</td>
+<td>
+<a href="./projects/negativelyskewed-paper.html" class="title listing-title">Being paid relatively well most of the time</a>
+</td>
+<td>
+<span class="listing-author">James Tripp, Gordon DA Brown</span>
+</td>
+<td>
+<span class="listing-categories">Paper</span>
+</td>
+
+</tr>
+
+<tr data-index="12" data-categories="UGhEJTIwVGhlc2lz" data-listing-date-sort="1357776000000" data-listing-file-modified-sort="1777658018341" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="295" data-listing-title-sort="Memory and sampling in contextual judgment" data-listing-filename-sort="phd-thesis.qmd">
+<td>
+<span class="listing-date">Jan 10, 2013</span>
+</td>
+<td>
+<a href="./projects/phd-thesis.html" class="title listing-title">Memory and sampling in contextual judgment</a>
+</td>
+<td>
+<span class="listing-author">James Tripp</span>
+</td>
+<td>
+<span class="listing-categories">PhD Thesis</span>
+</td>
+
+</tr>
+
+</tbody>
+</table>
 <div class="listing-no-matching d-none">No matching items</div>
 </div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

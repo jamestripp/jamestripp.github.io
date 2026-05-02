@@ -5,9 +5,12 @@ project:
 website:
   title: "James Tripp"
   site-url: "https://jamestripp.net"
-  search: false
+  search:
+    location: navbar
+    type: overlay
   twitter-card: true
   open-graph: true
+  llms-txt: true
   navbar:
     right:
       - text: Projects

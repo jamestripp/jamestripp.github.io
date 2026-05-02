@@ -1,7 +1,7 @@
 ---
 listing:
   contents: projects
-  type: default
+  type: table
   filter-ui: false
   fields: [date, title, author, categories]
   sort:
