@@ -10,7 +10,7 @@ James Tripp’s work, skills, teaching, awards and publications.
 
 I’m a cognitive scientist and research software engineer. I build software and data tools, support research teams, and have led technical work in universities and government.
 
-<James.Tripp@outlook.com> · [LinkedIn](https://linkedin.com/in/jamestripp/) · [GitHub](https://github.com/jamestripp) · [Google Scholar](https://scholar.google.com/citations?user=21Y5AegAAAAJ&hl=en&oi=ao)
+<James.Tripp@outlook.com> · [LinkedIn](https://linkedin.com/in/jamestripp/) · [GitHub](https://github.com/jamestripp)
 
 ## On this page
 

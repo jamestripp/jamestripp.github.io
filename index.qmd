@@ -6,45 +6,28 @@ title-block-style: none
 ::: {.home-page}
 :::: {.home-hero role="region" aria-label="Introduction"}
 ::: {.hero-copy}
-<p class="eyebrow">Research Software Engineer at the University of Birmingham</p>
+<p class="eyebrow">University of Birmingham</p>
 
-# I build software that helps research work better. {#hero-title}
+# Research software engineering {#hero-title}
 
-<p class="hero-intro">I help researchers solve problems with software, computing and training.</p>
+<p class="hero-intro">I develop software and data tools, and help research teams use them well.</p>
 
 ::: {.hero-actions}
-[See my work →](projects.qmd){.button .button-primary}
-[About me](#about-title){.button .button-secondary}
+[Projects](projects.qmd){.button .button-primary}
+[About](#about-title){.button .button-secondary}
 :::
 
 ::: {.hero-presence}
-<span>Follow my work</span>
+<span>Profiles</span>
 [GitHub](https://github.com/jamestripp)
 [LinkedIn](https://linkedin.com/in/jamestripp/)
-[Google Scholar](https://scholar.google.com/citations?user=21Y5AegAAAAJ&hl=en&oi=ao)
 :::
 :::
 
 ::: {.hero-portrait}
 <img src="profile.jpg" alt="Portrait of James Tripp" />
-
-::: {.portrait-caption}
-Software and support for research.
-:::
 :::
 ::::
-
-::: {.focus-strip role="list" aria-label="Areas of work"}
-::: {role="listitem"}
-<span class="focus-mark">01</span><span>Research software</span>
-:::
-::: {role="listitem"}
-<span class="focus-mark">02</span><span>Research infrastructure</span>
-:::
-::: {role="listitem"}
-<span class="focus-mark">03</span><span>Training &amp; collaboration</span>
-:::
-:::
 
 ::: {.home-section .selected-work role="region" aria-label="Selected work"}
 :::: {.section-heading}
@@ -54,7 +37,7 @@ Software and support for research.
 ## Tools, research and training. {#selected-work-title}
 :::
 
-[See all my work →](projects.qmd){.text-link}
+
 ::::
 
 ::: {.work-card-grid}
@@ -64,8 +47,6 @@ Software and support for research.
 ### [LE-CAT](projects/lecat.qmd)
 
 An R package and Shiny app for exploring text with custom lexicons.
-
-[View project ↗](projects/lecat.qmd){.card-link}
 :::
 
 ::: {.work-card}
@@ -74,8 +55,6 @@ An R package and Shiny app for exploring text with custom lexicons.
 ### [Backfillz](projects/backfillz.qmd)
 
 Visual diagnostics that make complex MCMC chains easier to understand.
-
-[View project ↗](projects/backfillz.qmd){.card-link}
 :::
 
 ::: {.work-card}
@@ -84,8 +63,6 @@ Visual diagnostics that make complex MCMC chains easier to understand.
 ### [Quarto: a library to run them all?](projects/quarto-rseconf.qmd)
 
 A practical workshop on using Quarto to bring research materials together.
-
-[View project ↗](projects/quarto-rseconf.qmd){.card-link}
 :::
 :::
 ::::
@@ -98,16 +75,7 @@ A practical workshop on using Quarto to bring research materials together.
 :::
 
 ::: {.about-copy}
-I’m a Research Software Engineer at the [University of Birmingham](https://www.birmingham.ac.uk/). I help researchers build and use software, data tools and computing resources.
-
-Before that, I worked at the University of Warwick as a Senior RSE and Academic Technologist. I built research software, taught workshops and supported research teams.
-
-::: {.about-links}
-[Read my CV →](cv.qmd)
-[See my code on GitHub ↗](https://github.com/jamestripp)
-[Find me on LinkedIn ↗](https://linkedin.com/in/jamestripp/)
-[View my Google Scholar profile ↗](https://scholar.google.com/citations?user=21Y5AegAAAAJ&hl=en&oi=ao)
-:::
+Previously, I was a Senior Research Software Engineer and Academic Technologist at the University of Warwick. I supported researchers across disciplines with software, data analysis and technical infrastructure.
 :::
 ::::
 :::
