@@ -2,7 +2,7 @@
 title: "Quarto: a library to run them all?"
 description: "Workshop delivered at RSE conf 2022"
 author: "Carlos Cámara-Menoyo, Cagatay Turkay, James Tripp"
-categories: "Presentation"
+categories: "Talks & workshops"
 date: "09/07/2022"
 draft: false
 ---

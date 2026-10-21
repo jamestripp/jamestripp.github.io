@@ -2,7 +2,7 @@
 title: "Being paid relatively well most of the time"
 description: "Being paid relatively well most of the time: Negatively skewed payments are more satisfying"
 author: "James Tripp, Gordon DA Brown"
-categories: "Paper"
+categories: "Research"
 date: "03/31/2016"
 draft: false
 ---

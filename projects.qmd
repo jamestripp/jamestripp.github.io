@@ -1,11 +1,11 @@
 ---
+title: "Projects"
 listing:
   contents: projects
-  type: table
-  filter-ui: false
-  fields: [date, title, author, categories]
-  sort:
-    - "date desc"
+  type: grid
+  grid-columns: 3
+  filter-ui: [title, description, categories]
+  categories: true
+  fields: [title, description, categories]
+  sort: "title"
 ---
-
-The various projects are listed below. These exclude internal teaching for Masters modules, prototypes and code associated with the development and deployment of infrastructure.

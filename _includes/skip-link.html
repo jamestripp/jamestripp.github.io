@@ -1,0 +1,12 @@
+<a class="skip-link" href="#quarto-document-content">Skip to main content</a>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const skipLink = document.querySelector(".skip-link");
+    const mainContent = document.getElementById("quarto-document-content");
+    document.querySelectorAll(".navbar-toggler[role='menu']").forEach((button) => {
+      button.removeAttribute("role");
+    });
+    if (skipLink) document.body.prepend(skipLink);
+    if (mainContent) mainContent.setAttribute("tabindex", "-1");
+  });
+</script>

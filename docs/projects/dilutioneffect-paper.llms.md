@@ -1,0 +1,23 @@
+[Skip to main content](#quarto-document-content)
+
+# A dilution effect without dilution
+
+Research
+
+A dilution effect without dilution: When missing evidence, not non-diagnostic evidence, is judged inaccurately
+
+Author
+
+Adam N.Sanborn, Takao Noguchi, James Tripp, Neil Stewart
+
+Published
+
+March 31, 2020
+
+[Paper link](https://www.sciencedirect.com/science/article/pii/S0010027719302847)
+
+A paper from my post-doc.
+
+# Abstract
+
+When asked to combine two pieces of evidence, one diagnostic and one non-diagnostic, people show a dilution effect: the addition of non-diagnostic evidence dilutes the overall strength of the evidence. This non-normative effect has been found in a variety of tasks and has been taken as evidence that people inappropriately combine information. In a series of five experiments, we found the dilution effect, but surprisingly it was not due to the inaccurate combination of diagnostic and non-diagnostic information. Because we have objectively correct answers for our task, we could see that participants were relatively accurate in judging diagnostic evidence combined with non-diagnostic evidence, but overestimated the strength of diagnostic evidence alone. This meant that the dilution effect – the gap between diagnostic evidence alone and diagnostic evidence combined with non-diagnostic evidence – was not caused by dilution. We hypothesized that participants were filling in “missing” evidence in a biased fashion when presented with diagnostic evidence alone. This hypothesis best explained the experimental results.

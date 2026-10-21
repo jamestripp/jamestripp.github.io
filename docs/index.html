@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -38,10 +41,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f59e40dd4a17874923f3adc463c32cfc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-9f30232948182f76cbe0f8db845b8660.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,12 +75,12 @@ ul.task-list li input[type="checkbox"] {
 
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="James Tripp">
-<meta property="og:description" content="">
 <meta property="og:image" content="https://jamestripp.net/profile.jpg">
 <meta property="og:site_name" content="James Tripp">
+<meta property="og:image:alt" content="Portrait of James Tripp">
 <meta name="twitter:title" content="James Tripp">
-<meta name="twitter:description" content="">
 <meta name="twitter:image" content="https://jamestripp.net/profile.jpg">
+<meta name="twitter:image:alt" content="Portrait of James Tripp">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -102,15 +105,17 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://linkedin.com/in/jamestripp/"> <i class="bi bi-linkedin" role="img">
-</i> 
-<span class="menu-text"></span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./cv.html"> 
+<span class="menu-text">CV</span></a>
   </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/jamestripp"> <i class="bi bi-github" role="img">
-</i> 
-<span class="menu-text"></span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./accessibility.html"> 
+<span class="menu-text">Accessibility</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://scholar.google.com/citations?user=21Y5AegAAAAJ&amp;hl=en&amp;oi=ao"> 
+<span class="menu-text">Google Scholar</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -125,30 +130,124 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-trestles">
-  <div class="about-entity">
-    <img src="profile.jpg" class="about-image
-  rounded " style="width: 20em;">
-<header id="title-block-header" class="quarto-title-block"></header>
-  </div>
-  <div class="about-contents"><main class="content" id="quarto-document-content">
-<p>My passions include computation, infrastructure and research. I currently use these skills to help audit the UK Government. At UoW I wrote software, taught, and supported researchers.</p>
-<section id="experience" class="level2">
-<h2 data-anchor-id="experience">Experience</h2>
-<p><a href="https://www.gov.uk/government/organisations/government-internal-audit-agency">GIAA</a> | Data Analytics Specialist | 2023 - present</p>
-<p><a href="https://warwick.ac.uk/">UoW</a> | Senior RSE | 2021 - 2023</p>
-<p><a href="https://warwick.ac.uk/">UoW</a> | Senior Academic Technologist | 2019 - 2021</p>
-</section>
-<section id="education" class="level2">
-<h2 data-anchor-id="education">Education</h2>
-<p><a href="https://warwick.ac.uk/">UoW</a> | PhD Psychology | 2011 - 2015</p>
-<p><a href="https://warwick.ac.uk/">UoW</a> | BSc Psychology | 2007 - 2011</p>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7">James Tripp</h1></header>
+<a class="skip-link" href="#quarto-document-content">Skip to main content</a>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const skipLink = document.querySelector(".skip-link");
+    const mainContent = document.getElementById("quarto-document-content");
+    document.querySelectorAll(".navbar-toggler[role='menu']").forEach((button) => {
+      button.removeAttribute("role");
+    });
+    if (skipLink) document.body.prepend(skipLink);
+    if (mainContent) mainContent.setAttribute("tabindex", "-1");
+  });
+</script>
+
+<header id="title-block-header">
 
 
-</section>
-</main></div>
+</header>
+
+
+<div class="home-page">
+<div class="home-hero" role="region" aria-label="Introduction">
+<div class="hero-copy">
+<p class="eyebrow">
+Research Software Engineer at the University of Birmingham
+</p>
+<section id="hero-title" class="level1">
+<h1>I build software that helps research work better.</h1>
+<p class="hero-intro">
+I help researchers solve problems with software, computing and training.
+</p>
+<div class="hero-actions">
+<p><a href="./projects.html" class="button button-primary">See my work →</a> <a href="#about-title" class="button button-secondary">About me</a></p>
 </div>
- <!-- /main -->
+<div class="hero-presence">
+<p><span>Follow my work</span> <a href="https://github.com/jamestripp">GitHub</a> <a href="https://linkedin.com/in/jamestripp/">LinkedIn</a> <a href="https://scholar.google.com/citations?user=21Y5AegAAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a></p>
+</div>
+</section>
+</div>
+<div class="hero-portrait">
+<p><img src="profile.jpg" alt="Portrait of James Tripp"></p>
+<div class="portrait-caption">
+<p>Software and support for research.</p>
+</div>
+</div>
+</div>
+<div class="focus-strip" role="list" aria-label="Areas of work">
+<div role="listitem">
+<p><span class="focus-mark">01</span><span>Research software</span></p>
+</div>
+<div role="listitem">
+<p><span class="focus-mark">02</span><span>Research infrastructure</span></p>
+</div>
+<div role="listitem">
+<p><span class="focus-mark">03</span><span>Training &amp; collaboration</span></p>
+</div>
+</div>
+<div class="home-section selected-work" role="region" aria-label="Selected work">
+<div class="section-heading">
+<div class="section-heading-copy">
+<p class="eyebrow">
+Selected work
+</p>
+<section id="selected-work-title" class="level2">
+<h2 data-anchor-id="selected-work-title">Tools, research and training.</h2>
+</section>
+</div>
+<p><a href="./projects.html" class="text-link">See all my work →</a></p>
+</div>
+<div class="work-card-grid">
+<div class="work-card">
+<p><span class="work-category">Software</span></p>
+<section id="le-cat" class="level3">
+<h3 data-anchor-id="le-cat"><a href="./projects/lecat.html">LE-CAT</a></h3>
+<p>An R package and Shiny app for exploring text with custom lexicons.</p>
+<p><a href="./projects/lecat.html" class="card-link">View project ↗</a></p>
+</section>
+</div>
+<div class="work-card">
+<p><span class="work-category">Software</span></p>
+<section id="backfillz" class="level3">
+<h3 data-anchor-id="backfillz"><a href="./projects/backfillz.html">Backfillz</a></h3>
+<p>Visual diagnostics that make complex MCMC chains easier to understand.</p>
+<p><a href="./projects/backfillz.html" class="card-link">View project ↗</a></p>
+</section>
+</div>
+<div class="work-card">
+<p><span class="work-category">Talks &amp; workshops</span></p>
+<section id="quarto-a-library-to-run-them-all" class="level3">
+<h3 data-anchor-id="quarto-a-library-to-run-them-all"><a href="./projects/quarto-rseconf.html">Quarto: a library to run them all?</a></h3>
+<p>A practical workshop on using Quarto to bring research materials together.</p>
+<p><a href="./projects/quarto-rseconf.html" class="card-link">View project ↗</a></p>
+</section>
+</div>
+</div>
+</div>
+<div class="home-section about-section" role="region" aria-label="About James">
+<div class="about-label">
+<p class="eyebrow">
+About
+</p>
+<section id="about-title" class="level2">
+<h2 data-anchor-id="about-title">About me</h2>
+</section>
+</div>
+<div class="about-copy">
+<p>I’m a Research Software Engineer at the <a href="https://www.birmingham.ac.uk/">University of Birmingham</a>. I help researchers build and use software, data tools and computing resources.</p>
+<p>Before that, I worked at the University of Warwick as a Senior RSE and Academic Technologist. I built research software, taught workshops and supported research teams.</p>
+<div class="about-links">
+<p><a href="./cv.html">Read my CV →</a> <a href="https://github.com/jamestripp">See my code on GitHub ↗</a> <a href="https://linkedin.com/in/jamestripp/">Find me on LinkedIn ↗</a> <a href="https://scholar.google.com/citations?user=21Y5AegAAAAJ&amp;hl=en&amp;oi=ao">View my Google Scholar profile ↗</a></p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const isCodeAnnotation = (el) => {

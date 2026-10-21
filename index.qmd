@@ -1,22 +1,113 @@
 ---
-image: profile.jpg
-about:
-  template: trestles
+title: "James Tripp"
+title-block-style: none
 ---
 
-My passions include computation, infrastructure and research. I currently use these skills to help audit the UK Government. At UoW I wrote software, taught, and supported researchers.
+::: {.home-page}
+:::: {.home-hero role="region" aria-label="Introduction"}
+::: {.hero-copy}
+<p class="eyebrow">Research Software Engineer at the University of Birmingham</p>
 
-## Experience
+# I build software that helps research work better. {#hero-title}
 
-[GIAA](https://www.gov.uk/government/organisations/government-internal-audit-agency) | Data Analytics Specialist | 2023 - present
+<p class="hero-intro">I help researchers solve problems with software, computing and training.</p>
 
-[UoW](https://warwick.ac.uk/) | Senior RSE | 2021 - 2023
+::: {.hero-actions}
+[See my work →](projects.qmd){.button .button-primary}
+[About me](#about-title){.button .button-secondary}
+:::
 
-[UoW](https://warwick.ac.uk/) | Senior Academic Technologist | 2019 - 2021
+::: {.hero-presence}
+<span>Follow my work</span>
+[GitHub](https://github.com/jamestripp)
+[LinkedIn](https://linkedin.com/in/jamestripp/)
+[Google Scholar](https://scholar.google.com/citations?user=21Y5AegAAAAJ&hl=en&oi=ao)
+:::
+:::
 
-## Education
+::: {.hero-portrait}
+<img src="profile.jpg" alt="Portrait of James Tripp" />
 
-[UoW](https://warwick.ac.uk/) | PhD Psychology | 2011 - 2015
+::: {.portrait-caption}
+Software and support for research.
+:::
+:::
+::::
 
-[UoW](https://warwick.ac.uk/) | BSc Psychology | 2007 - 2011
+::: {.focus-strip role="list" aria-label="Areas of work"}
+::: {role="listitem"}
+<span class="focus-mark">01</span><span>Research software</span>
+:::
+::: {role="listitem"}
+<span class="focus-mark">02</span><span>Research infrastructure</span>
+:::
+::: {role="listitem"}
+<span class="focus-mark">03</span><span>Training &amp; collaboration</span>
+:::
+:::
 
+::: {.home-section .selected-work role="region" aria-label="Selected work"}
+:::: {.section-heading}
+::: {.section-heading-copy}
+<p class="eyebrow">Selected work</p>
+
+## Tools, research and training. {#selected-work-title}
+:::
+
+[See all my work →](projects.qmd){.text-link}
+::::
+
+::: {.work-card-grid}
+::: {.work-card}
+<span class="work-category">Software</span>
+
+### [LE-CAT](projects/lecat.qmd)
+
+An R package and Shiny app for exploring text with custom lexicons.
+
+[View project ↗](projects/lecat.qmd){.card-link}
+:::
+
+::: {.work-card}
+<span class="work-category">Software</span>
+
+### [Backfillz](projects/backfillz.qmd)
+
+Visual diagnostics that make complex MCMC chains easier to understand.
+
+[View project ↗](projects/backfillz.qmd){.card-link}
+:::
+
+::: {.work-card}
+<span class="work-category">Talks &amp; workshops</span>
+
+### [Quarto: a library to run them all?](projects/quarto-rseconf.qmd)
+
+A practical workshop on using Quarto to bring research materials together.
+
+[View project ↗](projects/quarto-rseconf.qmd){.card-link}
+:::
+:::
+::::
+
+:::: {.home-section .about-section role="region" aria-label="About James"}
+::: {.about-label}
+<p class="eyebrow">About</p>
+
+## About me {#about-title}
+:::
+
+::: {.about-copy}
+I’m a Research Software Engineer at the [University of Birmingham](https://www.birmingham.ac.uk/). I help researchers build and use software, data tools and computing resources.
+
+Before that, I worked at the University of Warwick as a Senior RSE and Academic Technologist. I built research software, taught workshops and supported research teams.
+
+::: {.about-links}
+[Read my CV →](cv.qmd)
+[See my code on GitHub ↗](https://github.com/jamestripp)
+[Find me on LinkedIn ↗](https://linkedin.com/in/jamestripp/)
+[View my Google Scholar profile ↗](https://scholar.google.com/citations?user=21Y5AegAAAAJ&hl=en&oi=ao)
+:::
+:::
+::::
+:::

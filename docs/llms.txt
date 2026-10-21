@@ -2,4 +2,20 @@
 
 ## Pages
 
-- [projects](https://jamestripp.net/projects.llms.md)
+- [Accessibility](https://jamestripp.net/accessibility.llms.md)
+- [James Tripp](https://jamestripp.net/index.llms.md)
+- [Quarto: a library to run them all?](https://jamestripp.net/projects/quarto-rseconf.llms.md)
+- [Backfillz](https://jamestripp.net/projects/backfillz.llms.md)
+- [R and Docker](https://jamestripp.net/projects/RandDocker.llms.md)
+- [A dilution effect without dilution](https://jamestripp.net/projects/dilutioneffect-paper.llms.md)
+- [Memory and sampling in contextual judgment](https://jamestripp.net/projects/phd-thesis.llms.md)
+- [Grapho](https://jamestripp.net/projects/grapho.llms.md)
+- [Being paid relatively well most of the time](https://jamestripp.net/projects/negativelyskewed-paper.llms.md)
+- [Masterclass: Social Media](https://jamestripp.net/projects/qstep-social-media.llms.md)
+- [LE-CAT: Lexicon-based Categorization and Analysis Tool](https://jamestripp.net/projects/lecat.llms.md)
+- [Networking Workshop](https://jamestripp.net/projects/networking.llms.md)
+- [Introductory Social Media Analysis](https://jamestripp.net/projects/introductory-social-media-analysis.llms.md)
+- [SQL Masterclass](https://jamestripp.net/projects/qstep-sql.llms.md)
+- [QSTEP: Statistical workshop](https://jamestripp.net/projects/qstep-statistical-workshops.llms.md)
+- [Projects](https://jamestripp.net/projects.llms.md)
+- [Curriculum vitae](https://jamestripp.net/cv.llms.md)

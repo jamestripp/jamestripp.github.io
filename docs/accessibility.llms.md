@@ -1,0 +1,17 @@
+[Skip to main content](#quarto-document-content)
+
+# Accessibility
+
+Accessibility information for James Tripp’s website.
+
+I want this website to be usable by as many people as possible. I aim to meet WCAG 2.2 AA and follow GOV.UK accessibility guidance where it applies.
+
+The site includes a skip link, visible keyboard focus, clear link text, responsive layouts and support for reduced motion.
+
+## Known limitations
+
+I have not completed a full accessibility audit, so I cannot confirm that every page meets WCAG 2.2 AA. The site uses Quarto search and project filters, which I have not independently assessed with assistive technology.
+
+## Tell me about an accessibility problem
+
+If you have trouble using this site, email [James Tripp](mailto:James.Tripp@outlook.com). Please include the page you were using and what went wrong. You can also tell me which device, browser or assistive technology you use, if you are comfortable sharing that.

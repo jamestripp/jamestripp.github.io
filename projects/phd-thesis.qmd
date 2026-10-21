@@ -2,7 +2,7 @@
 title: "Memory and sampling in contextual judgment"
 description: "PhD Thesis in Psychology"
 author: "James Tripp"
-categories: "PhD Thesis"
+categories: "Research"
 date: "01/10/2013"
 draft: false
 ---

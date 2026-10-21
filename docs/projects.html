@@ -2,20 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>projects – James Tripp</title>
+<title>Projects – James Tripp</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -39,12 +42,11 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f59e40dd4a17874923f3adc463c32cfc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-ba8f7c244c1f50cbf6c6a3aa3874339a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -81,9 +83,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author"],
+      searchColumns: ["listing-title","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -102,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
   </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -132,15 +134,13 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="James Tripp">
-<meta property="og:description" content="">
+<meta property="og:title" content="Projects – James Tripp">
 <meta property="og:site_name" content="James Tripp">
-<meta name="twitter:title" content="James Tripp">
-<meta name="twitter:description" content="">
+<meta name="twitter:title" content="Projects – James Tripp">
 <meta name="twitter:card" content="summary">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -161,15 +161,17 @@ window.Quarto = {
     <a class="nav-link active" href="./projects.html" aria-current="page"> 
 <span class="menu-text">Projects</span></a>
   </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://linkedin.com/in/jamestripp/"> <i class="bi bi-linkedin" role="img">
-</i> 
-<span class="menu-text"></span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./cv.html"> 
+<span class="menu-text">CV</span></a>
   </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/jamestripp"> <i class="bi bi-github" role="img">
-</i> 
-<span class="menu-text"></span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./accessibility.html"> 
+<span class="menu-text">Accessibility</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://scholar.google.com/citations?user=21Y5AegAAAAJ&amp;hl=en&amp;oi=ao"> 
+<span class="menu-text">Google Scholar</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -182,285 +184,294 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(13)</span></div><div class="category" data-category="UmVzZWFyY2g=">Research <span class="quarto-category-count">(3)</span></div><div class="category" data-category="U29mdHdhcmU=">Software <span class="quarto-category-count">(3)</span></div><div class="category" data-category="VGFsa3MlMjAlMjYlMjB3b3Jrc2hvcHM=">Talks &amp; workshops <span class="quarto-category-count">(2)</span></div><div class="category" data-category="VGVhY2hpbmc=">Teaching <span class="quarto-category-count">(5)</span></div></div></div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+<a class="skip-link" href="#quarto-document-content">Skip to main content</a>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const skipLink = document.querySelector(".skip-link");
+    const mainContent = document.getElementById("quarto-document-content");
+    document.querySelectorAll(".navbar-toggler[role='menu']").forEach((button) => {
+      button.removeAttribute("role");
+    });
+    if (skipLink) document.body.prepend(skipLink);
+    if (mainContent) mainContent.setAttribute("tabindex", "-1");
+  });
+</script>
 
-
-
-
-<p>The various projects are listed below. These exclude internal teaching for Masters modules, prototypes and code associated with the development and deployment of infrastructure.</p>
-
-
-
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-date-sort" data-direction="asc">
-        Date - Oldest
-      </option>
-      <option value="listing-date-sort" data-direction="desc">
-        Date - Newest
-      </option>
-      <option value="listing-title-sort" data-direction="asc">
-        Title
-      </option>
-      <option value="listing-author" data-direction="asc">
-        Author
-      </option>
-    </select>
-  </div>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Projects</h1>
 </div>
-<table class="quarto-listing-table table">
-<thead>
-<tr>
 
-<th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
-</th>
 
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
-</th>
 
-<th>
-<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Author</a>
-</th>
+<div class="quarto-title-meta">
 
-<th>
-Categories
-</th>
+    
+  
+    
+  </div>
+  
 
-</tr>
-</thead>
-<tbody class="list">
 
-<tr data-index="0" data-categories="UHJlc2VudGF0aW9u" data-listing-date-sort="1663196400000" data-listing-file-modified-sort="1777658018340" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="123" data-listing-title-sort="R and Docker" data-listing-filename-sort="RandDocker.qmd">
-<td>
-<span class="listing-date">Sep 15, 2022</span>
-</td>
-<td>
-<a href="./projects/RandDocker.html" class="title listing-title">R and Docker</a>
-</td>
-<td>
-<span class="listing-author">James Tripp</span>
-</td>
-<td>
-<span class="listing-categories">Presentation</span>
-</td>
+</header>
 
-</tr>
 
-<tr data-index="1" data-categories="UHJlc2VudGF0aW9u" data-listing-date-sort="1662505200000" data-listing-file-modified-sort="1777658018342" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="267" data-listing-title-sort="Quarto: a library to run them all?" data-listing-filename-sort="quarto-rseconf.qmd">
-<td>
-<span class="listing-date">Sep 7, 2022</span>
-</td>
-<td>
-<a href="./projects/quarto-rseconf.html" class="title listing-title">Quarto: a library to run them all?</a>
-</td>
-<td>
-<span class="listing-author">Carlos Cámara-Menoyo, Cagatay Turkay, James Tripp</span>
-</td>
-<td>
-<span class="listing-categories">Presentation</span>
-</td>
 
-</tr>
 
-<tr data-index="2" data-categories="U29mdHdhcmU=" data-listing-date-sort="1652569200000" data-listing-file-modified-sort="1777658018340" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="210" data-listing-title-sort="Grapho" data-listing-filename-sort="grapho.qmd">
-<td>
-<span class="listing-date">May 15, 2022</span>
-</td>
-<td>
-<a href="./projects/grapho.html" class="title listing-title">Grapho</a>
-</td>
-<td>
-<span class="listing-author">James Tripp, Gregory McInerny</span>
-</td>
-<td>
-<span class="listing-categories">Software</span>
-</td>
 
-</tr>
 
-<tr data-index="3" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1645401600000" data-listing-file-modified-sort="1777658018341" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="422" data-listing-title-sort="Networking Workshop" data-listing-filename-sort="networking.qmd">
-<td>
-<span class="listing-date">Feb 21, 2022</span>
-</td>
-<td>
-<a href="./projects/networking.html" class="title listing-title">Networking Workshop</a>
-</td>
-<td>
-<span class="listing-author">James Tripp, Godwin Yeboah</span>
-</td>
-<td>
-<span class="listing-categories">Teaching</span>
-</td>
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="listing-actions-group">
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="UmVzZWFyY2g=" data-listing-date-sort="1585609200000" data-listing-file-modified-sort="1792567781392" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="168">
+<a href="./projects/dilutioneffect-paper.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+A dilution effect without dilution
+</h5>
+<div class="listing-categories">
 
-</tr>
+<div class="listing-category" onclick="window.quartoListingCategory('UmVzZWFyY2g='); return false;">Research</div>
 
-<tr data-index="4" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1643673600000" data-listing-file-modified-sort="1777658018341" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="25" data-listing-title-sort="Introductory Social Media Analysis" data-listing-filename-sort="introductory-social-media-analysis.qmd">
-<td>
-<span class="listing-date">Feb 1, 2022</span>
-</td>
-<td>
-<a href="./projects/introductory-social-media-analysis.html" class="title listing-title">Introductory Social Media Analysis</a>
-</td>
-<td>
-<span class="listing-author">James Tripp</span>
-</td>
-<td>
-<span class="listing-categories">Teaching</span>
-</td>
+</div>
+<div class="card-text listing-description delink">
+<p>A dilution effect without dilution: When missing evidence, not non-diagnostic evidence, is judged inaccurately</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="U29mdHdhcmU=" data-listing-date-sort="1588546800000" data-listing-file-modified-sort="1792567578550" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="187">
+<a href="./projects/backfillz.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Backfillz
+</h5>
+<div class="listing-categories">
 
-</tr>
+<div class="listing-category" onclick="window.quartoListingCategory('U29mdHdhcmU='); return false;">Software</div>
 
-<tr data-index="5" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1637798400000" data-listing-file-modified-sort="1777658018341" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="138" data-listing-title-sort="SQL Masterclass" data-listing-filename-sort="qstep-sql.qmd">
-<td>
-<span class="listing-date">Nov 25, 2021</span>
-</td>
-<td>
-<a href="./projects/qstep-sql.html" class="title listing-title">SQL Masterclass</a>
-</td>
-<td>
-<span class="listing-author">James Tripp</span>
-</td>
-<td>
-<span class="listing-categories">Teaching</span>
-</td>
+</div>
+<div class="card-text listing-description delink">
+<p>Backfillz.R provides new visual diagnostics for understanding MCMC (Markov Chain Monte Carlo) analyses and outputs.</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="UmVzZWFyY2g=" data-listing-date-sort="1459378800000" data-listing-file-modified-sort="1792567781409" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="197">
+<a href="./projects/negativelyskewed-paper.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Being paid relatively well most of the time
+</h5>
+<div class="listing-categories">
 
-</tr>
+<div class="listing-category" onclick="window.quartoListingCategory('UmVzZWFyY2g='); return false;">Research</div>
 
-<tr data-index="6" data-categories="U29mdHdhcmU=" data-listing-date-sort="1588546800000" data-listing-file-modified-sort="1777658018340" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="187" data-listing-title-sort="Backfillz" data-listing-filename-sort="backfillz.qmd">
-<td>
-<span class="listing-date">May 4, 2020</span>
-</td>
-<td>
-<a href="./projects/backfillz.html" class="title listing-title">Backfillz</a>
-</td>
-<td>
-<span class="listing-author">James Tripp, Gregory McInerny</span>
-</td>
-<td>
-<span class="listing-categories">Software</span>
-</td>
+</div>
+<div class="card-text listing-description delink">
+<p>Being paid relatively well most of the time: Negatively skewed payments are more satisfying</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="U29mdHdhcmU=" data-listing-date-sort="1652569200000" data-listing-file-modified-sort="1792567578551" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="210">
+<a href="./projects/grapho.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Grapho
+</h5>
+<div class="listing-categories">
 
-</tr>
+<div class="listing-category" onclick="window.quartoListingCategory('U29mdHdhcmU='); return false;">Software</div>
 
-<tr data-index="7" data-categories="UGFwZXI=" data-listing-date-sort="1585609200000" data-listing-file-modified-sort="1777658018340" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="168" data-listing-title-sort="A dilution effect without dilution" data-listing-filename-sort="dilutioneffect-paper.qmd">
-<td>
-<span class="listing-date">Mar 31, 2020</span>
-</td>
-<td>
-<a href="./projects/dilutioneffect-paper.html" class="title listing-title">A dilution effect without dilution</a>
-</td>
-<td>
-<span class="listing-author">Adam N.Sanborn, Takao Noguchi, James Tripp, Neil Stewart</span>
-</td>
-<td>
-<span class="listing-categories">Paper</span>
-</td>
+</div>
+<div class="card-text listing-description delink">
+<p>Grapho is an R package for recording the commands and visualisations created in an R session.</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1643673600000" data-listing-file-modified-sort="1792567578552" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="25">
+<a href="./projects/introductory-social-media-analysis.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Introductory Social Media Analysis
+</h5>
+<div class="listing-categories">
 
-</tr>
+<div class="listing-category" onclick="window.quartoListingCategory('VGVhY2hpbmc='); return false;">Teaching</div>
 
-<tr data-index="8" data-categories="U29mdHdhcmU=" data-listing-date-sort="1584662400000" data-listing-file-modified-sort="1777658018341" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="350" data-listing-title-sort="LE-CAT: Lexicon-based Categorization and Analysis Tool" data-listing-filename-sort="lecat.qmd">
-<td>
-<span class="listing-date">Mar 20, 2020</span>
-</td>
-<td>
-<a href="./projects/lecat.html" class="title listing-title">LE-CAT: Lexicon-based Categorization and Analysis Tool</a>
-</td>
-<td>
-<span class="listing-author">James Tripp, Noortje Marres</span>
-</td>
-<td>
-<span class="listing-categories">Software</span>
-</td>
+</div>
+<div class="card-text listing-description delink">
+<p>Basic example of collecting social media data</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="U29mdHdhcmU=" data-listing-date-sort="1584662400000" data-listing-file-modified-sort="1792567578552" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="350">
+<a href="./projects/lecat.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+LE-CAT: Lexicon-based Categorization and Analysis Tool
+</h5>
+<div class="listing-categories">
 
-</tr>
+<div class="listing-category" onclick="window.quartoListingCategory('U29mdHdhcmU='); return false;">Software</div>
 
-<tr data-index="9" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1566082800000" data-listing-file-modified-sort="1777658018341" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="197" data-listing-title-sort="QSTEP: Statistical workshop" data-listing-filename-sort="qstep-statistical-workshops.qmd">
-<td>
-<span class="listing-date">Aug 18, 2019</span>
-</td>
-<td>
-<a href="./projects/qstep-statistical-workshops.html" class="title listing-title">QSTEP: Statistical workshop</a>
-</td>
-<td>
-<span class="listing-author">James Tripp</span>
-</td>
-<td>
-<span class="listing-categories">Teaching</span>
-</td>
+</div>
+<div class="card-text listing-description delink">
+<p>R package and shiny app for lexicon based categorisation</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="6" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1552867200000" data-listing-file-modified-sort="1792567578555" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="676">
+<a href="./projects/qstep-social-media.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Masterclass: Social Media
+</h5>
+<div class="listing-categories">
 
-</tr>
+<div class="listing-category" onclick="window.quartoListingCategory('VGVhY2hpbmc='); return false;">Teaching</div>
 
-<tr data-index="10" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1552867200000" data-listing-file-modified-sort="1777658018341" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="676" data-listing-title-sort="Masterclass: Social Media" data-listing-filename-sort="qstep-social-media.qmd">
-<td>
-<span class="listing-date">Mar 18, 2019</span>
-</td>
-<td>
-<a href="./projects/qstep-social-media.html" class="title listing-title">Masterclass: Social Media</a>
-</td>
-<td>
-<span class="listing-author">James Tripp</span>
-</td>
-<td>
-<span class="listing-categories">Teaching</span>
-</td>
+</div>
+<div class="card-text listing-description delink">
+<p>A masterclass in social media data collection for the QSTEP centre</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="7" data-categories="UmVzZWFyY2g=" data-listing-date-sort="1357776000000" data-listing-file-modified-sort="1792567781426" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="295">
+<a href="./projects/phd-thesis.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Memory and sampling in contextual judgment
+</h5>
+<div class="listing-categories">
 
-</tr>
+<div class="listing-category" onclick="window.quartoListingCategory('UmVzZWFyY2g='); return false;">Research</div>
 
-<tr data-index="11" data-categories="UGFwZXI=" data-listing-date-sort="1459378800000" data-listing-file-modified-sort="1777658018341" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="197" data-listing-title-sort="Being paid relatively well most of the time" data-listing-filename-sort="negativelyskewed-paper.qmd">
-<td>
-<span class="listing-date">Mar 31, 2016</span>
-</td>
-<td>
-<a href="./projects/negativelyskewed-paper.html" class="title listing-title">Being paid relatively well most of the time</a>
-</td>
-<td>
-<span class="listing-author">James Tripp, Gordon DA Brown</span>
-</td>
-<td>
-<span class="listing-categories">Paper</span>
-</td>
+</div>
+<div class="card-text listing-description delink">
+<p>PhD Thesis in Psychology</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="8" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1645401600000" data-listing-file-modified-sort="1792567578554" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="422">
+<a href="./projects/networking.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Networking Workshop
+</h5>
+<div class="listing-categories">
 
-</tr>
+<div class="listing-category" onclick="window.quartoListingCategory('VGVhY2hpbmc='); return false;">Teaching</div>
 
-<tr data-index="12" data-categories="UGhEJTIwVGhlc2lz" data-listing-date-sort="1357776000000" data-listing-file-modified-sort="1777658018341" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="295" data-listing-title-sort="Memory and sampling in contextual judgment" data-listing-filename-sort="phd-thesis.qmd">
-<td>
-<span class="listing-date">Jan 10, 2013</span>
-</td>
-<td>
-<a href="./projects/phd-thesis.html" class="title listing-title">Memory and sampling in contextual judgment</a>
-</td>
-<td>
-<span class="listing-author">James Tripp</span>
-</td>
-<td>
-<span class="listing-categories">PhD Thesis</span>
-</td>
+</div>
+<div class="card-text listing-description delink">
+<p>A workshop on visualising historical networks</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="9" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1566082800000" data-listing-file-modified-sort="1792567578555" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="197">
+<a href="./projects/qstep-statistical-workshops.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+QSTEP: Statistical workshop
+</h5>
+<div class="listing-categories">
 
-</tr>
+<div class="listing-category" onclick="window.quartoListingCategory('VGVhY2hpbmc='); return false;">Teaching</div>
 
-</tbody>
-</table>
+</div>
+<div class="card-text listing-description delink">
+<p>A workshop designed to support students in their QSTEP statistical methods modules</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="10" data-categories="VGFsa3MlMjAlMjYlMjB3b3Jrc2hvcHM=" data-listing-date-sort="1662505200000" data-listing-file-modified-sort="1792567781440" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="267">
+<a href="./projects/quarto-rseconf.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Quarto: a library to run them all?
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('VGFsa3MlMjAlMjYlMjB3b3Jrc2hvcHM='); return false;">Talks &amp; workshops</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Workshop delivered at RSE conf 2022</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="11" data-categories="VGFsa3MlMjAlMjYlMjB3b3Jrc2hvcHM=" data-listing-date-sort="1663196400000" data-listing-file-modified-sort="1792567781456" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="123">
+<a href="./projects/RandDocker.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+R and Docker
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('VGFsa3MlMjAlMjYlMjB3b3Jrc2hvcHM='); return false;">Talks &amp; workshops</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Presentation to the Warwick R User Group (WRUG)</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="12" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1637798400000" data-listing-file-modified-sort="1792567578555" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="138">
+<a href="./projects/qstep-sql.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+SQL Masterclass
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('VGVhY2hpbmc='); return false;">Teaching</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>A one day Masterclass looking at SQL</p>
+</div>
+</div>
+</div></a>
+</div>
+</div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
