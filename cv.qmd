@@ -32,7 +32,8 @@ I’m a cognitive scientist and research software engineer. I build software and
 
 ## Skills
 
-I lead teams, work with stakeholders and use agile methods. I build tools in R, Python and PHP. My data science work includes statistics, machine learning, generative AI and geospatial analysis.
+I lead teams, work with stakeholders and use agile methods. I build tools in R, Python and PHP. 
+My data science work includes statistics, machine learning, generative AI and geospatial analysis.
 
 ## Experience
 
@@ -40,18 +41,21 @@ I lead teams, work with stakeholders and use agile methods. I build tools in R, 
 
 **Research Software Engineer** · Birmingham, UK · September 2026–present
 
-I help academics solve technical problems, analyse data and teach computing skills as part of the central Research Software Group. I use R, Python and Julia.
+I help academics solve technical problems, analyse data and teach computing skills as part of 
+the central Research Software Group. I use R, Python and Julia.
 
 ### Government Internal Audit Agency
 
 **Data Analytics Specialist (Grade 7)** · London, UK · October 2023–September 2026
 
-I managed and worked with senior leaders to improve government audits. I planned and delivered analysis, wrote reports and built tools. Our audits covered financial models, HR, risk, counter-fraud and other government services.
+I managed and worked with senior leaders to improve government audits. I planned and delivered 
+analysis, wrote reports and built tools. Our audits covered financial models, HR, risk, 
+counter-fraud and other government services.
 
 Highlights:
 
-- Built online tools for business processes including LLM, agentic workflows, and typical data science methods (Shiny, Django)
-- Independently checked large datasets used to make decisions affecting millions of people.
+- Built online tools for business processes including LLM, agentic workflows, and typical 
+data science methods
 
 ### Information and Digital Group, University of Warwick
 
@@ -59,9 +63,9 @@ Highlights:
 
 I worked in a central team that supported researchers and technical staff across the University.
 
-- Helped researchers document data, use software containers, publish code, review changes and automate tests and releases.
-- Built research software, including tools to train machine-learning models and websites using Omeka S.
-- Worked with the Centre for Digital Inquiry to help humanities researchers use digital methods, machine learning and data analysis.
+- Built research software to help researchers
+- Worked with the Centre for Digital Inquiry to help humanities researchers use
+ digital methods, machine learning and data analysis.
 
 ### Centre for Interdisciplinary Methodologies, University of Warwick
 
@@ -77,8 +81,9 @@ I worked in a central team that supported researchers and technical staff across
 
 I joined a growing centre to build software and research systems, and to teach workshops.
 
-- Worked with researchers in ecology, computing, sociology, media studies, anthropology and philosophy.
-- Designed and taught hundreds of hours of workshops and labs in machine learning, statistics and network analysis.
+- Worked with researchers across disciplines
+- Designed and taught hundreds of hours of workshops and labs in machine learning, 
+statistics, digital methods such as network analysis and distant reading.
 - Built and managed Linux servers for research and teaching.
 - Built software for data analysis and visualisation.
 
@@ -117,13 +122,16 @@ I worked with Professors Adam Sanborn and Neil Stewart to study how people combi
 ## Teaching
 
 - **IM939: Data Science Across Disciplines** · 2020–June 2021  
-  Designed and taught practical classes and supported student projects. Topics included Python, data cleaning, visualisation, dimension reduction and model comparison.
+  Designed and taught practical classes and supported student projects. Topics included Python, 
+  data cleaning, visualisation, dimension reduction and model comparison.
 - **IM931: Interdisciplinary Approaches to Machine Learning** · 2018–2021  
   Wrote and taught practical classes using Keras and TensorFlow. Supported projects in Python and R.
 - **IM921: Visualisation** · 2017–2021  
-  Co-designed and taught practical classes on visualisation in Python and R. Led discussions about tools and methods.
+  Co-designed and taught practical classes on visualisation in Python and R. Led discussions 
+  about tools and methods.
 - **QS903: Advanced Quantitative Research** · 2017–2019  
-  Taught statistics workshops, including generalised linear and hierarchical models. Supervised quantitative dissertations.
+  Taught statistics workshops, including generalised linear and hierarchical models. 
+  Supervised work on quantitative dissertations.
 - **IM913: Spatial Methods and Practice in Urban Science** · 2016–2021  
   Taught mapping and spatial analysis using QGIS, ArcGIS, GeoDa, Python and R.
 - **IM906: Dissertation** · 2015–2021  

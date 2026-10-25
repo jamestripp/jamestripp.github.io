@@ -6,7 +6,7 @@ University of Birmingham
 
 # Research software engineering
 
-I develop software and data tools, and help research teams use them well.
+I work with researchers to develop software
 
 [Projects](projects.llms.md) [About](#about-title)
 
@@ -34,7 +34,7 @@ Talks & workshops
 
 ### [Quarto: a library to run them all?](projects/quarto-rseconf.llms.md)
 
-A practical workshop on using Quarto to bring research materials together.
+A practical workshop on using Quarto in research.
 
 About
 

@@ -14,7 +14,7 @@ Published
 
 September 15, 2022
 
-I will be presenting and introduction to Docker and Containers with R to the Warwick User Group. Slides and the abstract is below.
+I will be presenting and introduction to Docker and Containers with R to the Warwick User Group. The slides are below.
 
 ### Slides
 
@@ -295,7 +295,3 @@ Peikert, Aaron, and Andreas M. Brandmaier. 2021. “A Reproducible Data Analysis
 Pittard, W. Stephen, and Shuzhao Li. 2020. “The Essential Toolbox of Data Science: Python, R, Git, and Docker.” In, edited by Shuzhao Li, 265–311. Methods in Molecular Biology. New York, NY: Springer US. <https://doi.org/10.1007/978-1-0716-0239-3_15>.
 
 Smith, David. 2022. “Easy r Tutorials with Dev Containers \| r-Bloggers.” <https://www.r-bloggers.com/2022/08/easy-r-tutorials-with-dev-containers/>.
-
-### Abstract
-
-Docker is a container technology which allows you to specify and build a compute environment. You can run the environment on your local machine and both the instructions for creating the environment and the environment itself can be shared. In this talk I will (a) introduce containers, (b) discuss a worked example of using Docker with R, and (c) consider how containers can help us do better research. Hopefully this presentation will help those of you who have never used Docker to consider if you want to use Docker in your own work and where to start.

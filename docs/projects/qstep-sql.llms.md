@@ -21,5 +21,3 @@ Designing and delivering this workshop was a lot of fun. The goal was to introdu
 Two datasets were imported in the database. The first was a rather nice geospatial dataset containing the world borders. The second were world development indicators available via the world bank - superb datasource! Full details are [here](https://github.com/jamestripp/qstep-sql/tree/master/1_preparation).
 
 Students then (a) carried out basic SQL queries, (b) aggregated and joined data, (c) imported the data from the database into R via an SSH tunnel and RPostgreSQL to create choropleths, and (d) explored additional datasets.
-
-Feedback from students was very good with this one. I may even have encouraged some aspiring data scientists :).

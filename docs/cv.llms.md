@@ -42,8 +42,7 @@ I managed and worked with senior leaders to improve government audits. I planned
 
 Highlights:
 
-- Built online tools for business processes including LLM, agentic workflows, and typical data science methods (Shiny, Django)
-- Independently checked large datasets used to make decisions affecting millions of people.
+- Built online tools for business processes including LLM, agentic workflows, and typical data science methods
 
 ### Information and Digital Group, University of Warwick
 
@@ -51,8 +50,7 @@ Highlights:
 
 I worked in a central team that supported researchers and technical staff across the University.
 
-- Helped researchers document data, use software containers, publish code, review changes and automate tests and releases.
-- Built research software, including tools to train machine-learning models and websites using Omeka S.
+- Built research software to help researchers
 - Worked with the Centre for Digital Inquiry to help humanities researchers use digital methods, machine learning and data analysis.
 
 ### Centre for Interdisciplinary Methodologies, University of Warwick
@@ -69,8 +67,8 @@ I worked in a central team that supported researchers and technical staff across
 
 I joined a growing centre to build software and research systems, and to teach workshops.
 
-- Worked with researchers in ecology, computing, sociology, media studies, anthropology and philosophy.
-- Designed and taught hundreds of hours of workshops and labs in machine learning, statistics and network analysis.
+- Worked with researchers across disciplines
+- Designed and taught hundreds of hours of workshops and labs in machine learning, statistics, digital methods such as network analysis and distant reading.
 - Built and managed Linux servers for research and teaching.
 - Built software for data analysis and visualisation.
 
@@ -115,7 +113,7 @@ I worked with Professors Adam Sanborn and Neil Stewart to study how people combi
 - **IM921: Visualisation** · 2017–2021\
   Co-designed and taught practical classes on visualisation in Python and R. Led discussions about tools and methods.
 - **QS903: Advanced Quantitative Research** · 2017–2019\
-  Taught statistics workshops, including generalised linear and hierarchical models. Supervised quantitative dissertations.
+  Taught statistics workshops, including generalised linear and hierarchical models. Supervised work on quantitative dissertations.
 - **IM913: Spatial Methods and Practice in Urban Science** · 2016–2021\
   Taught mapping and spatial analysis using QGIS, ArcGIS, GeoDa, Python and R.
 - **IM906: Dissertation** · 2015–2021\
