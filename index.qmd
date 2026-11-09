@@ -1,6 +1,5 @@
 ---
 title: "James Tripp"
-title-block-style: none
 ---
 
 ::: {.home-page}

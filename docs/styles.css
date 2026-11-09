@@ -1,8 +1,4 @@
 /* Site-wide palette and typography */
-@view-transition {
-  navigation: auto;
-}
-
 :root {
   --ink: #1d303b;
   --muted: #52636c;
@@ -450,6 +446,11 @@ body:has(.blog-page) main.content {
   max-width: 760px;
 }
 
+body:has(.cv-page) main.content,
+body:has(.accessibility-page) main.content {
+  max-width: 760px;
+}
+
 .blog-page {
   color: var(--muted);
 }
@@ -496,8 +497,7 @@ body:has(.quarto-listing-category) #listing-listing .quarto-post .body {
 }
 
 .cv-page {
-  max-width: 880px;
-  margin: 0 auto;
+  margin: 0;
   padding-bottom: 2rem;
 }
 
@@ -659,10 +659,6 @@ body:has(.cv-page) .quarto-alternate-formats {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  @view-transition {
-    navigation: none;
-  }
-
   html {
     scroll-behavior: auto !important;
   }

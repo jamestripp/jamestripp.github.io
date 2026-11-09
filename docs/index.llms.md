@@ -1,6 +1,6 @@
-# James Tripp
-
 [Skip to main content](#quarto-document-content)
+
+# James Tripp
 
 University of Birmingham
 
