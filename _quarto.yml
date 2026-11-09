@@ -27,8 +27,9 @@ format:
   html:
     theme:
       light: default
-      dark: darkly
+      dark: [darkly, theme-dark.scss]
     respect-user-color-scheme: true
     css: styles.css
     include-before-body: _includes/skip-link.html
+    include-after-body: _includes/prefetch-navigation.html
     anchor-sections: false

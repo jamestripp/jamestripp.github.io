@@ -12,7 +12,7 @@ I work with researchers to develop software
 
 Profiles [GitHub](https://github.com/jamestripp) [LinkedIn](https://linkedin.com/in/jamestripp/)
 
-![Portrait of James Tripp](profile.jpg)
+![Portrait of James Tripp](profile-optimized.jpg)
 
 Selected work
 

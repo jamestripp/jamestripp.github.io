@@ -50,7 +50,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-ba8f7c244c1f50cbf6c6a3aa3874339a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-df07115ad9f15e2ef3479c789e6873c8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-dark-4cdbcbed59b5baa9f001e6c360274b58.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="../site_libs/bootstrap/bootstrap-ba8f7c244c1f50cbf6c6a3aa3874339a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -387,6 +387,75 @@ ul.task-list li input[type="checkbox"] {
 
 
 </main> <!-- /main -->
+<script>
+  (() => {
+    const connection = navigator.connection;
+    if (
+      location.protocol !== "http:" && location.protocol !== "https:" ||
+      connection?.saveData ||
+      ["slow-2g", "2g"].includes(connection?.effectiveType)
+    ) return;
+
+    const prefetched = new Set();
+
+    const prefetchUrl = (url) => {
+      if (
+        url.origin !== location.origin ||
+        !url.pathname.endsWith(".html") ||
+        url.pathname === location.pathname ||
+        prefetched.has(url.href)
+      ) return;
+
+      const hint = document.createElement("link");
+      hint.rel = "prefetch";
+      hint.href = url.href;
+      document.head.append(hint);
+      prefetched.add(url.href);
+    };
+
+    const prefetchPage = (event) => {
+      const link = event.target.closest("a[href]");
+      if (!link || link.target || link.hasAttribute("download")) return;
+
+      const url = new URL(link.href, location.href);
+      url.hash = "";
+      prefetchUrl(url);
+    };
+
+    const prefetchSitePages = async () => {
+      if (document.visibilityState !== "visible") return;
+
+      const sitemapUrl = new URL("/sitemap.xml", location.origin);
+      const response = await fetch(sitemapUrl);
+      if (!response.ok) {
+        throw new Error(`Could not load sitemap: ${response.status}`);
+      }
+
+      const sitemap = new DOMParser().parseFromString(
+        await response.text(),
+        "application/xml"
+      );
+      sitemap.querySelectorAll("loc").forEach((locationElement) => {
+        prefetchUrl(new URL(locationElement.textContent, location.origin));
+      });
+    };
+
+    const scheduleSitePrefetch = () => {
+      const schedule = window.requestIdleCallback || ((callback) => {
+        window.setTimeout(callback, 1000);
+      });
+      schedule(() => {
+        prefetchSitePages().catch((error) => {
+          console.warn("Background page prefetch failed.", error);
+        });
+      }, { timeout: 3000 });
+    };
+
+    document.addEventListener("pointerover", prefetchPage, { passive: true });
+    document.addEventListener("focusin", prefetchPage);
+    window.addEventListener("load", scheduleSitePrefetch, { once: true });
+  })();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right

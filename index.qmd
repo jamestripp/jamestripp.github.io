@@ -26,7 +26,7 @@ title-block-style: none
 :::
 
 ::: {.hero-portrait}
-<img src="profile.jpg" alt="Portrait of James Tripp" />
+<img src="profile-optimized.jpg" alt="Portrait of James Tripp" width="760" height="982" loading="eager" fetchpriority="high" decoding="async" />
 :::
 ::::
 

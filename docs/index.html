@@ -47,7 +47,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-9f30232948182f76cbe0f8db845b8660.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-e83814b1ae72971c554ad591ccac6006.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-dark-d04db262add4f7f52b7be4fad692cfb9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="site_libs/bootstrap/bootstrap-9f30232948182f76cbe0f8db845b8660.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -79,11 +79,11 @@ ul.task-list li input[type="checkbox"] {
 
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="James Tripp">
-<meta property="og:image" content="https://jamestripp.net/profile.jpg">
+<meta property="og:image" content="https://jamestripp.net/profile-optimized.jpg">
 <meta property="og:site_name" content="James Tripp">
 <meta property="og:image:alt" content="Portrait of James Tripp">
 <meta name="twitter:title" content="James Tripp">
-<meta name="twitter:image" content="https://jamestripp.net/profile.jpg">
+<meta name="twitter:image" content="https://jamestripp.net/profile-optimized.jpg">
 <meta name="twitter:image:alt" content="Portrait of James Tripp">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -358,7 +358,7 @@ I work with researchers to develop software
 </section>
 </div>
 <div class="hero-portrait">
-<p><img src="profile.jpg" alt="Portrait of James Tripp"></p>
+<p><img src="profile-optimized.jpg" alt="Portrait of James Tripp" width="760" height="982" loading="eager" fetchpriority="high" decoding="async"></p>
 </div>
 </div>
 <div class="home-section selected-work" role="region" aria-label="Selected work">
@@ -414,6 +414,75 @@ About
 
 
 </main> <!-- /main -->
+<script>
+  (() => {
+    const connection = navigator.connection;
+    if (
+      location.protocol !== "http:" && location.protocol !== "https:" ||
+      connection?.saveData ||
+      ["slow-2g", "2g"].includes(connection?.effectiveType)
+    ) return;
+
+    const prefetched = new Set();
+
+    const prefetchUrl = (url) => {
+      if (
+        url.origin !== location.origin ||
+        !url.pathname.endsWith(".html") ||
+        url.pathname === location.pathname ||
+        prefetched.has(url.href)
+      ) return;
+
+      const hint = document.createElement("link");
+      hint.rel = "prefetch";
+      hint.href = url.href;
+      document.head.append(hint);
+      prefetched.add(url.href);
+    };
+
+    const prefetchPage = (event) => {
+      const link = event.target.closest("a[href]");
+      if (!link || link.target || link.hasAttribute("download")) return;
+
+      const url = new URL(link.href, location.href);
+      url.hash = "";
+      prefetchUrl(url);
+    };
+
+    const prefetchSitePages = async () => {
+      if (document.visibilityState !== "visible") return;
+
+      const sitemapUrl = new URL("/sitemap.xml", location.origin);
+      const response = await fetch(sitemapUrl);
+      if (!response.ok) {
+        throw new Error(`Could not load sitemap: ${response.status}`);
+      }
+
+      const sitemap = new DOMParser().parseFromString(
+        await response.text(),
+        "application/xml"
+      );
+      sitemap.querySelectorAll("loc").forEach((locationElement) => {
+        prefetchUrl(new URL(locationElement.textContent, location.origin));
+      });
+    };
+
+    const scheduleSitePrefetch = () => {
+      const schedule = window.requestIdleCallback || ((callback) => {
+        window.setTimeout(callback, 1000);
+      });
+      schedule(() => {
+        prefetchSitePages().catch((error) => {
+          console.warn("Background page prefetch failed.", error);
+        });
+      }, { timeout: 3000 });
+    };
+
+    document.addEventListener("pointerover", prefetchPage, { passive: true });
+    document.addEventListener("focusin", prefetchPage);
+    window.addEventListener("load", scheduleSitePrefetch, { once: true });
+  })();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
