@@ -8,7 +8,7 @@ University of Birmingham
 
 I work with researchers to develop software
 
-[Projects](projects.llms.md) [About](#about-title)
+[Projects](projects.llms.md) [Blog](blog.llms.md) [About](#about-title)
 
 Profiles [GitHub](https://github.com/jamestripp) [LinkedIn](https://linkedin.com/in/jamestripp/)
 

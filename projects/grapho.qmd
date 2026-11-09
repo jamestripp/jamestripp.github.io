@@ -19,6 +19,6 @@ coverage](https://codecov.io/gh/WarwickCIM/grapho/branch/master/graph/badge.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 <!-- badges: end -->
 
-# Project Description
+## Project Description
 
 Grapho is an R package for recording the commands and visualisations created in an R session. Functions are provided for parsing and visualising the user workflow.

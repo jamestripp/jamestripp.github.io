@@ -18,6 +18,6 @@ March 31, 2016
 
 A paper from my PhD thesis.
 
-# Abstract
+## Abstract
 
 How does the structure of a series of payments influence its recipient’s satisfaction? A common hypothesis is that each payment will be compared with a single “standard” or “reference” payment (e.g., the average payment). Cognitive models of judgment such as range frequency theory predict in contrast that the entire payment distribution will influence evaluation of each individual payment. Two experiments examined satisfaction with a series of payments. In both experiments, most payments were either relatively high in the experienced distribution (the distribution was negatively skewed) or relatively low (positively skewed). The total and average payment was held constant. Experiment 1 found that average satisfaction with individual payments was higher when the payments were negatively skewed, consistent with range frequency theory, and earlier findings were extended by comparing range frequency theory with a range-based model, a rank-based model, and a reference point model at the individual level. Experiment 2 examined satisfaction with whole sequences of payments and found that receiving a negatively skewed sequence was more satisfying overall than receiving a positively skewed sequence. It is concluded that negatively skewed payment distributions are more satisfying, as predicted by cognitive models of judgment.

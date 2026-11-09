@@ -3,10 +3,17 @@
   document.addEventListener("DOMContentLoaded", () => {
     const skipLink = document.querySelector(".skip-link");
     const mainContent = document.getElementById("quarto-document-content");
+    const themeToggle = document.querySelector(".quarto-color-scheme-toggle");
+    const projectFilter = document.querySelector("#listing-listing input.search");
     document.querySelectorAll(".navbar-toggler[role='menu']").forEach((button) => {
       button.removeAttribute("role");
     });
     if (skipLink) document.body.prepend(skipLink);
     if (mainContent) mainContent.setAttribute("tabindex", "-1");
+    if (themeToggle) {
+      themeToggle.setAttribute("aria-label", "Toggle dark mode");
+      themeToggle.querySelector(".bi")?.setAttribute("aria-hidden", "true");
+    }
+    if (projectFilter) projectFilter.setAttribute("aria-label", "Filter projects");
   });
 </script>

@@ -43,10 +43,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ba8f7c244c1f50cbf6c6a3aa3874339a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-ba8f7c244c1f50cbf6c6a3aa3874339a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-df07115ad9f15e2ef3479c789e6873c8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-ba8f7c244c1f50cbf6c6a3aa3874339a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -140,7 +144,178 @@ window.Quarto = {
 <meta name="twitter:card" content="summary">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkModeDefault = queryPrefersDark.matches;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    queryPrefersDark.addEventListener("change", e => {
+      if(window.localStorage.getItem("quarto-color-scheme") !== null)
+        return;
+      const alternate = e.matches
+      toggleColorMode(alternate);
+      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
+      toggleGiscusIfUsed(alternate, darkModeDefault);
+    });
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -157,6 +332,10 @@ window.Quarto = {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./blog.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./projects.html" aria-current="page"> 
 <span class="menu-text">Projects</span></a>
@@ -176,6 +355,7 @@ window.Quarto = {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -189,16 +369,24 @@ window.Quarto = {
     <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(13)</span></div><div class="category" data-category="UmVzZWFyY2g=">Research <span class="quarto-category-count">(3)</span></div><div class="category" data-category="U29mdHdhcmU=">Software <span class="quarto-category-count">(3)</span></div><div class="category" data-category="VGFsa3MlMjAlMjYlMjB3b3Jrc2hvcHM=">Talks &amp; workshops <span class="quarto-category-count">(2)</span></div><div class="category" data-category="VGVhY2hpbmc=">Teaching <span class="quarto-category-count">(5)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
+
 <a class="skip-link" href="#quarto-document-content">Skip to main content</a>
 <script>
   document.addEventListener("DOMContentLoaded", () => {
     const skipLink = document.querySelector(".skip-link");
     const mainContent = document.getElementById("quarto-document-content");
+    const themeToggle = document.querySelector(".quarto-color-scheme-toggle");
+    const projectFilter = document.querySelector("#listing-listing input.search");
     document.querySelectorAll(".navbar-toggler[role='menu']").forEach((button) => {
       button.removeAttribute("role");
     });
     if (skipLink) document.body.prepend(skipLink);
     if (mainContent) mainContent.setAttribute("tabindex", "-1");
+    if (themeToggle) {
+      themeToggle.setAttribute("aria-label", "Toggle dark mode");
+      themeToggle.querySelector(".bi")?.setAttribute("aria-hidden", "true");
+    }
+    if (projectFilter) projectFilter.setAttribute("aria-label", "Filter projects");
   });
 </script>
 
@@ -221,257 +409,286 @@ window.Quarto = {
 </header>
 
 
+<section id="browse-projects" class="level2">
+<h2 data-anchor-id="browse-projects">Browse projects</h2>
 
 
 
+</section>
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="listing-actions-group">
     <div class="input-group input-group-sm quarto-listing-filter">
       <span class="input-group-text"><i class="bi bi-search"></i></span>
       <input type="text" class="search form-control" placeholder="Filter">
     </div>
 </div>
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="UmVzZWFyY2g=" data-listing-date-sort="1585609200000" data-listing-file-modified-sort="1792920193535" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
-<a href="./projects/dilutioneffect-paper.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-A dilution effect without dilution
-</h5>
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="UmVzZWFyY2g=" data-listing-date-sort="1585609200000" data-listing-file-modified-sort="1792920193535" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./projects/dilutioneffect-paper.html" class="no-external">A dilution effect without dilution</a>
+</h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('UmVzZWFyY2g='); return false;">Research</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="delink listing-description"><a href="./projects/dilutioneffect-paper.html" class="no-external">
 <p>A dilution effect without dilution: When missing evidence, not non-diagnostic evidence, is judged inaccurately</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./projects/dilutioneffect-paper.html" class="no-external">
+</a>
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="U29mdHdhcmU=" data-listing-date-sort="1588546800000" data-listing-file-modified-sort="1792920142784" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="63">
-<a href="./projects/backfillz.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Backfillz
-</h5>
+<div class="quarto-post image-right" data-index="1" data-categories="U29mdHdhcmU=" data-listing-date-sort="1588546800000" data-listing-file-modified-sort="1792920142784" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="63">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./projects/backfillz.html" class="no-external">Backfillz</a>
+</h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('U29mdHdhcmU='); return false;">Software</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="delink listing-description"><a href="./projects/backfillz.html" class="no-external">
 <p>Backfillz.R provides new visual diagnostics for understanding MCMC (Markov Chain Monte Carlo) analyses and outputs.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./projects/backfillz.html" class="no-external">
+</a>
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="UmVzZWFyY2g=" data-listing-date-sort="1459378800000" data-listing-file-modified-sort="1792567781409" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="197">
-<a href="./projects/negativelyskewed-paper.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Being paid relatively well most of the time
-</h5>
+<div class="quarto-post image-right" data-index="2" data-categories="UmVzZWFyY2g=" data-listing-date-sort="1459378800000" data-listing-file-modified-sort="1794218018556" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="197">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./projects/negativelyskewed-paper.html" class="no-external">Being paid relatively well most of the time</a>
+</h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('UmVzZWFyY2g='); return false;">Research</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="delink listing-description"><a href="./projects/negativelyskewed-paper.html" class="no-external">
 <p>Being paid relatively well most of the time: Negatively skewed payments are more satisfying</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./projects/negativelyskewed-paper.html" class="no-external">
+</a>
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="U29mdHdhcmU=" data-listing-date-sort="1652569200000" data-listing-file-modified-sort="1792920228595" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="56">
-<a href="./projects/grapho.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Grapho
-</h5>
+<div class="quarto-post image-right" data-index="3" data-categories="U29mdHdhcmU=" data-listing-date-sort="1652569200000" data-listing-file-modified-sort="1794218018464" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="56">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./projects/grapho.html" class="no-external">Grapho</a>
+</h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('U29mdHdhcmU='); return false;">Software</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="delink listing-description"><a href="./projects/grapho.html" class="no-external">
 <p>Grapho is an R package for recording the commands and visualisations created in an R session.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./projects/grapho.html" class="no-external">
+</a>
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1643673600000" data-listing-file-modified-sort="1792567578552" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="25">
-<a href="./projects/introductory-social-media-analysis.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Introductory Social Media Analysis
-</h5>
+<div class="quarto-post image-right" data-index="4" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1643673600000" data-listing-file-modified-sort="1792567578552" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="25">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./projects/introductory-social-media-analysis.html" class="no-external">Introductory Social Media Analysis</a>
+</h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('VGVhY2hpbmc='); return false;">Teaching</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="delink listing-description"><a href="./projects/introductory-social-media-analysis.html" class="no-external">
 <p>Basic example of collecting social media data</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./projects/introductory-social-media-analysis.html" class="no-external">
+</a>
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="U29mdHdhcmU=" data-listing-date-sort="1584662400000" data-listing-file-modified-sort="1792920254901" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="86">
-<a href="./projects/lecat.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-LE-CAT: Lexicon-based Categorization and Analysis Tool
-</h5>
+<div class="quarto-post image-right" data-index="5" data-categories="U29mdHdhcmU=" data-listing-date-sort="1584662400000" data-listing-file-modified-sort="1792920254901" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="86">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./projects/lecat.html" class="no-external">LE-CAT: Lexicon-based Categorization and Analysis Tool</a>
+</h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('U29mdHdhcmU='); return false;">Software</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="delink listing-description"><a href="./projects/lecat.html" class="no-external">
 <p>R package and shiny app for lexicon based categorisation</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./projects/lecat.html" class="no-external">
+</a>
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="6" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1552867200000" data-listing-file-modified-sort="1792920326498" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="44">
-<a href="./projects/qstep-social-media.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Masterclass: Social Media
-</h5>
+<div class="quarto-post image-right" data-index="6" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1552867200000" data-listing-file-modified-sort="1792920326498" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="44">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./projects/qstep-social-media.html" class="no-external">Masterclass: Social Media</a>
+</h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('VGVhY2hpbmc='); return false;">Teaching</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="delink listing-description"><a href="./projects/qstep-social-media.html" class="no-external">
 <p>A masterclass in social media data collection for the QSTEP centre</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./projects/qstep-social-media.html" class="no-external">
+</a>
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="7" data-categories="UmVzZWFyY2g=" data-listing-date-sort="1357776000000" data-listing-file-modified-sort="1792920307659" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
-<a href="./projects/phd-thesis.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Memory and sampling in contextual judgment
-</h5>
+<div class="quarto-post image-right" data-index="7" data-categories="UmVzZWFyY2g=" data-listing-date-sort="1357776000000" data-listing-file-modified-sort="1792920307659" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./projects/phd-thesis.html" class="no-external">Memory and sampling in contextual judgment</a>
+</h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('UmVzZWFyY2g='); return false;">Research</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="delink listing-description"><a href="./projects/phd-thesis.html" class="no-external">
 <p>PhD Thesis in Psychology</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./projects/phd-thesis.html" class="no-external">
+</a>
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="8" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1645401600000" data-listing-file-modified-sort="1792920295174" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="53">
-<a href="./projects/networking.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Networking Workshop
-</h5>
+<div class="quarto-post image-right" data-index="8" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1645401600000" data-listing-file-modified-sort="1792920295174" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="53">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./projects/networking.html" class="no-external">Networking Workshop</a>
+</h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('VGVhY2hpbmc='); return false;">Teaching</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="delink listing-description"><a href="./projects/networking.html" class="no-external">
 <p>A workshop on visualising historical networks</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./projects/networking.html" class="no-external">
+</a>
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="9" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1566082800000" data-listing-file-modified-sort="1792920357207" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="50">
-<a href="./projects/qstep-statistical-workshops.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-QSTEP: Statistical workshop
-</h5>
+<div class="quarto-post image-right" data-index="9" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1566082800000" data-listing-file-modified-sort="1792920357207" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="50">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./projects/qstep-statistical-workshops.html" class="no-external">QSTEP: Statistical workshop</a>
+</h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('VGVhY2hpbmc='); return false;">Teaching</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="delink listing-description"><a href="./projects/qstep-statistical-workshops.html" class="no-external">
 <p>A workshop designed to support students in their QSTEP statistical methods modules</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./projects/qstep-statistical-workshops.html" class="no-external">
+</a>
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="10" data-categories="VGFsa3MlMjAlMjYlMjB3b3Jrc2hvcHM=" data-listing-date-sort="1662505200000" data-listing-file-modified-sort="1792920399637" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="130">
-<a href="./projects/quarto-rseconf.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Quarto: a library to run them all?
-</h5>
+<div class="quarto-post image-right" data-index="10" data-categories="VGFsa3MlMjAlMjYlMjB3b3Jrc2hvcHM=" data-listing-date-sort="1662505200000" data-listing-file-modified-sort="1794218044071" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="134">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./projects/quarto-rseconf.html" class="no-external">Quarto: a library to run them all?</a>
+</h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('VGFsa3MlMjAlMjYlMjB3b3Jrc2hvcHM='); return false;">Talks &amp; workshops</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="delink listing-description"><a href="./projects/quarto-rseconf.html" class="no-external">
 <p>Workshop delivered at RSE conf 2022</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./projects/quarto-rseconf.html" class="no-external">
+</a>
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="11" data-categories="VGFsa3MlMjAlMjYlMjB3b3Jrc2hvcHM=" data-listing-date-sort="1663196400000" data-listing-file-modified-sort="1792920422022" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="23">
-<a href="./projects/RandDocker.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-R and Docker
-</h5>
+<div class="quarto-post image-right" data-index="11" data-categories="VGFsa3MlMjAlMjYlMjB3b3Jrc2hvcHM=" data-listing-date-sort="1663196400000" data-listing-file-modified-sort="1794217865346" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="29">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./projects/RandDocker.html" class="no-external">R and Docker</a>
+</h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('VGFsa3MlMjAlMjYlMjB3b3Jrc2hvcHM='); return false;">Talks &amp; workshops</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="delink listing-description"><a href="./projects/RandDocker.html" class="no-external">
 <p>Presentation to the Warwick R User Group (WRUG)</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./projects/RandDocker.html" class="no-external">
+</a>
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="12" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1637798400000" data-listing-file-modified-sort="1792920343286" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="120">
-<a href="./projects/qstep-sql.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-SQL Masterclass
-</h5>
+<div class="quarto-post image-right" data-index="12" data-categories="VGVhY2hpbmc=" data-listing-date-sort="1637798400000" data-listing-file-modified-sort="1792920343286" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="120">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./projects/qstep-sql.html" class="no-external">SQL Masterclass</a>
+</h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('VGVhY2hpbmc='); return false;">Teaching</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="delink listing-description"><a href="./projects/qstep-sql.html" class="no-external">
 <p>A one day Masterclass looking at SQL</p>
+</a></div>
 </div>
+<div class="metadata">
+<a href="./projects/qstep-sql.html" class="no-external">
+</a>
 </div>
-</div></a>
 </div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     

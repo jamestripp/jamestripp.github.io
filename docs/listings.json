@@ -1,5 +1,11 @@
 [
   {
+    "listing": "/blog.html",
+    "items": [
+      "/posts/welcome.html"
+    ]
+  },
+  {
     "listing": "/projects.html",
     "items": [
       "/projects/dilutioneffect-paper.html",

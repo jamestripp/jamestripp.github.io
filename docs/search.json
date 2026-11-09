@@ -1,150 +1,17 @@
 [
   {
-    "objectID": "accessibility.html",
-    "href": "accessibility.html",
-    "title": "Accessibility",
-    "section": "",
-    "text": "Skip to main content\nI want this website to be usable by as many people as possible. I aim to meet WCAG 2.2 AA and follow GOV.UK accessibility guidance where it applies.\nThe site includes a skip link, visible keyboard focus, clear link text, responsive layouts and support for reduced motion."
-  },
-  {
-    "objectID": "accessibility.html#known-limitations",
-    "href": "accessibility.html#known-limitations",
-    "title": "Accessibility",
-    "section": "Known limitations",
-    "text": "Known limitations\nI have not completed a full accessibility audit, so I cannot confirm that every page meets WCAG 2.2 AA. The site uses Quarto search and project filters, which I have not independently assessed with assistive technology."
-  },
-  {
-    "objectID": "accessibility.html#tell-me-about-an-accessibility-problem",
-    "href": "accessibility.html#tell-me-about-an-accessibility-problem",
-    "title": "Accessibility",
-    "section": "Tell me about an accessibility problem",
-    "text": "Tell me about an accessibility problem\nIf you have trouble using this site, email James Tripp. Please include the page you were using and what went wrong. You can also tell me which device, browser or assistive technology you use, if you are comfortable sharing that."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "James Tripp",
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
     "section": "",
     "text": "Skip to main content"
   },
   {
-    "objectID": "index.html#selected-work-title",
-    "href": "index.html#selected-work-title",
-    "title": "James Tripp",
-    "section": "Tools, research and training.",
-    "text": "Tools, research and training."
-  },
-  {
-    "objectID": "index.html#about-title",
-    "href": "index.html#about-title",
-    "title": "James Tripp",
-    "section": "About me",
-    "text": "About me"
-  },
-  {
-    "objectID": "projects/quarto-rseconf.html",
-    "href": "projects/quarto-rseconf.html",
-    "title": "Quarto: a library to run them all?",
-    "section": "",
-    "text": "Skip to main content\n\n\n\n\n\nI co-delivered a workshop exploring the Quarto library at the RSE conference 2022. The slides and abstract are below.\n\nSlides\n\n\n\n\nAbstract\nUsing literate programming is a widespread practice amongst data scientists. This practice not only encourages data scientists to produce transparent, rich and reflective accounts of their analysis without the extra overhead of switching between tools, but also leads to artefacts (i.e., notebooks) that are increasingly becoming a medium for dissemination, reproducibility and education. Rmarkdown or Jupyter notebooks, are two of the most well known and used options. While both solutions can be used with multiple programming languages, the decision of whether to use one or the other is almost certain to be exclusively based on that. This workshop explore the use of the Qaurto library to support research."
-  },
-  {
-    "objectID": "projects/backfillz.html",
-    "href": "projects/backfillz.html",
-    "title": "Backfillz",
-    "section": "",
-    "text": "Skip to main content\n\n\n\n\n\nCode on GitHub\n\n    \nThis software provides several novel visualisations for exploring MCMC chains. I worked with MCMC chains during the my post-doc in Psychology when estimating the posterior distributions of cognitive models given the data and found this project very interesting."
-  },
-  {
-    "objectID": "projects/RandDocker.html",
-    "href": "projects/RandDocker.html",
-    "title": "R and Docker",
-    "section": "",
-    "text": "Skip to main content\n\n\n\n\n\nI will be presenting and introduction to Docker and Containers with R to the Warwick User Group. The slides are below.\n\nSlides"
-  },
-  {
-    "objectID": "projects/dilutioneffect-paper.html",
-    "href": "projects/dilutioneffect-paper.html",
-    "title": "A dilution effect without dilution",
-    "section": "",
-    "text": "Skip to main content\n\n\n\n\n\nPaper link\nA paper from my post-doc."
-  },
-  {
-    "objectID": "projects/phd-thesis.html",
-    "href": "projects/phd-thesis.html",
-    "title": "Memory and sampling in contextual judgment",
-    "section": "",
-    "text": "Skip to main content\n\n\n\n\n\nPaper link"
-  },
-  {
-    "objectID": "projects/grapho.html",
-    "href": "projects/grapho.html",
-    "title": "Grapho",
-    "section": "",
-    "text": "Skip to main content\n\n\n\n\n\nCode on GitHub\n\n    \n\nProject Description\nGrapho is an R package for recording the commands and visualisations created in an R session. Functions are provided for parsing and visualising the user workflow."
-  },
-  {
-    "objectID": "projects/negativelyskewed-paper.html",
-    "href": "projects/negativelyskewed-paper.html",
-    "title": "Being paid relatively well most of the time",
-    "section": "",
-    "text": "Skip to main content\n\n\n\n\n\nPaper link\nA paper from my PhD thesis.\n\nAbstract\nHow does the structure of a series of payments influence its recipient’s satisfaction? A common hypothesis is that each payment will be compared with a single “standard” or “reference” payment (e.g., the average payment). Cognitive models of judgment such as range frequency theory predict in contrast that the entire payment distribution will influence evaluation of each individual payment. Two experiments examined satisfaction with a series of payments. In both experiments, most payments were either relatively high in the experienced distribution (the distribution was negatively skewed) or relatively low (positively skewed). The total and average payment was held constant. Experiment 1 found that average satisfaction with individual payments was higher when the payments were negatively skewed, consistent with range frequency theory, and earlier findings were extended by comparing range frequency theory with a range-based model, a rank-based model, and a reference point model at the individual level. Experiment 2 examined satisfaction with whole sequences of payments and found that receiving a negatively skewed sequence was more satisfying overall than receiving a positively skewed sequence. It is concluded that negatively skewed payment distributions are more satisfying, as predicted by cognitive models of judgment."
-  },
-  {
-    "objectID": "projects/qstep-social-media.html",
-    "href": "projects/qstep-social-media.html",
-    "title": "Masterclass: Social Media",
-    "section": "",
-    "text": "Skip to main content\n\n\n\n\n\nCode on GitHub\n\n RStudio:  \nI was asked to deliver a Social Media Data Analysis workshop in R by the QSTEP centre at the University of Warwick. I decided to write the Masterclass entirely, where possible, using the tidyverse packages."
-  },
-  {
-    "objectID": "projects/qstep-social-media.html#outline",
-    "href": "projects/qstep-social-media.html#outline",
-    "title": "Masterclass: Social Media",
-    "section": "Outline",
-    "text": "Outline\nThe structure of the workshop is as follows\n\n\n\nStage\nTitle\nDetail\nR package(s)\n\n\n\n\n\nIntroduction\nOverview of the day\n\n\n\n\nR intro\nAn introduction to R\nggplot2, tidyverse\n\n\nCollection\nScraping\nDownloading and filtering html pages\nrvest, tidyverse, magittr, ggplot2, tibble\n\n\n\nAPI and data dumps\nAccessing data directly using APIs\nhttr, jsonlite, dplyr, textclean, stringr, ggplot2, tidyverse, magittr, tibble, twitteR, RedditExtractoR\n\n\nAnalysis\nSummarising\nTidyverse enabled summaries of our collected data\ntidyverse, tidytext, dplyr, tidyr\n\n\n\nText analysis\nApplying numerical analysis to our text\ntidytext, tidyverse, dplyr, stringr, RedditExtractoR, tidyr, igraph, ggraph, wordcloud, reshape2, tm, topicmodels\n\n\n\nNatural Language\nOptional section using the cleanNLP package\ncleanNLP, tibble, tidyverse, RedditExtractoR, reticulate"
-  },
-  {
-    "objectID": "projects/lecat.html",
-    "href": "projects/lecat.html",
-    "title": "LE-CAT: Lexicon-based Categorization and Analysis Tool",
-    "section": "",
-    "text": "Skip to main content\n\n\n\n\n\nCode on GitHub\n    \nI developed LE-CAT for Professor Noortje Marres. The software is written in R and searches for words in a text. Each word is associated with a category. The presence of the word (e.g., Tony Blair) is assumed to indicate the presence of the category in the text (e.g., politics). Summary information about category co-occurence is displayed displayed to the user as is a network of category and word co-occurence."
-  },
-  {
-    "objectID": "projects/networking.html",
-    "href": "projects/networking.html",
-    "title": "Networking Workshop",
-    "section": "",
-    "text": "Skip to main content\n\n\n\n\n\nCode on GitHub\n\n \nThe workshop was delivered to faculty members from the History department at the University of Warwick. We used an existing dataset of quakers and carried out our analysis using Grapho - a tool I often used during my time at the Centre for Interdisciplinary Methodologies."
-  },
-  {
-    "objectID": "projects/introductory-social-media-analysis.html",
-    "href": "projects/introductory-social-media-analysis.html",
-    "title": "Introductory Social Media Analysis",
-    "section": "",
-    "text": "Skip to main content\n\n\n\n\n\nCode on GitHub\n\n \nRudimentary example of collecting data from Twitter aimed at introducing R and data collection to humanities students."
-  },
-  {
-    "objectID": "projects/qstep-sql.html",
-    "href": "projects/qstep-sql.html",
-    "title": "SQL Masterclass",
-    "section": "",
-    "text": "Skip to main content\n\n\n\n\n\nCode on GitHub\nDesigning and delivering this workshop was a lot of fun. The goal was to introduce Structured Query Language. Students were provided with a containerised Linux machine so they could work with the SQL in a live environment (the Ansible playbook used can be seen here).\nTwo datasets were imported in the database. The first was a rather nice geospatial dataset containing the world borders. The second were world development indicators available via the world bank - superb datasource! Full details are here.\nStudents then (a) carried out basic SQL queries, (b) aggregated and joined data, (c) imported the data from the database into R via an SSH tunnel and RPostgreSQL to create choropleths, and (d) explored additional datasets."
-  },
-  {
-    "objectID": "projects/qstep-statistical-workshops.html",
-    "href": "projects/qstep-statistical-workshops.html",
-    "title": "QSTEP: Statistical workshop",
-    "section": "",
-    "text": "Skip to main content\n\n\n\n\n\nCode on GitHub\n\n \nQSTEP asked me to support their students in their statistical methods modules. The aim was to provide hands on R work with various statistical methods, as used in my Psychology PhD, including:\n\nBivariate regression\nLinear Regression\nMultiple Regression\nMultinomial Logit\nProportional Odds"
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Skip to main content\n\n\n\n\n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\nA dilution effect without dilution\n\n\n\nResearch\n\n\n\nA dilution effect without dilution: When missing evidence, not non-diagnostic evidence, is judged inaccurately\n\n\n\n\n\n\n\n\n\nBackfillz\n\n\n\nSoftware\n\n\n\nBackfillz.R provides new visual diagnostics for understanding MCMC (Markov Chain Monte Carlo) analyses and outputs.\n\n\n\n\n\n\n\n\n\nBeing paid relatively well most of the time\n\n\n\nResearch\n\n\n\nBeing paid relatively well most of the time: Negatively skewed payments are more satisfying\n\n\n\n\n\n\n\n\n\nGrapho\n\n\n\nSoftware\n\n\n\nGrapho is an R package for recording the commands and visualisations created in an R session.\n\n\n\n\n\n\n\n\n\nIntroductory Social Media Analysis\n\n\n\nTeaching\n\n\n\nBasic example of collecting social media data\n\n\n\n\n\n\n\n\n\nLE-CAT: Lexicon-based Categorization and Analysis Tool\n\n\n\nSoftware\n\n\n\nR package and shiny app for lexicon based categorisation\n\n\n\n\n\n\n\n\n\nMasterclass: Social Media\n\n\n\nTeaching\n\n\n\nA masterclass in social media data collection for the QSTEP centre\n\n\n\n\n\n\n\n\n\nMemory and sampling in contextual judgment\n\n\n\nResearch\n\n\n\nPhD Thesis in Psychology\n\n\n\n\n\n\n\n\n\nNetworking Workshop\n\n\n\nTeaching\n\n\n\nA workshop on visualising historical networks\n\n\n\n\n\n\n\n\n\nQSTEP: Statistical workshop\n\n\n\nTeaching\n\n\n\nA workshop designed to support students in their QSTEP statistical methods modules\n\n\n\n\n\n\n\n\n\nQuarto: a library to run them all?\n\n\n\nTalks & workshops\n\n\n\nWorkshop delivered at RSE conf 2022\n\n\n\n\n\n\n\n\n\nR and Docker\n\n\n\nTalks & workshops\n\n\n\nPresentation to the Warwick R User Group (WRUG)\n\n\n\n\n\n\n\n\n\nSQL Masterclass\n\n\n\nTeaching\n\n\n\nA one day Masterclass looking at SQL\n\n\n\n\n\nNo matching items"
+    "objectID": "blog.html#posts",
+    "href": "blog.html#posts",
+    "title": "Blog",
+    "section": "Posts",
+    "text": "Posts"
   },
   {
     "objectID": "cv.html",
@@ -208,5 +75,194 @@
     "title": "Curriculum vitae",
     "section": "References",
     "text": "References\nReferences are available on request.\nBack to top"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Skip to main content"
+  },
+  {
+    "objectID": "projects.html#browse-projects",
+    "href": "projects.html#browse-projects",
+    "title": "Projects",
+    "section": "Browse projects",
+    "text": "Browse projects"
+  },
+  {
+    "objectID": "projects/qstep-statistical-workshops.html",
+    "href": "projects/qstep-statistical-workshops.html",
+    "title": "QSTEP: Statistical workshop",
+    "section": "",
+    "text": "Skip to main content\n\n\n\n\n\nCode on GitHub\n\n \nQSTEP asked me to support their students in their statistical methods modules. The aim was to provide hands on R work with various statistical methods, as used in my Psychology PhD, including:\n\nBivariate regression\nLinear Regression\nMultiple Regression\nMultinomial Logit\nProportional Odds"
+  },
+  {
+    "objectID": "projects/qstep-sql.html",
+    "href": "projects/qstep-sql.html",
+    "title": "SQL Masterclass",
+    "section": "",
+    "text": "Skip to main content\n\n\n\n\n\nCode on GitHub\nDesigning and delivering this workshop was a lot of fun. The goal was to introduce Structured Query Language. Students were provided with a containerised Linux machine so they could work with the SQL in a live environment (the Ansible playbook used can be seen here).\nTwo datasets were imported in the database. The first was a rather nice geospatial dataset containing the world borders. The second were world development indicators available via the world bank - superb datasource! Full details are here.\nStudents then (a) carried out basic SQL queries, (b) aggregated and joined data, (c) imported the data from the database into R via an SSH tunnel and RPostgreSQL to create choropleths, and (d) explored additional datasets."
+  },
+  {
+    "objectID": "projects/introductory-social-media-analysis.html",
+    "href": "projects/introductory-social-media-analysis.html",
+    "title": "Introductory Social Media Analysis",
+    "section": "",
+    "text": "Skip to main content\n\n\n\n\n\nCode on GitHub\n\n \nRudimentary example of collecting data from Twitter aimed at introducing R and data collection to humanities students."
+  },
+  {
+    "objectID": "projects/networking.html",
+    "href": "projects/networking.html",
+    "title": "Networking Workshop",
+    "section": "",
+    "text": "Skip to main content\n\n\n\n\n\nCode on GitHub\n\n \nThe workshop was delivered to faculty members from the History department at the University of Warwick. We used an existing dataset of quakers and carried out our analysis using Grapho - a tool I often used during my time at the Centre for Interdisciplinary Methodologies."
+  },
+  {
+    "objectID": "projects/lecat.html",
+    "href": "projects/lecat.html",
+    "title": "LE-CAT: Lexicon-based Categorization and Analysis Tool",
+    "section": "",
+    "text": "Skip to main content\n\n\n\n\n\nCode on GitHub\n    \nI developed LE-CAT for Professor Noortje Marres. The software is written in R and searches for words in a text. Each word is associated with a category. The presence of the word (e.g., Tony Blair) is assumed to indicate the presence of the category in the text (e.g., politics). Summary information about category co-occurence is displayed displayed to the user as is a network of category and word co-occurence."
+  },
+  {
+    "objectID": "projects/qstep-social-media.html",
+    "href": "projects/qstep-social-media.html",
+    "title": "Masterclass: Social Media",
+    "section": "",
+    "text": "Skip to main content\n\n\n\n\n\nCode on GitHub\n\n RStudio:  \nI was asked to deliver a Social Media Data Analysis workshop in R by the QSTEP centre at the University of Warwick. I decided to write the Masterclass entirely, where possible, using the tidyverse packages."
+  },
+  {
+    "objectID": "posts/welcome.html",
+    "href": "posts/welcome.html",
+    "title": "Welcome",
+    "section": "",
+    "text": "Skip to main content\n\n\n\n\n\nI find blogs to be either maintained wonderfully, or fickle side projects. I have no idea which of these this will be.\nIf this does flourish, then expect:\n\nPosts about technology and life. The two are rather intertwined.\nSome middling entertainment."
+  },
+  {
+    "objectID": "projects/negativelyskewed-paper.html",
+    "href": "projects/negativelyskewed-paper.html",
+    "title": "Being paid relatively well most of the time",
+    "section": "",
+    "text": "Skip to main content\nPaper link\nA paper from my PhD thesis."
+  },
+  {
+    "objectID": "projects/negativelyskewed-paper.html#abstract",
+    "href": "projects/negativelyskewed-paper.html#abstract",
+    "title": "Being paid relatively well most of the time",
+    "section": "Abstract",
+    "text": "Abstract\nHow does the structure of a series of payments influence its recipient’s satisfaction? A common hypothesis is that each payment will be compared with a single “standard” or “reference” payment (e.g., the average payment). Cognitive models of judgment such as range frequency theory predict in contrast that the entire payment distribution will influence evaluation of each individual payment. Two experiments examined satisfaction with a series of payments. In both experiments, most payments were either relatively high in the experienced distribution (the distribution was negatively skewed) or relatively low (positively skewed). The total and average payment was held constant. Experiment 1 found that average satisfaction with individual payments was higher when the payments were negatively skewed, consistent with range frequency theory, and earlier findings were extended by comparing range frequency theory with a range-based model, a rank-based model, and a reference point model at the individual level. Experiment 2 examined satisfaction with whole sequences of payments and found that receiving a negatively skewed sequence was more satisfying overall than receiving a positively skewed sequence. It is concluded that negatively skewed payment distributions are more satisfying, as predicted by cognitive models of judgment."
+  },
+  {
+    "objectID": "projects/grapho.html",
+    "href": "projects/grapho.html",
+    "title": "Grapho",
+    "section": "",
+    "text": "Skip to main content\nCode on GitHub"
+  },
+  {
+    "objectID": "projects/grapho.html#project-description",
+    "href": "projects/grapho.html#project-description",
+    "title": "Grapho",
+    "section": "Project Description",
+    "text": "Project Description\nGrapho is an R package for recording the commands and visualisations created in an R session. Functions are provided for parsing and visualising the user workflow."
+  },
+  {
+    "objectID": "projects/phd-thesis.html",
+    "href": "projects/phd-thesis.html",
+    "title": "Memory and sampling in contextual judgment",
+    "section": "",
+    "text": "Skip to main content\n\n\n\n\n\nPaper link"
+  },
+  {
+    "objectID": "projects/dilutioneffect-paper.html",
+    "href": "projects/dilutioneffect-paper.html",
+    "title": "A dilution effect without dilution",
+    "section": "",
+    "text": "Skip to main content\n\n\n\n\n\nPaper link\nA paper from my post-doc."
+  },
+  {
+    "objectID": "projects/RandDocker.html",
+    "href": "projects/RandDocker.html",
+    "title": "R and Docker",
+    "section": "",
+    "text": "Skip to main content\nI will be presenting and introduction to Docker and Containers with R to the Warwick User Group. The slides are below."
+  },
+  {
+    "objectID": "projects/RandDocker.html#slides",
+    "href": "projects/RandDocker.html#slides",
+    "title": "R and Docker",
+    "section": "Slides",
+    "text": "Slides"
+  },
+  {
+    "objectID": "projects/backfillz.html",
+    "href": "projects/backfillz.html",
+    "title": "Backfillz",
+    "section": "",
+    "text": "Skip to main content\n\n\n\n\n\nCode on GitHub\n\n    \nThis software provides several novel visualisations for exploring MCMC chains. I worked with MCMC chains during the my post-doc in Psychology when estimating the posterior distributions of cognitive models given the data and found this project very interesting."
+  },
+  {
+    "objectID": "projects/quarto-rseconf.html",
+    "href": "projects/quarto-rseconf.html",
+    "title": "Quarto: a library to run them all?",
+    "section": "",
+    "text": "Skip to main content\nI co-delivered a workshop exploring the Quarto library at the RSE conference 2022. The slides and abstract are below."
+  },
+  {
+    "objectID": "projects/quarto-rseconf.html#slides",
+    "href": "projects/quarto-rseconf.html#slides",
+    "title": "Quarto: a library to run them all?",
+    "section": "Slides",
+    "text": "Slides"
+  },
+  {
+    "objectID": "projects/quarto-rseconf.html#abstract",
+    "href": "projects/quarto-rseconf.html#abstract",
+    "title": "Quarto: a library to run them all?",
+    "section": "Abstract",
+    "text": "Abstract\nUsing literate programming is a widespread practice amongst data scientists. This practice not only encourages data scientists to produce transparent, rich and reflective accounts of their analysis without the extra overhead of switching between tools, but also leads to artefacts (i.e., notebooks) that are increasingly becoming a medium for dissemination, reproducibility and education. Rmarkdown or Jupyter notebooks, are two of the most well known and used options. While both solutions can be used with multiple programming languages, the decision of whether to use one or the other is almost certain to be exclusively based on that. This workshop explore the use of the Qaurto library to support research."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "James Tripp",
+    "section": "",
+    "text": "Skip to main content"
+  },
+  {
+    "objectID": "index.html#selected-work-title",
+    "href": "index.html#selected-work-title",
+    "title": "James Tripp",
+    "section": "Tools, research and training.",
+    "text": "Tools, research and training."
+  },
+  {
+    "objectID": "index.html#about-title",
+    "href": "index.html#about-title",
+    "title": "James Tripp",
+    "section": "About me",
+    "text": "About me"
+  },
+  {
+    "objectID": "accessibility.html",
+    "href": "accessibility.html",
+    "title": "Accessibility",
+    "section": "",
+    "text": "Skip to main content\nI want this website to be usable by as many people as possible. I aim to meet WCAG 2.2 AA and follow GOV.UK accessibility guidance where it applies.\nThe site includes a skip link, visible keyboard focus, a labeled theme switch, titled embedded presentations, responsive layouts and support for reduced motion. The theme follows your device preference by default and can be changed from the navigation bar."
+  },
+  {
+    "objectID": "accessibility.html#known-limitations",
+    "href": "accessibility.html#known-limitations",
+    "title": "Accessibility",
+    "section": "Known limitations",
+    "text": "Known limitations\nI have not completed a full WCAG 2.2 AA audit or tested the site with a screen reader, so I cannot confirm that every page meets the standard. Quarto search, project filters and content inside embedded presentations have not been independently assessed with assistive technology."
+  },
+  {
+    "objectID": "accessibility.html#tell-me-about-an-accessibility-problem",
+    "href": "accessibility.html#tell-me-about-an-accessibility-problem",
+    "title": "Accessibility",
+    "section": "Tell me about an accessibility problem",
+    "text": "Tell me about an accessibility problem\nIf you have trouble using this site, email James Tripp. Please include the page you were using and what went wrong. You can also tell me which device, browser or assistive technology you use, if you are comfortable sharing that."
   }
 ]

@@ -4,9 +4,27 @@
   --muted: #52636c;
   --paper: #ffffff;
   --surface: #ffffff;
+  --surface-hover: #f5f7f8;
   --line: #d8e0e4;
+  --line-strong: #aebdc4;
   --accent: #28566b;
   --accent-dark: #193f52;
+  --button-text: #ffffff;
+  color-scheme: light;
+}
+
+body.quarto-dark {
+  --ink: #e3ebef;
+  --muted: #a9b8bf;
+  --paper: #11191d;
+  --surface: #172228;
+  --surface-hover: #202e35;
+  --line: #33454e;
+  --line-strong: #526872;
+  --accent: #8fc0d3;
+  --accent-dark: #b5d8e5;
+  --button-text: #11191d;
+  color-scheme: dark;
 }
 
 body {
@@ -48,7 +66,7 @@ a:hover {
 .skip-link,
 .skip-link:hover {
   background: var(--ink);
-  color: #fff;
+  color: var(--paper);
 }
 
 .skip-link:focus {
@@ -56,8 +74,9 @@ a:hover {
 }
 
 .navbar {
-  background: #ffffff;
+  background: var(--paper);
   border-bottom: 1px solid var(--line);
+  padding-block: 0.5rem;
 }
 
 .navbar-brand,
@@ -104,6 +123,44 @@ a:hover {
 
 .quarto-search-button {
   color: var(--ink);
+}
+
+#quarto-header .quarto-color-scheme-toggle {
+  display: inline-flex;
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+#quarto-header .quarto-color-scheme-toggle:not(.alternate) .bi::before {
+  content: "\f494";
+}
+
+#quarto-header .quarto-color-scheme-toggle.alternate .bi::before {
+  content: "\f5a1";
+}
+
+#quarto-header .quarto-color-scheme-toggle:hover {
+  color: var(--accent);
+}
+
+body.quarto-dark #quarto-search input {
+  border-color: var(--line);
+  background-color: var(--surface);
+  color: var(--ink);
+}
+
+body.quarto-dark #quarto-search input::placeholder {
+  color: var(--muted);
+}
+
+iframe {
+  display: block;
+  max-width: 100%;
+  border: 1px solid var(--line);
 }
 
 .home-page {
@@ -183,12 +240,12 @@ body:has(.home-page) .quarto-title-block {
 
 .button-primary {
   background: var(--accent);
-  color: #fff;
+  color: var(--button-text);
 }
 
 .button-primary:hover {
   background: var(--accent-dark);
-  color: #fff;
+  color: var(--button-text);
 }
 
 .button-secondary {
@@ -197,7 +254,7 @@ body:has(.home-page) .quarto-title-block {
 }
 
 .button-secondary:hover {
-  background: #edf2f4;
+  background: var(--surface-hover);
   color: var(--accent-dark);
 }
 
@@ -284,10 +341,9 @@ body:has(.home-page) .quarto-title-block {
 }
 
 .work-card {
-  min-height: 180px;
-  padding: 1.2rem;
-  border: 1px solid var(--line);
-  border-top: 2px solid #aebdc4;
+  padding: 1rem 0.25rem;
+  border: 0;
+  border-top: 1px solid var(--line);
   background: var(--surface);
   color: var(--ink);
   text-decoration: none;
@@ -296,7 +352,6 @@ body:has(.home-page) .quarto-title-block {
 
 .work-card:hover {
   border-top-color: var(--accent);
-  background: #fafcfc;
   color: var(--ink);
 }
 
@@ -372,8 +427,34 @@ body:has(.home-page) .quarto-title-block {
 
 #listing-listing .quarto-grid-item:hover,
 #listing-listing .card:hover {
-  border-color: #aebdc4;
-  background: #fafcfc;
+  border-color: var(--line-strong);
+  background: var(--surface-hover);
+}
+
+body:has(.blog-page) main.content {
+  max-width: 760px;
+}
+
+.blog-page {
+  color: var(--muted);
+}
+
+#listing-listing .quarto-post {
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+body:has(.quarto-listing-category) #listing-listing .quarto-post .metadata {
+  display: none;
+}
+
+body:has(.quarto-listing-category) #listing-listing .quarto-post .body {
+  flex: 1 1 100%;
+}
+
+#listing-listing .listing-date {
+  color: var(--muted);
+  font-size: 0.9rem;
 }
 
 #listing-listing .listing-title {
@@ -413,7 +494,7 @@ body:has(.cv-page) .quarto-alternate-formats {
   margin: 1rem 0 2rem;
   padding: 1.5rem clamp(1.1rem, 3vw, 2rem);
   border-left: 3px solid var(--accent);
-  background: #f5f7f8;
+  background: var(--surface-hover);
 }
 
 .cv-intro h2 {
@@ -466,7 +547,7 @@ body:has(.cv-page) .quarto-alternate-formats {
   margin: 0.4rem 0 0.75rem;
   padding: 0.6rem 0.8rem;
   border-left: 3px solid var(--accent);
-  background: #f5f7f8;
+  background: var(--surface-hover);
   color: var(--accent);
   font-size: 1.125rem;
   font-weight: 650;

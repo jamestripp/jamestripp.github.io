@@ -2,10 +2,11 @@
 title: "Projects"
 listing:
   contents: projects
-  type: grid
-  grid-columns: 3
+  type: default
   filter-ui: [title, description, categories]
   categories: true
   fields: [title, description, categories]
   sort: "title"
 ---
+
+## Browse projects

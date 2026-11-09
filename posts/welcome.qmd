@@ -1,0 +1,15 @@
+---
+title: "Welcome"
+description: "A few notes about this blog"
+author: "James Tripp"
+date: "2026-11-09"
+categories: [Notes, Misc]
+---
+
+I find blogs to be either maintained wonderfully, or fickle side projects. I have no idea which of these this will be.
+
+If this does flourish, then expect:
+
+* Posts about technology and life. The two are rather intertwined.
+* Some middling entertainment.
+

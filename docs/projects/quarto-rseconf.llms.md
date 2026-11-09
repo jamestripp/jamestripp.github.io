@@ -16,7 +16,7 @@ September 7, 2022
 
 I co-delivered a workshop exploring the Quarto library at the RSE conference 2022. The slides and abstract are below.
 
-### Slides
+## Slides
 
 Quarto:\
 A library to run them all?
@@ -430,6 +430,6 @@ If you’ve enjoyed the workshop and want to keep exploring quarto, there are so
 
 https://bit.ly/rsecon22-quarto
 
-### Abstract
+## Abstract
 
 Using literate programming is a widespread practice amongst data scientists. This practice not only encourages data scientists to produce transparent, rich and reflective accounts of their analysis without the extra overhead of switching between tools, but also leads to artefacts (i.e., notebooks) that are increasingly becoming a medium for dissemination, reproducibility and education. Rmarkdown or Jupyter notebooks, are two of the most well known and used options. While both solutions can be used with multiple programming languages, the decision of whether to use one or the other is almost certain to be exclusively based on that. This workshop explore the use of the Qaurto library to support research.

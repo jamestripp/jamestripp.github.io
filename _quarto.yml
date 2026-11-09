@@ -13,6 +13,8 @@ website:
   llms-txt: true
   navbar:
     right:
+      - text: Blog
+        href: blog.qmd
       - text: Projects
         href: projects.qmd
       - text: CV
@@ -23,7 +25,10 @@ website:
         href: "https://scholar.google.com/citations?user=21Y5AegAAAAJ&hl=en&oi=ao"
 format:
   html:
-    theme: default
+    theme:
+      light: default
+      dark: darkly
+    respect-user-color-scheme: true
     css: styles.css
     include-before-body: _includes/skip-link.html
     anchor-sections: false

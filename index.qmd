@@ -14,6 +14,7 @@ title-block-style: none
 
 ::: {.hero-actions}
 [Projects](projects.qmd){.button .button-primary}
+[Blog](blog.qmd){.button .button-secondary}
 [About](#about-title){.button .button-secondary}
 :::
 
