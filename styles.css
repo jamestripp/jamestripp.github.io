@@ -98,6 +98,11 @@ a:hover {
   font-weight: 650;
 }
 
+.navbar-brand {
+  font-size: 1.25rem;
+  transition: none;
+}
+
 .navbar .nav-link {
   display: flex;
   min-height: 44px;
@@ -107,6 +112,16 @@ a:hover {
 .navbar-toggler {
   min-width: 44px;
   min-height: 44px;
+}
+
+#quarto-search {
+  width: 180px;
+}
+
+@media (max-width: 991.98px) {
+  #quarto-search {
+    width: 40px;
+  }
 }
 
 #quarto-header .navbar .navbar-brand:hover,
@@ -248,7 +263,6 @@ body:has(.home-page) .quarto-title-block {
   font-size: 0.94rem;
   font-weight: 700;
   text-decoration: none;
-  transition: background-color 120ms ease, color 120ms ease;
 }
 
 .button-primary {
@@ -358,7 +372,6 @@ body:has(.home-page) .quarto-title-block {
   background: var(--surface);
   color: var(--ink);
   text-decoration: none;
-  transition: border-color 120ms ease, background-color 120ms ease;
 }
 
 .work-card:hover {
@@ -433,7 +446,6 @@ body:has(.home-page) .quarto-title-block {
   border-radius: 3px;
   background: var(--surface);
   box-shadow: none;
-  transition: border-color 120ms ease, background-color 120ms ease;
 }
 
 #listing-listing .quarto-grid-item:hover,
